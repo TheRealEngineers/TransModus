@@ -1,4 +1,3 @@
-package loginsystem;
 import javax.swing.JOptionPane;
 
 public class RegisterForm extends javax.swing.JFrame {
