@@ -1,4 +1,4 @@
-package loginsystem;
+import javax.swing.JOptionPane;
 
 public class LoginForm extends javax.swing.JFrame {
     // Creates new form LoginForm
