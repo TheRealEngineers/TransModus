@@ -1,4 +1,8 @@
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 package loginsystem;
 
@@ -149,26 +153,38 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        Scanner SQLscanner = new Scanner(System.in)
+        
         String username = tfUsername.getText();
         String password = new String(tfPassword.getPassword());
+
+        // Establish a connection to the database
+    try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus_Database", "username", "password")) {
+        // Prepare the SQL statement
+        String sql = "SELECT * FROM clients WHERE username = ? AND password = ?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setString(1, username);
+        statement.setString(2, password);
+
+        // Execute the query
+        ResultSet resultSet = statement.executeQuery();
         
-        /*
-        /*** IF: USERNAME AND PASSWORD MATCH WITH DATABASE, TAKE USER TO HOMEPAGE
-        if (username == SQL_username && password == SQL_password) { 
-            HomePage hpg = new HomePage();  
-            hpg.setVisible(true);
-            hpg.pack();
-            this.dispose();
-        }
-        
-        /*** ELSE: LOGIN ATTEMPT FAILS
-        else{
-        JOptionPane.showMessageDialog(this,
-            JOptionPane.showMessageDialog(this,
-                "Invalid username and/or password", "ERROR", JOptionPane.ERROR_MESSAGE);
-        }
-        */
-    }//GEN-LAST:event_btnLoginActionPerformed
+        // Check if the query returned a match
+                if (resultSet.next()) {
+                    // If a match is found, take the user to the homepage
+                    HomePage hpg = new HomePage();
+                    hpg.setVisible(true);
+                    hpg.pack();
+                    this.dispose();
+                } else {
+                    // If no match is found, display an error message
+                    JOptionPane.showMessageDialog(this, "Invalid username and/or password", "ERROR", JOptionPane.ERROR_MESSAGE);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }//GEN-LAST:event_btnLoginActionPerformed
+
     
     // @param args the command line arguments
     public static void main(String args[]) {
