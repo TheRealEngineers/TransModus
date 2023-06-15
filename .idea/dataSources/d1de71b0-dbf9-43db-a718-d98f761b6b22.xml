@@ -1033,7 +1033,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="298" parent="297" name="client_id">
-      <AutoIncrement>25</AutoIncrement>
+      <AutoIncrement>82</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1048,32 +1048,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="301" parent="297" name="password">
+    <column id="301" parent="297" name="email">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="302" parent="297" name="birthday_month">
-      <DasType>char(3)|0s</DasType>
+    <column id="302" parent="297" name="password">
+      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="303" parent="297" name="birthday_day">
-      <DasType>int|0s</DasType>
+    <column id="303" parent="297" name="birthday_month">
+      <DasType>char(3)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="304" parent="297" name="birthday_year">
+    <column id="304" parent="297" name="birthday_day">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <index id="305" parent="297" name="PRIMARY">
+    <column id="305" parent="297" name="birthday_year">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <index id="306" parent="297" name="PRIMARY">
       <ColNames>client_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="306" parent="297" name="PRIMARY">
+    <key id="307" parent="297" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

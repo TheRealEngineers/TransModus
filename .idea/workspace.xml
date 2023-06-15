@@ -7,7 +7,9 @@
     <list default="true" id="d31c2a0c-08d2-4f99-a7a4-fb2ff5c49020" name="Changes" comment="TRS-30 First Edition of Database">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/TransModus_Database.sql" afterDir="false" />
     </list>
+    <list id="900863b8-dd2e-49dd-b494-2b48abb84d8c" name="Changes by davidpedroza" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +55,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "database.data.views",
     "vue.rearranger.settings.migration": "true"
   },
