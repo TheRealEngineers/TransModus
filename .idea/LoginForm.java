@@ -4,8 +4,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-package loginsystem;
-
 public class LoginForm extends javax.swing.JFrame {
     // Creates new form LoginForm
     public LoginForm() {
