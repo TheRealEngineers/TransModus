@@ -9,21 +9,21 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public class Booking {
-    private int bookingId;
+    private int booking_id;
     private String user_id;
     private String bookingName;
     private Timestamp dateTime;
 
     public Booking() {
-        this.bookingId = bookingId;
+        this.booking_id = booking_id;
         this.user_id = user_id;
         this.bookingName = bookingName;
         this.dateTime = dateTime;
     }
 
     // Getter methods
-    public int getBookingId() {
-        return bookingId;
+    public int getbooking_id() {
+        return booking_id;
     }
 
     public String getuser_id() {
@@ -42,11 +42,11 @@ public class Booking {
         List<Booking> bookings = new ArrayList<>();
         try (Connection connection = getConnection();
              Statement statement = connection.createStatement();
-             ResultSet resultSet = statement.executeQuery("SELECT * FROM client")) {
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM booking")) {
             while (resultSet.next()) {
-                int bookingId = resultSet.getInt("client_id");
-                String user_id = resultSet.getString("login");
-                String bookingName = resultSet.getString("name");
+                int booking_id = resultSet.getInt("booking_id");
+                String user_id = resultSet.getString("client_id");
+                String bookingName = resultSet.getString("booking_name");
                 Timestamp dateTime = null;  // Replace with the real column name for datetime
                 // Retrieve other columns as needed
 
