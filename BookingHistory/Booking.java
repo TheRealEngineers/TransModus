@@ -10,13 +10,13 @@ import java.util.List;
 
 public class Booking {
     private int bookingId;
-    private String userId;
+    private String user_id;
     private String bookingName;
     private Timestamp dateTime;
 
     public Booking() {
         this.bookingId = bookingId;
-        this.userId = userId;
+        this.user_id = user_id;
         this.bookingName = bookingName;
         this.dateTime = dateTime;
     }
@@ -26,8 +26,8 @@ public class Booking {
         return bookingId;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getuser_id() {
+        return user_id;
     }
 
     public String getBookingName() {
@@ -45,7 +45,7 @@ public class Booking {
              ResultSet resultSet = statement.executeQuery("SELECT * FROM client")) {
             while (resultSet.next()) {
                 int bookingId = resultSet.getInt("client_id");
-                String userId = resultSet.getString("login");
+                String user_id = resultSet.getString("login");
                 String bookingName = resultSet.getString("name");
                 Timestamp dateTime = null;  // Replace with the real column name for datetime
                 // Retrieve other columns as needed
