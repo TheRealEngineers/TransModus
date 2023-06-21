@@ -10,8 +10,8 @@ public class Main {
 
         // Process the retrieved bookings
         for (Booking b : bookings) {
-            System.out.println("Booking ID: " + b.getBookingId());
-            System.out.println("User ID: " + b.getUserId());
+            System.out.println("Booking ID: " + b.getbooking_id());
+            System.out.println("User ID: " + b.getuser_id());
             System.out.println("Booking Name: " + b.getBookingName());
             System.out.println("DateTime: " + b.getDateTime());
             System.out.println();
