@@ -47,7 +47,7 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("SimSun-ExtB", 1, 13)); // NOI18N
         jLabel3.setText("Don't have an account? Create one here!");
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(179, 0, 0));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("SimSun-ExtB", 1, 48)); // NOI18N
@@ -71,7 +71,7 @@ public class LoginForm extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        btnRegister.setBackground(new java.awt.Color(0, 0, 0));
+        btnRegister.setBackground(new java.awt.Color(179, 0, 0));
         btnRegister.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         btnRegister.setForeground(new java.awt.Color(255, 255, 255));
         btnRegister.setText("REGISTER");
@@ -81,7 +81,7 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        btnLogin.setBackground(new java.awt.Color(0, 0, 0));
+        btnLogin.setBackground(new java.awt.Color(179, 0, 0));
         btnLogin.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("LOGIN");
