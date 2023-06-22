@@ -186,9 +186,9 @@ public class RegisterForm extends javax.swing.JFrame {
         String lastname = tfLastName.getText();
         String email = tfContactEmail.getText();
         
-        int birthMonth = cbBirthMonth.getSelectedIndex();
-        int birthDay = cbBirthDay.getSelectedIndex();
-        int birthYear = cbBirthYear.getSelectedIndex();
+        Object birthMonth = cbBirthMonth.getSelectedItem();
+        Object birthDay = cbBirthDay.getSelectedItem();
+        Object birthYear = cbBirthYear.getSelectedItem();
         
         String username = tfUsername.getText();
         String password = new String(tfPassword.getPassword());
