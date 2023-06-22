@@ -511,7 +511,7 @@ public class RoutineMng extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Table is Empty ");
             }
             else { // IF TABLE IS NOT EMPTY, BUT NO ROW IS SELECTED
-                JOptionPane.showMessageDialog(this, "Please select a Single Row for Delection");
+                JOptionPane.showMessageDialog(this, "Please select a Single Row for Deletion");
             }
         }
     }//GEN-LAST:event_btnDeleteBusActionPerformed
@@ -542,7 +542,20 @@ public class RoutineMng extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddTrainActionPerformed
 
     private void btnDeleteTrainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteTrainActionPerformed
-        // TODO add your handling code here:
+        DefaultTableModel tblModel_2 = (DefaultTableModel) TrainTable.getModel();
+        
+        // Delete row
+        if (TrainTable.getSelectedRowCount() == 1){
+           tblModel_2.removeRow(TrainTable.getSelectedRow());
+        }
+        else {
+            if (TrainTable.getRowCount() == 0) { // IF TABLE IS EMPTY 
+                JOptionPane.showMessageDialog(this, "Table is Empty ");
+            }
+            else { // IF TABLE IS NOT EMPTY, BUT NO ROW IS SELECTED
+                JOptionPane.showMessageDialog(this, "Please select a Single Row for Deletion");
+            }
+        }
     }//GEN-LAST:event_btnDeleteTrainActionPerformed
 
     
@@ -572,7 +585,20 @@ public class RoutineMng extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddPlaneActionPerformed
 
     private void btnDeletePlaneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletePlaneActionPerformed
-        // TODO add your handling code here:
+        DefaultTableModel tblModel_3 = (DefaultTableModel) PlaneTable.getModel();
+        
+        // Delete row
+        if (PlaneTable.getSelectedRowCount() == 1){
+           tblModel_3.removeRow(PlaneTable.getSelectedRow());
+        }
+        else {
+            if (PlaneTable.getRowCount() == 0) { // IF TABLE IS EMPTY 
+                JOptionPane.showMessageDialog(this, "Table is Empty ");
+            }
+            else { // IF TABLE IS NOT EMPTY, BUT NO ROW IS SELECTED
+                JOptionPane.showMessageDialog(this, "Please select a Single Row for Deletion");
+            }
+        }
     }//GEN-LAST:event_btnDeletePlaneActionPerformed
 
 
