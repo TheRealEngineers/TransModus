@@ -60,7 +60,7 @@ public class Booking {
     }
 
     public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/TransModus_Database"; //change databaseName as well
+        String url = "jdbc:mysql://localhost:3306"; //change databaseName as well
         String username = "username";
         String password = "password";
         return DriverManager.getConnection(url, username, password);
