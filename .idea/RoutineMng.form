@@ -24,162 +24,98 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jSeparator3" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                                          <Component id="txtTrainPrice" min="-2" pref="133" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel_2" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="txtTrainNum" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="txtTrainTo" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="txtTrainFrom" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="btnAddTrain" min="-2" pref="88" max="-2" attributes="0"/>
-                                                      <Component id="btnDeleteTrain" min="-2" pref="88" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="cbTrainDepart1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="cbTrainDepart2" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                                                  <Component id="cbTrainArrive1" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="cbTrainArrive2" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="txtPlaneNum" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="txtPlaneTo" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="txtPlaneFrom" alignment="1" min="-2" pref="133" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnAddPlane" min="-2" max="-2" attributes="0"/>
-                                              <Component id="btnDeletePlane" min="-2" pref="88" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="txtBusNum" max="32767" attributes="0"/>
-                                                      <Component id="txtBusTo" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="txtBusFrom" alignment="1" pref="133" max="32767" attributes="0"/>
-                                                  </Group>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="btnAddBus" min="-2" pref="88" max="-2" attributes="0"/>
-                                                      <Component id="btnDeleteBus" min="-2" pref="88" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="txtBusPrice" min="-2" pref="133" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel_1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <Component id="cbBusArrive1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="cbBusArrive2" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" attributes="0">
-                                                      <Component id="cbBusDepart1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="cbBusDepart2" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                              <Component id="txtPlanePrice" min="-2" pref="133" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel_3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                  <Component id="cbPlaneDepart1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="cbPlaneDepart2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtBusNum" max="32767" attributes="0"/>
+                                  <Component id="txtBusTo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtBusArrival" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtBusDepart" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtBusFrom" alignment="1" pref="133" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                                  <Component id="cbPlaneArrive1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="cbPlaneArrive2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnAddBus" min="-2" pref="88" max="-2" attributes="0"/>
+                                  <Component id="btnDeleteBus" min="-2" pref="88" max="-2" attributes="0"/>
+                                  <Component id="btnSaveBus" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="btnHome" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="btnLoad" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtTrainNum" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtTrainTo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtTrainArrival" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtTrainDepart" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="txtTrainFrom" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnAddTrain" min="-2" pref="88" max="-2" attributes="0"/>
+                                  <Component id="btnDeleteTrain" min="-2" pref="88" max="-2" attributes="0"/>
+                                  <Component id="btnSaveTrain" min="-2" pref="88" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <Component id="jScrollPane1" min="-2" pref="626" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator1" min="-2" pref="399" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnHome" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtPlaneNum" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPlaneTo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPlaneArrival" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtPlaneDepart" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="txtPlaneFrom" alignment="1" min="-2" pref="133" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnAddPlane" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnDeletePlane" min="-2" pref="88" max="-2" attributes="0"/>
+                                  <Component id="btnSavePlane" min="-2" pref="88" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jScrollPane3" min="-2" pref="626" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="626" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane3" pref="701" max="32767" attributes="0"/>
-                  <Component id="jScrollPane1" max="32767" attributes="0"/>
-                  <Component id="jScrollPane2" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -189,167 +125,113 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtBusNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtBusFrom" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtBusTo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                              <Component id="btnAddBus" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnDeleteBus" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Component id="jScrollPane1" min="-2" pref="217" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jScrollPane3" min="-2" pref="217" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtBusNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnAddBus" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cbBusDepart1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbBusDepart2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtBusFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtBusTo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDeleteBus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtBusDepart" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cbBusArrive1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbBusArrive2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtBusArrival" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSaveBus" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel_1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtBusPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
-              </Group>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtTrainNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="txtTrainFrom" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtTrainTo" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="btnAddTrain" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnDeleteTrain" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="cbTrainDepart1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cbTrainDepart2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="txtTrainNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnAddTrain" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cbTrainArrive1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbTrainArrive2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTrainFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDeleteTrain" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="txtTrainTo" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtTrainDepart" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtTrainArrival" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSaveTrain" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtTrainPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel_2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="32767" attributes="0"/>
-                      <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
-                      <Component id="jScrollPane3" min="-2" pref="219" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
+                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtPlaneNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnAddPlane" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPlaneFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtPlaneNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtPlaneFrom" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtPlaneTo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                              <Component id="btnAddPlane" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnDeletePlane" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDeletePlane" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                              <Component id="txtPlaneTo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cbPlaneDepart1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbPlaneDepart2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPlaneDepart" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cbPlaneArrive1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbPlaneArrive2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPlaneArrival" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSavePlane" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtPlanePrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel_3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnLoad" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnHome" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnHome" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jScrollPane2" alignment="1" min="-2" pref="219" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="217" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -368,22 +250,16 @@
               <Font name="SimSun-ExtB" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="0">
-                <Column editable="false" title="Bus #" type="java.lang.String"/>
-                <Column editable="false" title="From" type="java.lang.String"/>
-                <Column editable="false" title="To" type="java.lang.String"/>
-                <Column editable="false" title="Departure Time" type="java.lang.Object"/>
-                <Column editable="false" title="Arrival Time" type="java.lang.Object"/>
-                <Column editable="false" title="Price" type="java.lang.String"/>
+              <Table columnCount="5" rowCount="4">
+                <Column editable="true" title="Bus #" type="java.lang.Integer"/>
+                <Column editable="true" title="From" type="java.lang.String"/>
+                <Column editable="true" title="To" type="java.lang.String"/>
+                <Column editable="true" title="Departure Time" type="java.lang.Object"/>
+                <Column editable="true" title="Arrival Time" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
@@ -431,22 +307,16 @@
               <Font name="SimSun-ExtB" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="0">
-                <Column editable="false" title="Plane #" type="java.lang.String"/>
-                <Column editable="false" title="From" type="java.lang.String"/>
-                <Column editable="false" title="To" type="java.lang.String"/>
-                <Column editable="false" title="Departure Time" type="java.lang.Object"/>
-                <Column editable="false" title="Arrival Time" type="java.lang.Object"/>
-                <Column editable="false" title="Price" type="java.lang.String"/>
+              <Table columnCount="5" rowCount="4">
+                <Column editable="true" title="Plane #" type="java.lang.Integer"/>
+                <Column editable="true" title="From" type="java.lang.String"/>
+                <Column editable="true" title="To" type="java.lang.String"/>
+                <Column editable="true" title="Departure Time" type="java.lang.Object"/>
+                <Column editable="true" title="Arrival Time" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
@@ -494,22 +364,16 @@
               <Font name="SimSun-ExtB" size="18" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="0">
-                <Column editable="false" title="Train #" type="java.lang.String"/>
-                <Column editable="false" title="From" type="java.lang.String"/>
-                <Column editable="false" title="To" type="java.lang.String"/>
-                <Column editable="false" title="Departure Time" type="java.lang.Object"/>
-                <Column editable="false" title="Arrival Time" type="java.lang.Object"/>
-                <Column editable="false" title="Price" type="java.lang.Object"/>
+              <Table columnCount="5" rowCount="4">
+                <Column editable="true" title="Train #" type="java.lang.Integer"/>
+                <Column editable="true" title="From" type="java.lang.String"/>
+                <Column editable="true" title="To" type="java.lang.String"/>
+                <Column editable="true" title="Departure Time" type="java.lang.Object"/>
+                <Column editable="true" title="Arrival Time" type="java.lang.Object"/>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="0">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                   <Title/>
                   <Editor/>
@@ -626,6 +490,10 @@
         <Property name="text" type="java.lang.String" value="To"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JTextField" name="txtBusArrival">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtBusDepart">
+    </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -635,6 +503,10 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtBusFrom">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTrainArrival">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTrainDepart">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
@@ -682,6 +554,10 @@
         <Property name="text" type="java.lang.String" value="Train Number"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JTextField" name="txtPlaneArrival">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPlaneDepart">
+    </Component>
     <Component class="javax.swing.JLabel" name="jLabel13">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -728,6 +604,17 @@
         <Property name="text" type="java.lang.String" value="Plane Number"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JButton" name="btnSaveTrain">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Sitka Banner" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveTrainActionPerformed"/>
+      </Events>
+    </Component>
     <Component class="javax.swing.JButton" name="btnDeleteBus">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -761,507 +648,27 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteTrainActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JComboBox" name="cbBusDepart1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="48">
-            <StringItem index="0" value="01:00"/>
-            <StringItem index="1" value="01:15"/>
-            <StringItem index="2" value="01:30"/>
-            <StringItem index="3" value="01:45"/>
-            <StringItem index="4" value="02:00"/>
-            <StringItem index="5" value="02:15"/>
-            <StringItem index="6" value="02:30"/>
-            <StringItem index="7" value="02:45"/>
-            <StringItem index="8" value="03:00"/>
-            <StringItem index="9" value="03:15"/>
-            <StringItem index="10" value="03:30"/>
-            <StringItem index="11" value="03:45"/>
-            <StringItem index="12" value="04:00"/>
-            <StringItem index="13" value="04:15"/>
-            <StringItem index="14" value="04:30"/>
-            <StringItem index="15" value="04:45"/>
-            <StringItem index="16" value="05:00"/>
-            <StringItem index="17" value="05:15"/>
-            <StringItem index="18" value="05:30"/>
-            <StringItem index="19" value="05:45"/>
-            <StringItem index="20" value="06:00"/>
-            <StringItem index="21" value="06:15"/>
-            <StringItem index="22" value="06:30"/>
-            <StringItem index="23" value="06:45"/>
-            <StringItem index="24" value="07:00"/>
-            <StringItem index="25" value="07:15"/>
-            <StringItem index="26" value="07:30"/>
-            <StringItem index="27" value="07:45"/>
-            <StringItem index="28" value="08:00"/>
-            <StringItem index="29" value="08:15"/>
-            <StringItem index="30" value="08:30"/>
-            <StringItem index="31" value="08:45"/>
-            <StringItem index="32" value="09:00"/>
-            <StringItem index="33" value="09:15"/>
-            <StringItem index="34" value="09:30"/>
-            <StringItem index="35" value="09:45"/>
-            <StringItem index="36" value="10:00"/>
-            <StringItem index="37" value="10:15"/>
-            <StringItem index="38" value="10:30"/>
-            <StringItem index="39" value="10:45"/>
-            <StringItem index="40" value="11:00"/>
-            <StringItem index="41" value="11:15"/>
-            <StringItem index="42" value="11:30"/>
-            <StringItem index="43" value="11:45"/>
-            <StringItem index="44" value="12:00"/>
-            <StringItem index="45" value="12:15"/>
-            <StringItem index="46" value="12:30"/>
-            <StringItem index="47" value="12:45"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbBusDepart2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="AM"/>
-            <StringItem index="1" value="PM"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbBusArrive1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="48">
-            <StringItem index="0" value="01:00"/>
-            <StringItem index="1" value="01:15"/>
-            <StringItem index="2" value="01:30"/>
-            <StringItem index="3" value="01:45"/>
-            <StringItem index="4" value="02:00"/>
-            <StringItem index="5" value="02:15"/>
-            <StringItem index="6" value="02:30"/>
-            <StringItem index="7" value="02:45"/>
-            <StringItem index="8" value="03:00"/>
-            <StringItem index="9" value="03:15"/>
-            <StringItem index="10" value="03:30"/>
-            <StringItem index="11" value="03:45"/>
-            <StringItem index="12" value="04:00"/>
-            <StringItem index="13" value="04:15"/>
-            <StringItem index="14" value="04:30"/>
-            <StringItem index="15" value="04:45"/>
-            <StringItem index="16" value="05:00"/>
-            <StringItem index="17" value="05:15"/>
-            <StringItem index="18" value="05:30"/>
-            <StringItem index="19" value="05:45"/>
-            <StringItem index="20" value="06:00"/>
-            <StringItem index="21" value="06:15"/>
-            <StringItem index="22" value="06:30"/>
-            <StringItem index="23" value="06:45"/>
-            <StringItem index="24" value="07:00"/>
-            <StringItem index="25" value="07:15"/>
-            <StringItem index="26" value="07:30"/>
-            <StringItem index="27" value="07:45"/>
-            <StringItem index="28" value="08:00"/>
-            <StringItem index="29" value="08:15"/>
-            <StringItem index="30" value="08:30"/>
-            <StringItem index="31" value="08:45"/>
-            <StringItem index="32" value="09:00"/>
-            <StringItem index="33" value="09:15"/>
-            <StringItem index="34" value="09:30"/>
-            <StringItem index="35" value="09:45"/>
-            <StringItem index="36" value="10:00"/>
-            <StringItem index="37" value="10:15"/>
-            <StringItem index="38" value="10:30"/>
-            <StringItem index="39" value="10:45"/>
-            <StringItem index="40" value="11:00"/>
-            <StringItem index="41" value="11:15"/>
-            <StringItem index="42" value="11:30"/>
-            <StringItem index="43" value="11:45"/>
-            <StringItem index="44" value="12:00"/>
-            <StringItem index="45" value="12:15"/>
-            <StringItem index="46" value="12:30"/>
-            <StringItem index="47" value="12:45"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbBusArrive2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="AM"/>
-            <StringItem index="1" value="PM"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbTrainArrive1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="48">
-            <StringItem index="0" value="01:00"/>
-            <StringItem index="1" value="01:15"/>
-            <StringItem index="2" value="01:30"/>
-            <StringItem index="3" value="01:45"/>
-            <StringItem index="4" value="02:00"/>
-            <StringItem index="5" value="02:15"/>
-            <StringItem index="6" value="02:30"/>
-            <StringItem index="7" value="02:45"/>
-            <StringItem index="8" value="03:00"/>
-            <StringItem index="9" value="03:15"/>
-            <StringItem index="10" value="03:30"/>
-            <StringItem index="11" value="03:45"/>
-            <StringItem index="12" value="04:00"/>
-            <StringItem index="13" value="04:15"/>
-            <StringItem index="14" value="04:30"/>
-            <StringItem index="15" value="04:45"/>
-            <StringItem index="16" value="05:00"/>
-            <StringItem index="17" value="05:15"/>
-            <StringItem index="18" value="05:30"/>
-            <StringItem index="19" value="05:45"/>
-            <StringItem index="20" value="06:00"/>
-            <StringItem index="21" value="06:15"/>
-            <StringItem index="22" value="06:30"/>
-            <StringItem index="23" value="06:45"/>
-            <StringItem index="24" value="07:00"/>
-            <StringItem index="25" value="07:15"/>
-            <StringItem index="26" value="07:30"/>
-            <StringItem index="27" value="07:45"/>
-            <StringItem index="28" value="08:00"/>
-            <StringItem index="29" value="08:15"/>
-            <StringItem index="30" value="08:30"/>
-            <StringItem index="31" value="08:45"/>
-            <StringItem index="32" value="09:00"/>
-            <StringItem index="33" value="09:15"/>
-            <StringItem index="34" value="09:30"/>
-            <StringItem index="35" value="09:45"/>
-            <StringItem index="36" value="10:00"/>
-            <StringItem index="37" value="10:15"/>
-            <StringItem index="38" value="10:30"/>
-            <StringItem index="39" value="10:45"/>
-            <StringItem index="40" value="11:00"/>
-            <StringItem index="41" value="11:15"/>
-            <StringItem index="42" value="11:30"/>
-            <StringItem index="43" value="11:45"/>
-            <StringItem index="44" value="12:00"/>
-            <StringItem index="45" value="12:15"/>
-            <StringItem index="46" value="12:30"/>
-            <StringItem index="47" value="12:45"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbTrainArrive2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="AM"/>
-            <StringItem index="1" value="PM"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbTrainDepart1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="48">
-            <StringItem index="0" value="01:00"/>
-            <StringItem index="1" value="01:15"/>
-            <StringItem index="2" value="01:30"/>
-            <StringItem index="3" value="01:45"/>
-            <StringItem index="4" value="02:00"/>
-            <StringItem index="5" value="02:15"/>
-            <StringItem index="6" value="02:30"/>
-            <StringItem index="7" value="02:45"/>
-            <StringItem index="8" value="03:00"/>
-            <StringItem index="9" value="03:15"/>
-            <StringItem index="10" value="03:30"/>
-            <StringItem index="11" value="03:45"/>
-            <StringItem index="12" value="04:00"/>
-            <StringItem index="13" value="04:15"/>
-            <StringItem index="14" value="04:30"/>
-            <StringItem index="15" value="04:45"/>
-            <StringItem index="16" value="05:00"/>
-            <StringItem index="17" value="05:15"/>
-            <StringItem index="18" value="05:30"/>
-            <StringItem index="19" value="05:45"/>
-            <StringItem index="20" value="06:00"/>
-            <StringItem index="21" value="06:15"/>
-            <StringItem index="22" value="06:30"/>
-            <StringItem index="23" value="06:45"/>
-            <StringItem index="24" value="07:00"/>
-            <StringItem index="25" value="07:15"/>
-            <StringItem index="26" value="07:30"/>
-            <StringItem index="27" value="07:45"/>
-            <StringItem index="28" value="08:00"/>
-            <StringItem index="29" value="08:15"/>
-            <StringItem index="30" value="08:30"/>
-            <StringItem index="31" value="08:45"/>
-            <StringItem index="32" value="09:00"/>
-            <StringItem index="33" value="09:15"/>
-            <StringItem index="34" value="09:30"/>
-            <StringItem index="35" value="09:45"/>
-            <StringItem index="36" value="10:00"/>
-            <StringItem index="37" value="10:15"/>
-            <StringItem index="38" value="10:30"/>
-            <StringItem index="39" value="10:45"/>
-            <StringItem index="40" value="11:00"/>
-            <StringItem index="41" value="11:15"/>
-            <StringItem index="42" value="11:30"/>
-            <StringItem index="43" value="11:45"/>
-            <StringItem index="44" value="12:00"/>
-            <StringItem index="45" value="12:15"/>
-            <StringItem index="46" value="12:30"/>
-            <StringItem index="47" value="12:45"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbTrainDepart2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="AM"/>
-            <StringItem index="1" value="PM"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbPlaneArrive1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="48">
-            <StringItem index="0" value="01:00"/>
-            <StringItem index="1" value="01:15"/>
-            <StringItem index="2" value="01:30"/>
-            <StringItem index="3" value="01:45"/>
-            <StringItem index="4" value="02:00"/>
-            <StringItem index="5" value="02:15"/>
-            <StringItem index="6" value="02:30"/>
-            <StringItem index="7" value="02:45"/>
-            <StringItem index="8" value="03:00"/>
-            <StringItem index="9" value="03:15"/>
-            <StringItem index="10" value="03:30"/>
-            <StringItem index="11" value="03:45"/>
-            <StringItem index="12" value="04:00"/>
-            <StringItem index="13" value="04:15"/>
-            <StringItem index="14" value="04:30"/>
-            <StringItem index="15" value="04:45"/>
-            <StringItem index="16" value="05:00"/>
-            <StringItem index="17" value="05:15"/>
-            <StringItem index="18" value="05:30"/>
-            <StringItem index="19" value="05:45"/>
-            <StringItem index="20" value="06:00"/>
-            <StringItem index="21" value="06:15"/>
-            <StringItem index="22" value="06:30"/>
-            <StringItem index="23" value="06:45"/>
-            <StringItem index="24" value="07:00"/>
-            <StringItem index="25" value="07:15"/>
-            <StringItem index="26" value="07:30"/>
-            <StringItem index="27" value="07:45"/>
-            <StringItem index="28" value="08:00"/>
-            <StringItem index="29" value="08:15"/>
-            <StringItem index="30" value="08:30"/>
-            <StringItem index="31" value="08:45"/>
-            <StringItem index="32" value="09:00"/>
-            <StringItem index="33" value="09:15"/>
-            <StringItem index="34" value="09:30"/>
-            <StringItem index="35" value="09:45"/>
-            <StringItem index="36" value="10:00"/>
-            <StringItem index="37" value="10:15"/>
-            <StringItem index="38" value="10:30"/>
-            <StringItem index="39" value="10:45"/>
-            <StringItem index="40" value="11:00"/>
-            <StringItem index="41" value="11:15"/>
-            <StringItem index="42" value="11:30"/>
-            <StringItem index="43" value="11:45"/>
-            <StringItem index="44" value="12:00"/>
-            <StringItem index="45" value="12:15"/>
-            <StringItem index="46" value="12:30"/>
-            <StringItem index="47" value="12:45"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbPlaneArrive2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="AM"/>
-            <StringItem index="1" value="PM"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbPlaneDepart1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="48">
-            <StringItem index="0" value="01:00"/>
-            <StringItem index="1" value="01:15"/>
-            <StringItem index="2" value="01:30"/>
-            <StringItem index="3" value="01:45"/>
-            <StringItem index="4" value="02:00"/>
-            <StringItem index="5" value="02:15"/>
-            <StringItem index="6" value="02:30"/>
-            <StringItem index="7" value="02:45"/>
-            <StringItem index="8" value="03:00"/>
-            <StringItem index="9" value="03:15"/>
-            <StringItem index="10" value="03:30"/>
-            <StringItem index="11" value="03:45"/>
-            <StringItem index="12" value="04:00"/>
-            <StringItem index="13" value="04:15"/>
-            <StringItem index="14" value="04:30"/>
-            <StringItem index="15" value="04:45"/>
-            <StringItem index="16" value="05:00"/>
-            <StringItem index="17" value="05:15"/>
-            <StringItem index="18" value="05:30"/>
-            <StringItem index="19" value="05:45"/>
-            <StringItem index="20" value="06:00"/>
-            <StringItem index="21" value="06:15"/>
-            <StringItem index="22" value="06:30"/>
-            <StringItem index="23" value="06:45"/>
-            <StringItem index="24" value="07:00"/>
-            <StringItem index="25" value="07:15"/>
-            <StringItem index="26" value="07:30"/>
-            <StringItem index="27" value="07:45"/>
-            <StringItem index="28" value="08:00"/>
-            <StringItem index="29" value="08:15"/>
-            <StringItem index="30" value="08:30"/>
-            <StringItem index="31" value="08:45"/>
-            <StringItem index="32" value="09:00"/>
-            <StringItem index="33" value="09:15"/>
-            <StringItem index="34" value="09:30"/>
-            <StringItem index="35" value="09:45"/>
-            <StringItem index="36" value="10:00"/>
-            <StringItem index="37" value="10:15"/>
-            <StringItem index="38" value="10:30"/>
-            <StringItem index="39" value="10:45"/>
-            <StringItem index="40" value="11:00"/>
-            <StringItem index="41" value="11:15"/>
-            <StringItem index="42" value="11:30"/>
-            <StringItem index="43" value="11:45"/>
-            <StringItem index="44" value="12:00"/>
-            <StringItem index="45" value="12:15"/>
-            <StringItem index="46" value="12:30"/>
-            <StringItem index="47" value="12:45"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="cbPlaneDepart2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="AM"/>
-            <StringItem index="1" value="PM"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnLoad">
+    <Component class="javax.swing.JButton" name="btnSavePlane">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Sitka Banner" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Load Data"/>
-        <Property name="actionCommand" type="java.lang.String" value="Save Changes"/>
+        <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoadActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSavePlaneActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel18">
+    <Component class="javax.swing.JButton" name="btnSaveBus">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SimSun-ExtB" size="14" style="1"/>
+          <Font name="Sitka Banner" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Price (USD)"/>
+        <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtBusPrice">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SimSun-ExtB" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value=".00"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel20">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SimSun-ExtB" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Price (USD)"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtTrainPrice">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_2">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SimSun-ExtB" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value=".00"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel22">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SimSun-ExtB" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Price (USD)"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtPlanePrice">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel_3">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SimSun-ExtB" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value=".00"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JSeparator" name="jSeparator1">
-    </Component>
-    <Component class="javax.swing.JSeparator" name="jSeparator3">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveBusActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
