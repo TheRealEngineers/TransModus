@@ -637,9 +637,9 @@ public class RoutineMng extends javax.swing.JFrame {
     // TRAIN TABLE
     // Add new train to table and save to database
     private void btnAddTrainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddTrainActionPerformed
-        String trainNum = txtPlaneNum.getText();
-        String trainStart = txtPlaneFrom.getText();
-        String trainEnd = txtPlaneTo.getText();
+        String trainNum = txtTrainNum.getText();
+        String trainStart = txtTrainFrom.getText();
+        String trainEnd = txtTrainTo.getText();
         String trainPrice = txtTrainPrice.getText(); 
         Object departTime = cbTrainDepart1.getSelectedIndex() + " " + cbTrainDepart2.getSelectedIndex();
         Object arrivalTime = cbTrainDepart1.getSelectedIndex() + " " + cbTrainDepart2.getSelectedIndex();
@@ -684,7 +684,6 @@ public class RoutineMng extends javax.swing.JFrame {
         String planeStart = txtPlaneFrom.getText();
         String planeEnd = txtPlaneTo.getText();
         String planePrice = txtPlanePrice.getText();
-        
         Object departTime = cbPlaneDepart1.getSelectedIndex() + " " + cbPlaneDepart2.getSelectedIndex();
         Object arrivalTime = cbPlaneDepart1.getSelectedIndex() + " " + cbPlaneDepart2.getSelectedIndex();
 
