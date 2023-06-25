@@ -7,134 +7,124 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d31c2a0c-08d2-4f99-a7a4-fb2ff5c49020" name="Changes" comment="TRS-30 First Edition of Database">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" afterDir="false" />
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_10_23,_11_32_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_10_23,_11_32_AM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_10_23,_9_53_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_10_23,_9_53_AM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_10_23__11_32_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_10_23__9_53_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_13_23,_4_38_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_13_23__4_38_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_15_23,_1_38_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_15_23__1_38_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_20_23,_4_25_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_20_23,_4_25_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_20_23,_4_54_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_20_23__4_25_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_20_23__4_25_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_20_23__4_54_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/TransModus_Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/TransModus_Database.sql" afterDir="false" />
     </list>
-    <list id="900863b8-dd2e-49dd-b494-2b48abb84d8c" name="Changes by davidpedroza" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Chance Chime &lt;cchime82@icloud.com&gt;" />
-        <option value="chance.chime.814@my.csun.edu" />
-        <option value="Chance" />
-      </list>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TRS-28-Create-initial-website-design-and-wireframes" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="9e395907-bfac-44eb-a916-9f0b935fad20" />
-  </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="z5t4o33k" />
+    <option name="directoryName" value="fw3ycxxy" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2RAiz11Q1aZczfbMUDv3VAAEXd6" />
+  <component name="ProjectId" id="2QymudliJyHhzVWblzyfGdAw9IA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "TRS-30-Database-Setup",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "copyright",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TestingBranch-Sprint1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/justchance/Desktop/projects/TransModus&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;d1de71b0-dbf9-43db-a718-d98f761b6b22&quot;,
+      &quot;d1de71b0-dbf9-43db-a718-d98f761b6b22/schema/\&quot;TransModus\&quot;&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JAVA"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Ticket Reservation" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Database Script.TransModus_Booking.sql">
+    <configuration name="TransModus_Booking.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/Database/TransModus_Booking.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="d1de71b0-dbf9-43db-a718-d98f761b6b22" namespace="schema/&quot;TransModus&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="TransModus_Database.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/Database/TransModus_Database.sql" />
       <script-mode>FILE</script-mode>
+      <data-source id="d1de71b0-dbf9-43db-a718-d98f761b6b22" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="app1.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app1.js" working-dir="$PROJECT_DIR$/web">
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="TRS-30 Created DataBase">
-      <created>1686698049938</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1686698049938</updated>
-    </task>
-    <task id="LOCAL-00002" summary="TRS-30 Created DataBase">
-      <created>1686698419829</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1686698419829</updated>
-    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d31c2a0c-08d2-4f99-a7a4-fb2ff5c49020" name="Changes" comment="TRS-30 Created DataBase" />
-      <created>1686699547177</created>
+      <changelist id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="" />
+      <created>1686334419147</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686699547177</updated>
-      <workItem from="1686699549994" duration="12385000" />
-      <workItem from="1687472671038" duration="24075000" />
+      <updated>1686334419147</updated>
+      <workItem from="1687555046415" duration="253000" />
+      <workItem from="1687555302474" duration="815000" />
+      <workItem from="1687556121160" duration="2603000" />
+      <workItem from="1687716571559" duration="1400000" />
     </task>
-    <task id="LOCAL-00003" summary="TRS-30 First Edition of Database">
-      <created>1686715181559</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1686715181559</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,19 +135,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/TRS-30-Database-Setup" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="TRS-30 Created DataBase" />
-    <MESSAGE value="TRS-30 First Edition of Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="TRS-30 First Edition of Database" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

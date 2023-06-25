@@ -160,7 +160,7 @@ public class LoginForm extends javax.swing.JFrame {
         String password = new String(tfPassword.getPassword());
 
         // Establish a connection to the database
-    try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus_Database", "username", "password")) {
+    try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "username", "password")) {
         // Prepare the SQL statement
         String sql = "SELECT * FROM clients WHERE username = ? AND password = ?";
         PreparedStatement statement = connection.prepareStatement(sql);
