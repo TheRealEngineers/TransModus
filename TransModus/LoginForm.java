@@ -96,7 +96,7 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\Login_BG_40.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("Image/Login_BG_40.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
