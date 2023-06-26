@@ -25,6 +25,7 @@ DELETE c1 FROM booking c1
             c1.booking_id > c2.booking_id AND
             c1.booking_name = c2.booking_name;
 
+
 -- Retrieve data from booking table
 SELECT
     LPAD(booking_id, 5, '0') AS booking_id,
@@ -32,4 +33,5 @@ SELECT
     date_time
 FROM
     booking
+
 

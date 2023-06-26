@@ -43,15 +43,15 @@ DELETE c1 FROM client c1
 -- Will remove the users without email?
 DELETE FROM client WHERE email = '';
 
--- Retrieve data from the table
+-- Retrieve data from the table (permanently)
+-- TransModus User Database
 SELECT
     LPAD(client_id, 5, '0') AS user_id,
     name,
     login AS username,
     email,
     password,
-    (CONCAT(UCASE(LEFT(birthday_month, 1)),
-           LCASE(SUBSTRING(birthday_month, 2)))) AS birthday_month,
+    (CONCAT(UCASE(LEFT(birthday_month, 1)),LCASE(SUBSTRING(birthday_month, 2)))) AS birthday_month,
     birthday_day,
     birthday_year
 FROM

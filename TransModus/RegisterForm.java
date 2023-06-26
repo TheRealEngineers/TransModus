@@ -1,3 +1,8 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.time.Month;
 import java.util.Date;
 import javax.swing.JOptionPane;
 
@@ -184,35 +189,59 @@ public class RegisterForm extends javax.swing.JFrame {
     private void btnFinishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinishActionPerformed
         String firstname = tfFirstName.getText();
         String lastname = tfLastName.getText();
+        String name = firstname + " " + lastname; // Combine firstname and lastname into a full name
         String email = tfContactEmail.getText();
-        
-        Object birthMonth = cbBirthMonth.getSelectedItem();
-        Object birthDay = cbBirthDay.getSelectedItem();
-        Object birthYear = cbBirthYear.getSelectedItem();
-        
+
+        int birthMonth = cbBirthMonth.getSelectedIndex() + 1; // Add +1 to match month number
+        String birthday_month = Month.of(birthMonth).name().substring(0, 3);
+
+        Object birthday_day = cbBirthDay.getSelectedItem();
+        Object birthday_year = cbBirthYear.getSelectedItem();
+
         String username = tfUsername.getText();
         String password = new String(tfPassword.getPassword());
 
-        if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || username.isEmpty() || password.isEmpty()) { 
+        if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || username.isEmpty() || password.isEmpty()) {
             JOptionPane.showMessageDialog(this,
                     "Registration could not be completed", "ERROR", JOptionPane.ERROR_MESSAGE);
-        }
-        else { // SEND REGISTRATION INFORMATION TO SQL DATABASE AND RETURN TO LOGIN PAGE
-            JOptionPane.showMessageDialog(this,
-                    "Your account has been successfully registered! "
-                            + "Thank you for signing up with TransModus!");
-        
-            
-            // IMPLEMENT SQL FUNCTIONS HERE
-            // SEND INFO TO SQL DATABASE
+        } else {
+            try {
+                // Connect to the database
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "Cubbie17");
 
-            
-            HomePage hpg = new HomePage();  
-            hpg.setVisible(true);
-            hpg.pack();
-            this.dispose();
-        }        
-        
+                // Prepare the SQL statement
+                String sql = "INSERT INTO client (name, login, email, password, birthday_month, birthday_day, birthday_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                PreparedStatement statement = connection.prepareStatement(sql);
+                 
+                statement.setString(2, name);
+                statement.setString(3, email);
+                statement.setString(4, birthday_month);
+                statement.setObject(5, birthday_day);
+                statement.setObject(6, birthday_year);
+                statement.setString(7, username);
+                statement.setString(8, password);
+
+                // Execute the SQL statement
+                int rowsAffected = statement.executeUpdate();
+                if (rowsAffected > 0) {
+                    JOptionPane.showMessageDialog(this,
+                            "Your account has been successfully registered! "
+                                    + "Thank you for signing up with TransModus!");
+
+                    HomePage hpg = new HomePage();
+                    hpg.setVisible(true);
+                    hpg.pack();
+                    this.dispose();
+                }
+
+                // Close the connection
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(this,
+                        "An error occurred while registering your account", "ERROR", JOptionPane.ERROR_MESSAGE);
+            }
+        }
     }//GEN-LAST:event_btnFinishActionPerformed
 
     // @param args the command line arguments
