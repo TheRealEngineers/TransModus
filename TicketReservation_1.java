@@ -1,9 +1,15 @@
-public class TicketReservation_1 extends javax.swing.JFrame {
+import javax.swing.JSpinner;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
+public class TicketReservation_1 extends javax.swing.JFrame {
+    DefaultTableModel model;
+    
     // Creates new form TicketReservation 
     public TicketReservation_1() {
         initComponents();
-        this.setLocationRelativeTo(null); 
+        this.setLocationRelativeTo(null);
+        model = (DefaultTableModel) TransitTable.getModel();
     }
 
     /**
@@ -19,112 +25,73 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
-        cbBusTo = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        cbTrainFrom = new javax.swing.JComboBox<>();
-        cbTrainTo = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        cbBusFrom = new javax.swing.JComboBox<>();
-        methodBus = new javax.swing.JRadioButton();
-        methodTrain = new javax.swing.JRadioButton();
-        methodPlane = new javax.swing.JRadioButton();
-        jLabel7 = new javax.swing.JLabel();
-        ClassStand = new javax.swing.JRadioButton();
-        ClassFirst = new javax.swing.JRadioButton();
-        ClassEcon = new javax.swing.JRadioButton();
-        ticket_RT = new javax.swing.JRadioButton();
-        ticket_OW = new javax.swing.JRadioButton();
-        cbPlaneTo = new javax.swing.JComboBox<>();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        cbPlaneFrom = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         departDate = new com.toedter.calendar.JDateChooser();
         returnDate = new com.toedter.calendar.JDateChooser();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TransitTable = new javax.swing.JTable();
+        jLabel13 = new javax.swing.JLabel();
         btnChkTransport = new javax.swing.JButton();
+        cbFrom = new javax.swing.JComboBox<>();
+        cbTranMethod = new javax.swing.JComboBox<>();
+        cbTo = new javax.swing.JComboBox<>();
+        jLabel20 = new javax.swing.JLabel();
+        cbTripType = new javax.swing.JComboBox<>();
         jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        btnTicketReview = new javax.swing.JButton();
+        cbTicketClass = new javax.swing.JComboBox<>();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        cbAmtTickets = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnHome = new javax.swing.JButton();
+        jPanel22 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(179, 0, 0)));
 
-        cbBusTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         jLabel5.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel5.setText("From");
 
-        cbTrainFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        cbTrainTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel12.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        jLabel12.setText("From");
-
         jLabel4.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel4.setText("To");
-
-        jLabel11.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        jLabel11.setText("To");
-
-        cbBusFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        buttonGroup2.add(methodBus);
-        methodBus.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        methodBus.setText("Bus");
-
-        buttonGroup2.add(methodTrain);
-        methodTrain.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        methodTrain.setText("Train");
-
-        buttonGroup2.add(methodPlane);
-        methodPlane.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        methodPlane.setText("Plane");
-
-        jLabel7.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
-        jLabel7.setText("Class Type");
-
-        buttonGroup3.add(ClassStand);
-        ClassStand.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
-        ClassStand.setText("Standard");
-
-        buttonGroup3.add(ClassFirst);
-        ClassFirst.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
-        ClassFirst.setText("First Class");
-
-        buttonGroup3.add(ClassEcon);
-        ClassEcon.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
-        ClassEcon.setText("Economy");
-
-        buttonGroup1.add(ticket_RT);
-        ticket_RT.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
-        ticket_RT.setText("Round Trip");
-
-        buttonGroup1.add(ticket_OW);
-        ticket_OW.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
-        ticket_OW.setText("One-Way");
-
-        cbPlaneTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel41.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        jLabel41.setText("To");
-
-        jLabel42.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
-        jLabel42.setText("From");
-
-        cbPlaneFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel9.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel9.setText("Departure");
 
         jLabel10.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel10.setText("Return");
+
+        TransitTable.setFont(new java.awt.Font("SimSun-ExtB", 0, 16)); // NOI18N
+        TransitTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"5336", "LA", "San F", "6:30 am", "7:45 am", "58"},
+                {"5337", "LA", "San F", "8:00 am", "9:15 am", "58"},
+                {"5338", "LA", "San F", "10:15 am", "11:30 am", "58"}
+            },
+            new String [] {
+                "Transit #", "From", "To", "Departure Time", "Arrival Time", "Price"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        TransitTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(TransitTable);
+
+        jLabel13.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel13.setText("Trip Type");
 
         btnChkTransport.setBackground(new java.awt.Color(204, 0, 0));
         btnChkTransport.setFont(new java.awt.Font("Sitka Banner", 0, 24)); // NOI18N
@@ -135,140 +102,168 @@ public class TicketReservation_1 extends javax.swing.JFrame {
             }
         });
 
+        cbFrom.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
+        cbFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        cbTranMethod.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
+        cbTranMethod.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bus", "Train", "Plane" }));
+
+        cbTo.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
+        cbTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel20.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel20.setText("Transit Method");
+
+        cbTripType.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
+        cbTripType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "One Way", "Roundtrip" }));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(methodTrain)
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbTrainFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbTrainTo, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(methodPlane)
-                            .addComponent(methodBus))
-                        .addGap(36, 36, 36)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbBusFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel42)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbPlaneFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel41)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cbPlaneTo, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10))
-                        .addGap(44, 44, 44)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(returnDate, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
-                            .addComponent(departDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(85, 85, 85))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ClassStand)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ClassEcon)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ClassFirst)
-                .addGap(110, 110, 110))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(ticket_OW)
-                        .addGap(48, 48, 48)
-                        .addComponent(ticket_RT))
+                        .addContainerGap()
+                        .addComponent(jScrollPane1))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(133, 133, 133)
-                        .addComponent(btnChkTransport, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(59, 59, 59)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(jLabel5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(cbFrom, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel4)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(cbTo, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(94, 94, 94)
+                                        .addComponent(jLabel20)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(cbTranMethod, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(122, 122, 122))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnChkTransport)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(departDate, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(36, 36, 36)
+                                        .addComponent(jLabel10)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(returnDate, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addGap(18, 18, 18)
+                .addComponent(cbTripType, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(170, 170, 170))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addGap(23, 23, 23)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ticket_OW)
-                    .addComponent(ticket_RT))
-                .addGap(63, 63, 63)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(cbBusFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(cbBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(methodBus))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(cbTrainFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11)
-                    .addComponent(cbTrainTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(methodTrain))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel42)
-                    .addComponent(cbPlaneFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel41)
-                    .addComponent(cbPlaneTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(methodPlane))
-                .addGap(37, 37, 37)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(departDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
+                    .addComponent(jLabel20)
+                    .addComponent(cbTranMethod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(cbTripType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(cbTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addGap(33, 33, 33)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10)
-                    .addComponent(returnDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ClassFirst)
-                    .addComponent(ClassEcon)
-                    .addComponent(ClassStand)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(returnDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(departDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel9)))
+                .addGap(34, 34, 34)
                 .addComponent(btnChkTransport)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(179, 0, 0)));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\airplane-train-think-paper-banner_1020x574.jpg")); // NOI18N
+        btnTicketReview.setBackground(new java.awt.Color(204, 0, 0));
+        btnTicketReview.setFont(new java.awt.Font("Sitka Banner", 0, 24)); // NOI18N
+        btnTicketReview.setText("Review Booking");
+        btnTicketReview.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTicketReviewActionPerformed(evt);
+            }
+        });
+
+        cbTicketClass.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        cbTicketClass.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Economy", "Business", "First Class" }));
+
+        jLabel18.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel18.setText("Ticket Class");
+
+        jLabel21.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel21.setText("No. of tickets");
+
+        jLabel15.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
+        jLabel15.setText("Ticket Details");
+
+        cbAmtTickets.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        cbAmtTickets.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 784, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnTicketReview, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(43, 43, 43)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel21)
+                                    .addComponent(jLabel18))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cbTicketClass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbAmtTickets, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 151, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel15)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbTicketClass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(cbAmtTickets, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(btnTicketReview)
+                .addContainerGap())
         );
 
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 10, 10, 10, new java.awt.Color(179, 0, 0)));
@@ -276,6 +271,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("SimSun-ExtB", 0, 48)); // NOI18N
         jLabel1.setText("Ticket Reservation");
 
+        btnHome.setBackground(new java.awt.Color(204, 0, 0));
         btnHome.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
@@ -291,7 +287,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(244, 244, 244)
+                .addGap(223, 223, 223)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -306,6 +302,19 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                 .addComponent(jLabel1))
         );
 
+        jPanel22.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(179, 0, 0)));
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -315,13 +324,13 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(486, 486, 486)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -333,7 +342,8 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -348,12 +358,32 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnHomeActionPerformed
 
-    // Check transit tables for any available buses/trains/planes
-    private void btnChkTransportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChkTransportActionPerformed
+    private void btnTicketReviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTicketReviewActionPerformed
         TicketReservation_2 trs2 = new TicketReservation_2();
+        trs2.dispTrip.setText(cbTripType.getSelectedItem().toString());
+        trs2.dispMethod.setText(cbTranMethod.getSelectedItem().toString());
+        trs2.dispDepartDate.setText(departDate.getDate().toString());
+        trs2.dispReturnDate.setText(returnDate.getDate().toString());
+        trs2.dispClass.setText(cbTicketClass.getSelectedItem().toString());
+        trs2.dispAmount.setText(cbAmtTickets.getSelectedItem().toString());
+            
+        int index = TransitTable.getSelectedRow();
+        TableModel model = TransitTable.getModel();
+            trs2.dispTranNum.setText(model.getValueAt(index, 0).toString());
+            trs2.dispFrom.setText(model.getValueAt(index, 1).toString());
+            trs2.dispTo.setText(model.getValueAt(index, 2).toString());
+            trs2.dispDepartTime.setText(model.getValueAt(index, 3).toString());
+            trs2.dispArriveTime.setText(model.getValueAt(index, 4).toString());
+            trs2.dispPrice.setText(model.getValueAt(index, 5).toString());
+        
         trs2.setVisible(true);
         trs2.pack();
         this.dispose();
+    }//GEN-LAST:event_btnTicketReviewActionPerformed
+
+    private void btnChkTransportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChkTransportActionPerformed
+        // LOAD IN AVAILABLE TRANSITS FROM DATBASE
+        
     }//GEN-LAST:event_btnChkTransportActionPerformed
 
  
@@ -367,40 +397,35 @@ public class TicketReservation_1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton ClassEcon;
-    private javax.swing.JRadioButton ClassFirst;
-    private javax.swing.JRadioButton ClassStand;
+    private javax.swing.JTable TransitTable;
     private javax.swing.JButton btnChkTransport;
     private javax.swing.JButton btnHome;
+    private javax.swing.JButton btnTicketReview;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.JComboBox<String> cbBusFrom;
-    private javax.swing.JComboBox<String> cbBusTo;
-    private javax.swing.JComboBox<String> cbPlaneFrom;
-    private javax.swing.JComboBox<String> cbPlaneTo;
-    private javax.swing.JComboBox<String> cbTrainFrom;
-    private javax.swing.JComboBox<String> cbTrainTo;
+    private javax.swing.JComboBox<String> cbAmtTickets;
+    public javax.swing.JComboBox<String> cbFrom;
+    private javax.swing.JComboBox<String> cbTicketClass;
+    public javax.swing.JComboBox<String> cbTo;
+    public javax.swing.JComboBox<String> cbTranMethod;
+    public javax.swing.JComboBox<String> cbTripType;
     private com.toedter.calendar.JDateChooser departDate;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JRadioButton methodBus;
-    private javax.swing.JRadioButton methodPlane;
-    private javax.swing.JRadioButton methodTrain;
+    private javax.swing.JScrollPane jScrollPane1;
     private com.toedter.calendar.JDateChooser returnDate;
-    private javax.swing.JRadioButton ticket_OW;
-    private javax.swing.JRadioButton ticket_RT;
     // End of variables declaration//GEN-END:variables
 }
