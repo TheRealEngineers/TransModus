@@ -8,7 +8,8 @@ USE `TransModus`;
 -- Create a new table on clients
 CREATE TABLE IF NOT EXISTS client (
     `client_id` INT(9) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `name` VARCHAR(50) NOT NULL,
+    `firstname` VARCHAR(50) NOT NULL,
+    `lastname` VARCHAR(50) NOT NULL,
     `login` VARCHAR(50) NOT NULL,
     `email` VARCHAR(50) DEFAULT NULL,
     `password` VARCHAR(50) NOT NULL,
@@ -21,10 +22,10 @@ ALTER TABLE client AUTO_INCREMENT = 1;
 ALTER TABLE client MODIFY client_id int NOT NULL AUTO_INCREMENT;
 
 -- Insert data into the table
-INSERT INTO client (name, login, email, password, birthday_month, birthday_day, birthday_year)
-VALUES ('John Doe', 'jdoe1', 'john.doe@example.com', 'biscuitwarrior', 'Jan', 1, 2000),
-       ('Jane Smith', 'jsmith2', 'jane.smith@example.com', 'justiceandliberty123', 'Aug', 18, 2002),
-       ('Mike Johnson','mjohnson3', 'mike.johnson@example.com', 'password123', 'Apr', 28, 2003);
+INSERT INTO client (firstname, lastname, login, email, password, birthday_month, birthday_day, birthday_year)
+VALUES ('John', 'Doe', 'jdoe1', 'john.doe@example.com', 'biscuitwarrior', 'Jan', 1, 2000),
+       ('Jane', 'Smith', 'jsmith2', 'jane.smith@example.com', 'justiceandliberty123', 'Aug', 18, 2002),
+       ('Mike', 'Johnson','mjohnson3', 'mike.johnson@example.com', 'password123', 'Apr', 28, 2003);
 
 -- Remove duplicates from the table
 DELETE c1 FROM client c1
@@ -32,7 +33,8 @@ DELETE c1 FROM client c1
                client c2 ON c1.client_id > c2.client_id
                WHERE
                    c1.client_id = c2.client_id
-                   AND c1.name = c2.name
+                   AND c1.firstname = c2.firstname
+                   AND c1.lastname = c2.lastname
                    OR c1.login = c2.login
                    OR c1.email = c2.email
                    AND c1.birthday_month = c2.birthday_month
@@ -47,7 +49,8 @@ DELETE FROM client WHERE email = '';
 -- TransModus User Database
 SELECT
     LPAD(client_id, 5, '0') AS user_id,
-    name,
+    firstname,
+    lastname,
     login AS username,
     email,
     password,

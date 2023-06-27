@@ -7,11 +7,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="Testing Version 2">
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="Testing Version 3 (images)">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/TicketReservation_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/TransModus_Database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketReservation_1.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_1.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketReservation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketReservation_2.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_2.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketReservation_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketReservation_3.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_3.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicketReservation_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/HomePage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransModus/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserProfile.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserProfile.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +117,7 @@
       <workItem from="1687555302474" duration="815000" />
       <workItem from="1687556121160" duration="2603000" />
       <workItem from="1687716571559" duration="1400000" />
-      <workItem from="1687731073112" duration="16558000" />
+      <workItem from="1687731073112" duration="21167000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version 1">
       <option name="closed" value="true" />
@@ -125,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687821447515</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Testing Version 3 (images)">
+      <option name="closed" value="true" />
+      <created>1687821971869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687821971869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +180,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing Version 1" />
     <MESSAGE value="Testing Version 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Version 2" />
+    <MESSAGE value="Testing Version 3 (images)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Version 3 (images)" />
   </component>
 </project>

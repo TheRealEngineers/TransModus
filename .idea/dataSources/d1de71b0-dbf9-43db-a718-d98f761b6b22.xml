@@ -1071,90 +1071,54 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="306" parent="298" name="name">
+    <column id="306" parent="298" name="firstname">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="307" parent="298" name="login">
+    <column id="307" parent="298" name="lastname">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="308" parent="298" name="email">
+    <column id="308" parent="298" name="login">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="309" parent="298" name="password">
+    <column id="309" parent="298" name="email">
       <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="310" parent="298" name="birthday_month">
-      <DasType>char(3)|0s</DasType>
+    <column id="310" parent="298" name="password">
+      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="311" parent="298" name="birthday_day">
-      <DasType>int|0s</DasType>
+    <column id="311" parent="298" name="birthday_month">
+      <DasType>char(3)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="312" parent="298" name="birthday_year">
+    <column id="312" parent="298" name="birthday_day">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <index id="313" parent="298" name="PRIMARY">
+    <column id="313" parent="298" name="birthday_year">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <index id="314" parent="298" name="PRIMARY">
       <ColNames>client_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="314" parent="298" name="PRIMARY">
+    <key id="315" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="315" parent="299" name="user_id">
-      <DasType>varchar(5)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="316" parent="299" name="name">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="317" parent="299" name="username">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="318" parent="299" name="email">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="319" parent="299" name="password">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="320" parent="299" name="birthday_month">
-      <DasType>varchar(3)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <column id="321" parent="299" name="birthday_day">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-    </column>
-    <column id="322" parent="299" name="birthday_year">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-    </column>
   </database-model>
 </dataSource>

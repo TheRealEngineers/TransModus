@@ -76,7 +76,12 @@ public class RegisterForm extends javax.swing.JFrame {
         btnFinish.setText("Finish Registration");
         btnFinish.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFinishActionPerformed(evt);
+                try {
+                    btnFinishActionPerformed(evt);
+                } catch (ClassNotFoundException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -86,13 +91,13 @@ public class RegisterForm extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Sitka Banner", 0, 18)); // NOI18N
         jLabel11.setText("CONTACT EMAIL");
 
-        cbBirthMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        cbBirthMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }));
 
         cbBirthDay.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         cbBirthYear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994", "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979", "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964", "1963", "1962", "1961", "1960", "1959", "1958", "1957", "1956", "1955", "1954", "1953", "1952", "1951", "1950", "1949", "1948", "1947", "1946", "1945", "1944", "1943", "1942", "1941", "1940", "1939", "1938", "1937", "1936", "1935", "1934", "1933", "1932", "1931", "1930", "1929", "1928", "1927", "1926", "1925", "1924", "1923", "1922", "1921", "1920", "1919", "1918", "1917", "1916", "1915", "1914", "1913", "1912", "1911", "1910", "1909", "1908", "1907", "1906", "1905", "1904", "1903", "1902", "1901", "1900" }));
 
-        jLabel4.setText(" month      day        year");
+        jLabel4.setText(" month            day               year");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,8 +137,8 @@ public class RegisterForm extends javax.swing.JFrame {
                                 .addComponent(cbBirthDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cbBirthYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(35, 35, 35))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -186,22 +191,19 @@ public class RegisterForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnFinishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinishActionPerformed
+    private void btnFinishActionPerformed(java.awt.event.ActionEvent evt) throws ClassNotFoundException {//GEN-FIRST:event_btnFinishActionPerformed
         String firstname = tfFirstName.getText();
         String lastname = tfLastName.getText();
-        String name = firstname + " " + lastname; // Combine firstname and lastname into a full name
         String email = tfContactEmail.getText();
 
-        int birthMonth = cbBirthMonth.getSelectedIndex() + 1; // Add +1 to match month number
-        String birthday_month = Month.of(birthMonth).name().substring(0, 3);
-
+        Object birthday_month = cbBirthMonth.getSelectedItem();
         Object birthday_day = cbBirthDay.getSelectedItem();
         Object birthday_year = cbBirthYear.getSelectedItem();
 
-        String username = tfUsername.getText();
+        String login = tfUsername.getText();
         String password = new String(tfPassword.getPassword());
 
-        if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || username.isEmpty() || password.isEmpty()) {
+        if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || login.isEmpty() || password.isEmpty()) {
             JOptionPane.showMessageDialog(this,
                     "Registration could not be completed", "ERROR", JOptionPane.ERROR_MESSAGE);
         } else {
@@ -210,16 +212,18 @@ public class RegisterForm extends javax.swing.JFrame {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "Cubbie17");
 
                 // Prepare the SQL statement
-                String sql = "INSERT INTO client (name, login, email, password, birthday_month, birthday_day, birthday_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO client (firstname, lastname, login, email, password, birthday_month, birthday_day, birthday_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 PreparedStatement statement = connection.prepareStatement(sql);
                  
-                statement.setString(2, name);
-                statement.setString(3, email);
-                statement.setString(4, birthday_month);
-                statement.setObject(5, birthday_day);
-                statement.setObject(6, birthday_year);
-                statement.setString(7, username);
-                statement.setString(8, password);
+                statement.setString(1, firstname);
+                statement.setString(2, lastname);
+                statement.setString(3, login);
+                statement.setString(4, email);
+                statement.setString(5, password);
+                statement.setObject(6, birthday_month);
+                statement.setObject(7, birthday_day);
+                statement.setObject(8, birthday_year);
+                
 
                 // Execute the SQL statement
                 int rowsAffected = statement.executeUpdate();
