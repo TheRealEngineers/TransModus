@@ -258,7 +258,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(179, 0, 0)));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\airplane-train-think-paper-banner_1020x574.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("Image/airplane-train-think-paper-banner_1020x574.jpg")); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
