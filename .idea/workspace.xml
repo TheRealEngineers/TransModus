@@ -7,27 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" afterDir="false" />
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-53 Testing Version 2 - Merged TR1 &amp; TR2 into Branch (From TRS-39)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/TransModus_Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/TransModus_Database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/HomePage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/LoginForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/RegisterForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/RegisterForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/RegisterForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/RoutineMng.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/RoutineMng.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/RoutineMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/RoutineMng.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/TicketReservation_1.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_1.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/TicketReservation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/TicketReservation_2.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_2.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/TicketReservation_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/TicketReservation_3.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_3.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/TicketReservation_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/UserProfile.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/UserProfile.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransModusInterface/TicketReservation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModusInterface/TicketReservation_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +70,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TransModusInterface" />
       <recent name="$PROJECT_DIR$/TransModus" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Ticket Reservation" />
@@ -125,7 +108,7 @@
       <workItem from="1687716571559" duration="1400000" />
       <workItem from="1687731073112" duration="21167000" />
       <workItem from="1687839098777" duration="2886000" />
-      <workItem from="1687886358831" duration="3189000" />
+      <workItem from="1687886358831" duration="3906000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Version 1">
       <option name="closed" value="true" />
@@ -151,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1687821971869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TRS-53 Testing Version 1">
+      <option name="closed" value="true" />
+      <created>1687908272302</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687908272302</updated>
+    </task>
+    <task id="LOCAL-00005" summary="TRS-53 Testing Version 2 - Merged TR1 &amp; TR2 into Branch (From TRS-39)">
+      <option name="closed" value="true" />
+      <created>1687908538882</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687908538882</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +188,8 @@
     <MESSAGE value="Testing Version 1" />
     <MESSAGE value="Testing Version 2" />
     <MESSAGE value="Testing Version 3 (images)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Version 3 (images)" />
+    <MESSAGE value="TRS-53 Testing Version 1" />
+    <MESSAGE value="TRS-53 Testing Version 2 - Merged TR1 &amp; TR2 into Branch (From TRS-39)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TRS-53 Testing Version 2 - Merged TR1 &amp; TR2 into Branch (From TRS-39)" />
   </component>
 </project>
