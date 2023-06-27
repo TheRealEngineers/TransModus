@@ -45,6 +45,8 @@ DELETE c1 FROM client c1
 -- Will remove the users without email?
 DELETE FROM client WHERE email = '';
 
+
+
 -- Retrieve data from the table (permanently)
 -- TransModus User Database
 SELECT

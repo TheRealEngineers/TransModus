@@ -214,3 +214,10 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JTextField tfUsername;
     // End of variables declaration//GEN-END:variables
 }
+
+//
+// Train selected
+// Goes to Train Datataba
+// Edits Train (Train #, From, To, D. Time, Arrival Time)
+// Update
+// End
