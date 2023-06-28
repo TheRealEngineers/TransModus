@@ -16,8 +16,7 @@ public class ConfirmationEmailApplication {
 	}
 	@EventListener(ApplicationReadyEvent.class)
 	public void sendMail(){
-		senderService.sendEmail("TransModusServices@gmail.com,",
-				"Thank You for Your Reservation with Transmodus",
+		senderService.sendEmail("jaikoisal@gmail.com", "Thank You for Your Reservation with Transmodus",
 				"We hope this email finds you well. We are writing to express our sincere gratitude for choosing Transmodus as your preferred reservation system for managing your bookings. We are thrilled to have you on board, and we appreciate your trust in our application.\n" +
 						"\n" +
 						"At Transmodus, we understand the importance of efficient reservation management, and our primary goal is to provide you with a seamless experience. Our team has been working tirelessly to develop a robust system that caters to your specific needs, streamlining your reservation processes and enhancing customer satisfaction.\n" +
