@@ -12,11 +12,12 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
-            <name qname="@" />
             <name qname="TransModus" />
+            <name qname="@" />
           </node>
         </introspection-scope>
       </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
     </data-source>
   </component>
 </project>
