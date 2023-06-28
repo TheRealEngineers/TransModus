@@ -1,3 +1,6 @@
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.BorderFactory;
 public class TicketReservation_3 extends javax.swing.JFrame {
 
     // Creates new form TicketReservation_3
@@ -32,20 +35,25 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Sitka Banner", 0, 36)); // NOI18N
+        jLabel1.setFont(new Font("Monotype Corsiva", Font.BOLD, 36)); // Set cursive font
+        jLabel1.setForeground(Color.WHITE); 
         jLabel1.setText("Transit Ticket Information");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
+        jPanel1.setBorder(BorderFactory.createMatteBorder(3, 3, 3, 3, Color.RED)); // Set red border
+        jPanel1.setBackground(Color.BLACK); 
 
-        jLabel3.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel3.setFont(new Font("Monotype Corsiva", Font.PLAIN, 18)); // Set cursive font
+        jLabel3.setForeground(Color.WHITE); 
         jLabel3.setText("Transit Number:");
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel5.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel5.setFont(new Font("Monotype Corsiva", Font.BOLD, 18)); // Set cursive font
+        jLabel5.setForeground(Color.WHITE);
         jLabel5.setText("Class Type");
 
-        jLabel6.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel6.setFont(new Font("Monotype Corsiva", Font.BOLD, 18)); // Set cursive font
+        jLabel6.setForeground(Color.WHITE); // NOI18N
         jLabel6.setText("*Location 1 to Location 2");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -71,7 +79,8 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(112, 112, 112));
 
-        jLabel8.setFont(new java.awt.Font("Sitka Banner", 1, 36)); // NOI18N
+        jLabel8.setFont(new Font("Monotype Corsiva", Font.BOLD, 36)); // Set cursive font
+        jLabel8.setForeground(Color.WHITE);
         jLabel8.setText("DEPARTURE ");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -93,7 +102,8 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(112, 112, 112));
 
-        jLabel7.setFont(new java.awt.Font("Sitka Banner", 1, 36)); // NOI18N
+        jLabel7.setFont(new Font("Monotype Corsiva", Font.BOLD, 36)); // Set cursive font
+        jLabel7.setForeground(Color.WHITE); 
         jLabel7.setText("ARRIVAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -115,7 +125,8 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel2.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
+        jLabel2.setFont(new Font("Monotype Corsiva", Font.BOLD, 24)); // Set cursive font
+        jLabel2.setForeground(Color.WHITE); 
         jLabel2.setText("TRANSMODUS SERVICES");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -123,7 +134,7 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel2)
                 .addContainerGap(36, Short.MAX_VALUE))
         );
