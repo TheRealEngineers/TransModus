@@ -13,7 +13,7 @@ public class EmailSenderService {
                           String subject,
                           String body){
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("TransModusServices@gmail.com");
+        message.setFrom("jaikoisal@gmail.com");
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(String.valueOf(message));
