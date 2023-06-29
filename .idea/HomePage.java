@@ -18,7 +18,7 @@ public class HomePage extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         btnProfile = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnBooking = new javax.swing.JButton();
         btnTicketRes = new javax.swing.JButton();
         btnRoutineMng = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -59,8 +59,13 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
-        jButton2.setText("Booking History");
+        btnBooking.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+        btnBooking.setText("Booking History");
+        btnBooking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBookingActionPerformed(evt);
+            }
+        });
 
         btnTicketRes.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
         btnTicketRes.setText("Book Tickets");
@@ -105,7 +110,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -134,7 +139,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addGap(251, 251, 251)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(6, 6, 6)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(241, 241, 241)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -161,7 +166,7 @@ public class HomePage extends javax.swing.JFrame {
         TicketReservation_1 trs = new TicketReservation_1();  
         trs.setVisible(true);
         trs.pack();
-        this.dispose();
+        this.setVisible(false);
     }//GEN-LAST:event_btnTicketResActionPerformed
 
     private void btnRoutineMngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRoutineMngActionPerformed
@@ -169,6 +174,12 @@ public class HomePage extends javax.swing.JFrame {
         mng.setVisible(true);
         mng.pack();
     }//GEN-LAST:event_btnRoutineMngActionPerformed
+
+    private void btnBookingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookingActionPerformed
+        Booking bk = new Booking();  
+        bk.setVisible(true);
+        bk.pack();
+        this.setVisible(false);    }//GEN-LAST:event_btnBookingActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -204,10 +215,10 @@ public class HomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBooking;
     private javax.swing.JButton btnProfile;
     private javax.swing.JButton btnRoutineMng;
     private javax.swing.JButton btnTicketRes;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
