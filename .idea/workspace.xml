@@ -7,6 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="Testing Version 3 (images)">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -22,6 +23,10 @@
       <change beforePath="$PROJECT_DIR$/TransModus/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/RegisterForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserProfile.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserProfile.java" beforeDir="false" />
+=======
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-53 Testing Version 2.5 (Just in case :D)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 93fe10af7e8f6686a804d9dfa20e338634acd894
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="TRS-53-Test-Debug-Sprint-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +52,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -103,6 +109,30 @@
     </configuration>
     <configuration name="app1.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app1.js" working-dir="$PROJECT_DIR$/web">
       <method v="2" />
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TRS-14-Booking-History&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/justchance/Desktop/projects/TransModus&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Transmodus" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Transmodus" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+>>>>>>> 93fe10af7e8f6686a804d9dfa20e338634acd894
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,11 +143,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686334419147</updated>
+<<<<<<< HEAD
       <workItem from="1687555046415" duration="253000" />
       <workItem from="1687555302474" duration="815000" />
       <workItem from="1687556121160" duration="2603000" />
       <workItem from="1687716571559" duration="1400000" />
       <workItem from="1687731073112" duration="21167000" />
+=======
+      <workItem from="1687909140186" duration="71000" />
+      <workItem from="1687909213147" duration="36000" />
+      <workItem from="1687909251644" duration="7000" />
+>>>>>>> 93fe10af7e8f6686a804d9dfa20e338634acd894
     </task>
     <task id="LOCAL-00001" summary="Testing Version 1">
       <option name="closed" value="true" />
