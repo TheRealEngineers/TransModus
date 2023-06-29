@@ -83,7 +83,7 @@ public class TicketReservation_3 extends javax.swing.JFrame {
             }
         });
 
-        jPanel14.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel14.setBackground(new java.awt.Color(51, 51, 51));
         jPanel14.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
 
         jLabel37.setBackground(new java.awt.Color(255, 51, 51));
@@ -95,36 +95,44 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jPanel13.setBackground(new java.awt.Color(153, 0, 0));
 
-        jLabel38.setBackground(null);
+        jLabel38.setBackground(java.awt.Color.white);
         jLabel38.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("Class Type:");
 
-        dispClass2.setBackground(null);
+        dispClass2.setBackground(java.awt.Color.white);
         dispClass2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispClass2.setForeground(new java.awt.Color(255, 255, 255));
         dispClass2.setText(". . .");
 
-        jLabel40.setBackground(null);
+        jLabel40.setBackground(java.awt.Color.white);
         jLabel40.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
         jLabel40.setText("Transit Number:");
 
-        dispTranNum2.setBackground(null);
+        dispTranNum2.setBackground(java.awt.Color.white);
         dispTranNum2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispTranNum2.setForeground(new java.awt.Color(255, 255, 255));
         dispTranNum2.setText(". . .");
 
-        dispMethod2.setBackground(null);
+        dispMethod2.setBackground(java.awt.Color.white);
         dispMethod2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispMethod2.setForeground(new java.awt.Color(255, 255, 255));
         dispMethod2.setText(". . .");
 
-        jLabel42.setBackground(null);
+        jLabel42.setBackground(java.awt.Color.white);
         jLabel42.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
         jLabel42.setText("Transit Method:");
 
-        jLabel39.setBackground(null);
+        jLabel39.setBackground(java.awt.Color.white);
         jLabel39.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("No. of passengers:");
 
-        dispAmount2.setBackground(null);
+        dispAmount2.setBackground(java.awt.Color.white);
         dispAmount2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispAmount2.setForeground(new java.awt.Color(255, 255, 255));
         dispAmount2.setText(". . .");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
@@ -170,28 +178,42 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jPanel8.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel8.setBackground(new java.awt.Color(255, 0, 0));
         jPanel8.setForeground(new java.awt.Color(204, 204, 204));
 
+        jLabel21.setBackground(new java.awt.Color(255, 255, 255));
         jLabel21.setFont(new java.awt.Font("Poor Richard", 3, 36)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("DEPARTURE ");
 
+        jLabel22.setBackground(new java.awt.Color(255, 255, 255));
         jLabel22.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Location:");
 
+        jLabel23.setBackground(new java.awt.Color(255, 255, 255));
         jLabel23.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("Time of Departure:");
 
+        dispDepartTime2.setBackground(new java.awt.Color(255, 255, 255));
         dispDepartTime2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispDepartTime2.setForeground(new java.awt.Color(255, 255, 255));
         dispDepartTime2.setText(". . .");
 
+        dispFrom2.setBackground(new java.awt.Color(255, 255, 255));
         dispFrom2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispFrom2.setForeground(new java.awt.Color(255, 255, 255));
         dispFrom2.setText(". . .");
 
+        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
         jLabel26.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("Date:");
 
+        dispDepartDate2.setBackground(new java.awt.Color(255, 255, 255));
         dispDepartDate2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispDepartDate2.setForeground(new java.awt.Color(255, 255, 255));
         dispDepartDate2.setText(". . .");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -236,22 +258,32 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jPanel9.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel9.setBackground(new java.awt.Color(255, 0, 0));
         jPanel9.setForeground(new java.awt.Color(204, 204, 204));
 
+        jLabel28.setBackground(new java.awt.Color(255, 255, 255));
         jLabel28.setFont(new java.awt.Font("Poor Richard", 3, 36)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("ARRIVAL");
 
+        jLabel29.setBackground(new java.awt.Color(255, 255, 255));
         jLabel29.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("Location:");
 
+        jLabel30.setBackground(new java.awt.Color(255, 255, 255));
         jLabel30.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("Time of Arrival:");
 
+        dispArriveTime2.setBackground(new java.awt.Color(255, 255, 255));
         dispArriveTime2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispArriveTime2.setForeground(new java.awt.Color(255, 255, 255));
         dispArriveTime2.setText(". . .");
 
+        dispTo2.setBackground(new java.awt.Color(255, 255, 255));
         dispTo2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispTo2.setForeground(new java.awt.Color(255, 255, 255));
         dispTo2.setText(". . .");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -322,28 +354,44 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jPanel15.setBackground(new java.awt.Color(153, 0, 0));
 
+        jLabel41.setBackground(new java.awt.Color(255, 255, 255));
         jLabel41.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
         jLabel41.setText("Passenger 2:");
 
+        dispClient2.setBackground(new java.awt.Color(255, 255, 255));
         dispClient2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispClient2.setForeground(new java.awt.Color(255, 255, 255));
         dispClient2.setText("none");
 
+        jLabel43.setBackground(new java.awt.Color(255, 255, 255));
         jLabel43.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Passenger 1:");
 
+        dispClient1.setBackground(new java.awt.Color(255, 255, 255));
         dispClient1.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispClient1.setForeground(new java.awt.Color(255, 255, 255));
         dispClient1.setText(". . .");
 
+        dispClient3.setBackground(new java.awt.Color(255, 255, 255));
         dispClient3.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispClient3.setForeground(new java.awt.Color(255, 255, 255));
         dispClient3.setText("none");
 
+        jLabel44.setBackground(new java.awt.Color(255, 255, 255));
         jLabel44.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("Passegner 3:");
 
+        jLabel45.setBackground(new java.awt.Color(255, 255, 255));
         jLabel45.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(255, 255, 255));
         jLabel45.setText("Passenger 4:");
 
+        dispClient4.setBackground(new java.awt.Color(255, 255, 255));
         dispClient4.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+        dispClient4.setForeground(new java.awt.Color(255, 255, 255));
         dispClient4.setText("none");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -386,7 +434,7 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                     .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(dispClient4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
