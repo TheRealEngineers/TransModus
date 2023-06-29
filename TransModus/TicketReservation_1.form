@@ -250,13 +250,13 @@
                       <Data value="Houston"/>
                     </Column>
                     <Column editable="true" title="Departure Time" type="java.lang.Object">
-                      <Data value="6:30 am"/>
-                      <Data value="9:30 am"/>
+                      <Data value="6:15 am"/>
+                      <Data value="9:00 am"/>
                       <Data value="1:45 pm"/>
                     </Column>
                     <Column editable="true" title="Arrival Time" type="java.lang.Object">
-                      <Data value="8:15 am"/>
-                      <Data value="11:00 am"/>
+                      <Data value="5:30 pm"/>
+                      <Data value="12:15 pm"/>
                       <Data value="3:15 pm"/>
                     </Column>
                     <Column editable="true" title="Price" type="java.lang.String">
