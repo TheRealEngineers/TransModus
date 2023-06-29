@@ -83,15 +83,15 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("Image/Routine_IMG.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\Routine_IMG.png")); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("Image/Ticket_IMG.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\Ticket_IMG.png")); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("Image/Profile_IMG.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\Profile_IMG.png")); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("Image/Clock_IMG.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\Clock_IMG.png")); // NOI18N
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("Image/TransModus_BG_2.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\TransModus_BG_2.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -182,35 +182,35 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="Image/Routine_IMG.png"/>
+          <Image iconType="2" name="C:\Users\Andres Ibarra\Documents\NetBeansProjects\TransModus\Image\Routine_IMG.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="Image/Ticket_IMG.png"/>
+          <Image iconType="2" name="C:\Users\Andres Ibarra\Documents\NetBeansProjects\TransModus\Image\Ticket_IMG.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="Image/Profile_IMG.png"/>
+          <Image iconType="2" name="C:\Users\Andres Ibarra\Documents\NetBeansProjects\TransModus\Image\Profile_IMG.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="Image/Clock_IMG.png"/>
+          <Image iconType="2" name="C:\Users\Andres Ibarra\Documents\NetBeansProjects\TransModus\Image\Clock_IMG.png"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="Image/TransModus_BG_2.jpg"/>
+          <Image iconType="2" name="C:\Users\Andres Ibarra\Documents\NetBeansProjects\TransModus\Image\TransModus_BG_2.jpg"/>
         </Property>
       </Properties>
     </Component>
