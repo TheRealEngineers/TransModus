@@ -35,4 +35,4 @@ FROM
 -- Displays Name, Username, Date of Birth, Phone Number (Initially Null), & Email
 -- User has ability to edit their data
 -- Need *Stayed Login* til close application
--- In "Home Page", Welcome (User)!
+-- In "Home Page", Welcome (User)! in TOP RIGHT
