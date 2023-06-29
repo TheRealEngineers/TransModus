@@ -82,8 +82,8 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         TransitTable.setFont(new java.awt.Font("SimSun-ExtB", 0, 16)); // NOI18N
         TransitTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"5336", "Northridge", "San Francisco", "6:30 am", "8:15 am", "58"},
-                {"8743", "Los Angeles", "San Diego", "9:30 am", "11:00 am", "81"},
+                {"5336", "Northridge", "San Francisco", "6:15 am", "5:30 pm", "58"},
+                {"8743", "Los Angeles", "San Diego", "9:00 am", "12:15 pm", "81"},
                 {"9846", "Las Vegas", "Houston", "1:45 pm", "3:15 pm", "110"}
             },
             new String [] {
