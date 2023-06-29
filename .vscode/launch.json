@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Booking",
+            "request": "launch",
+            "mainClass": "Booking",
+            "projectName": "TransModus_dee9d71"
+        },
+        {
+            "type": "java",
             "name": "HomePage",
             "request": "launch",
             "mainClass": "HomePage",
