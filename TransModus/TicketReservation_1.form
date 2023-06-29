@@ -233,53 +233,35 @@
                   <Font name="SimSun-ExtB" size="16" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="6" rowCount="6">
+                  <Table columnCount="6" rowCount="3">
                     <Column editable="true" title="Transit #" type="java.lang.String">
                       <Data value="5336"/>
-                      <Data value="5337"/>
-                      <Data value="8755"/>
                       <Data value="8743"/>
-                      <Data value="9354"/>
                       <Data value="9846"/>
                     </Column>
                     <Column editable="true" title="From" type="java.lang.String">
-                      <Data value="Los Angeles"/>
-                      <Data value="Los Angeles"/>
                       <Data value="Northridge"/>
-                      <Data value="Northridge"/>
-                      <Data value="Los Angles"/>
+                      <Data value="Los Angeles"/>
                       <Data value="Las Vegas"/>
                     </Column>
                     <Column editable="true" title="To" type="java.lang.String">
                       <Data value="San Francisco"/>
-                      <Data value="San Francisco"/>
-                      <Data value="Las Vegas"/>
                       <Data value="San Diego"/>
-                      <Data value="Las Vegas"/>
                       <Data value="Houston"/>
                     </Column>
                     <Column editable="true" title="Departure Time" type="java.lang.Object">
                       <Data value="6:30 am"/>
-                      <Data value="8:00 am"/>
-                      <Data value="10:15 am"/>
                       <Data value="9:30 am"/>
-                      <Data value="3:00 pm"/>
                       <Data value="1:45 pm"/>
                     </Column>
                     <Column editable="true" title="Arrival Time" type="java.lang.Object">
-                      <Data value="7:45 am"/>
-                      <Data value="9:15 am"/>
-                      <Data value="12:00 am"/>
+                      <Data value="8:15 am"/>
                       <Data value="11:00 am"/>
-                      <Data value="4:45 pm"/>
                       <Data value="3:15 pm"/>
                     </Column>
                     <Column editable="true" title="Price" type="java.lang.String">
                       <Data value="58"/>
-                      <Data value="58"/>
-                      <Data value="77"/>
                       <Data value="81"/>
-                      <Data value="112"/>
                       <Data value="110"/>
                     </Column>
                   </Table>
