@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Booking",
+            "request": "launch",
+            "mainClass": "Booking",
+            "projectName": "TransModus_dee9d71"
+        },
+        {
+            "type": "java",
+            "name": "HomePage",
+            "request": "launch",
+            "mainClass": "HomePage",
+            "projectName": "TransModus_dee9d71"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "HomePage",
+            "request": "launch",
+            "mainClass": "HomePage",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "LoginForm",
+            "request": "launch",
+            "mainClass": "LoginForm",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "RegisterForm",
+            "request": "launch",
+            "mainClass": "RegisterForm",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "RoutineMng",
+            "request": "launch",
+            "mainClass": "RoutineMng",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_1",
+            "request": "launch",
+            "mainClass": "TicketReservation_1",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_2",
+            "request": "launch",
+            "mainClass": "TicketReservation_2",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_3",
+            "request": "launch",
+            "mainClass": "TicketReservation_3",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
+            "name": "UserProfile",
+            "request": "launch",
+            "mainClass": "UserProfile",
+            "projectName": "TransModus_28facee1"
+        }
+    ]
+}
