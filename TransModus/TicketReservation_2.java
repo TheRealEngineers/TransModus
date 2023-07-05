@@ -362,7 +362,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         destination_2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         destination_2.setText("...");
 
-        returnDate_2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
+        returnDate_2.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
         returnDate_2.setText("none");
 
         departDate_2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
@@ -437,16 +437,16 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         jLabel33.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         jLabel33.setText("Passenger 4");
 
-        dispPass2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
+        dispPass2.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
         dispPass2.setText("none");
 
-        dispPass3.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
+        dispPass3.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
         dispPass3.setText("none");
 
         dispPass1.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         dispPass1.setText("...");
 
-        dispPass4.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
+        dispPass4.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
         dispPass4.setText("none");
 
         jLabel34.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
@@ -600,9 +600,11 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(departDate_2)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10)
-                    .addComponent(returnDate_2))
+                    .addComponent(jLabel9))
+                    .addGap(18, 18, 18)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel10)
+                        .addComponent(returnDate_2))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
