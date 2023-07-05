@@ -157,7 +157,7 @@ public class LoginForm extends javax.swing.JFrame {
         String password = new String(tfPassword.getPassword());
 
 
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "Cubbie17");
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
              PreparedStatement statement = connection.prepareStatement("SELECT login, password, firstname, client_id FROM client WHERE login = ? AND password = ?")) {
 
             // Prepare the SQL statement
@@ -172,6 +172,7 @@ public class LoginForm extends javax.swing.JFrame {
                     // If a match is found, take the user to the homepage
                     HomePage hpg = new HomePage();
                     hpg.dispUser.setText(resultSet.getString("firstname") + "!");
+                    hpg.ActiveClient.setText(resultSet.getString("client_id"));
                     hpg.setVisible(true);
                     hpg.pack();
                     this.dispose();
@@ -208,6 +209,5 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField tfPassword;
     private javax.swing.JTextField tfUsername;
-    private javax.swing.JTextField tfFirstName;
     // End of variables declaration//GEN-END:variables
 }

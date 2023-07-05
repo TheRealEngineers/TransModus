@@ -209,7 +209,7 @@ public class RegisterForm extends javax.swing.JFrame {
         } else {
             try {
                 // Connect to the database
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "Cubbie17");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
 
                 // Prepare the SQL statement
                 String sql = "INSERT INTO client (firstname, lastname, login, email, password, birthday_month, birthday_day, birthday_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
