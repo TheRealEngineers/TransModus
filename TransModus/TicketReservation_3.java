@@ -62,7 +62,7 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Sitka Banner", 0, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 30)); // NOI18N
         jLabel1.setText("Payment Confirmed! Here are your ticket details");
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
@@ -87,15 +87,21 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jPanel14.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(204, 0, 0)));
 
         jLabel37.setBackground(new java.awt.Color(255, 51, 51));
-        jLabel37.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(255, 255, 255));
         jLabel37.setText("Booking Code:");
 
+<<<<<<< Updated upstream
         tfBookCode.setFont(new java.awt.Font("SimSun-ExtB", 1, 18)); // NOI18N
+=======
+        tfBookCode.setEditable(false);
+        tfBookCode.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
 
         jPanel13.setBackground(new java.awt.Color(153, 0, 0));
 
         jLabel38.setBackground(java.awt.Color.white);
+<<<<<<< Updated upstream
         jLabel38.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setText("Class Type:");
@@ -122,10 +128,39 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jLabel42.setBackground(java.awt.Color.white);
         jLabel42.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        jLabel38.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel38.setText("Class Type:");
+
+        ticketClass_3.setBackground(java.awt.Color.white);
+        ticketClass_3.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        ticketClass_3.setForeground(new java.awt.Color(255, 255, 255));
+        ticketClass_3.setText(". . .");
+
+        jLabel40.setBackground(java.awt.Color.white);
+        jLabel40.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setText("Transit Number:");
+
+        transitID_3.setBackground(java.awt.Color.white);
+        transitID_3.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        transitID_3.setForeground(new java.awt.Color(255, 255, 255));
+        transitID_3.setText(". . .");
+
+        tranMethod_3.setBackground(java.awt.Color.white);
+        tranMethod_3.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        tranMethod_3.setForeground(new java.awt.Color(255, 255, 255));
+        tranMethod_3.setText(". . .");
+
+        jLabel42.setBackground(java.awt.Color.white);
+        jLabel42.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+>>>>>>> Stashed changes
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
         jLabel42.setText("Transit Method:");
 
         jLabel39.setBackground(java.awt.Color.white);
+<<<<<<< Updated upstream
         jLabel39.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("No. of passengers:");
@@ -134,6 +169,16 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         dispAmount2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
         dispAmount2.setForeground(new java.awt.Color(255, 255, 255));
         dispAmount2.setText(". . .");
+=======
+        jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setText("No. of passengers:");
+
+        amtTickets_3.setBackground(java.awt.Color.white);
+        amtTickets_3.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
+        amtTickets_3.setForeground(new java.awt.Color(255, 255, 255));
+        amtTickets_3.setText(". . .");
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -187,32 +232,32 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jLabel21.setText("DEPARTURE ");
 
         jLabel22.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel22.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Location:");
 
         jLabel23.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel23.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("Time of Departure:");
 
         dispDepartTime2.setBackground(new java.awt.Color(255, 255, 255));
-        dispDepartTime2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispDepartTime2.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         dispDepartTime2.setForeground(new java.awt.Color(255, 255, 255));
         dispDepartTime2.setText(". . .");
 
         dispFrom2.setBackground(new java.awt.Color(255, 255, 255));
-        dispFrom2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispFrom2.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         dispFrom2.setForeground(new java.awt.Color(255, 255, 255));
         dispFrom2.setText(". . .");
 
         jLabel26.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel26.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("Date:");
 
         dispDepartDate2.setBackground(new java.awt.Color(255, 255, 255));
-        dispDepartDate2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispDepartDate2.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         dispDepartDate2.setForeground(new java.awt.Color(255, 255, 255));
         dispDepartDate2.setText(". . .");
 
@@ -272,17 +317,25 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jLabel29.setText("Location:");
 
         jLabel30.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel30.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("Time of Arrival:");
 
         dispArriveTime2.setBackground(new java.awt.Color(255, 255, 255));
-        dispArriveTime2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispArriveTime2.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         dispArriveTime2.setForeground(new java.awt.Color(255, 255, 255));
         dispArriveTime2.setText(". . .");
 
+<<<<<<< Updated upstream
+=======
+        jLabel29.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel29.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Going to:");
+
+>>>>>>> Stashed changes
         dispTo2.setBackground(new java.awt.Color(255, 255, 255));
-        dispTo2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        dispTo2.setFont(new java.awt.Font("Times New Roman", 0, 21)); // NOI18N
         dispTo2.setForeground(new java.awt.Color(255, 255, 255));
         dispTo2.setText(". . .");
 
@@ -324,10 +377,29 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
         jPanel10.setBackground(new java.awt.Color(153, 0, 0));
 
-        jLabel33.setFont(new java.awt.Font("SimSun-ExtB", 1, 36)); // NOI18N
+        jLabel33.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("TRANSMODUS SERVICES");
 
+<<<<<<< Updated upstream
+=======
+        jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Company:");
+
+        station_3.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        station_3.setForeground(new java.awt.Color(255, 255, 255));
+        station_3.setText("...");
+
+        company_3.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        company_3.setForeground(new java.awt.Color(255, 255, 255));
+        company_3.setText("...");
+
+        jLabel34.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setText("Station:");
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -355,42 +427,74 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jPanel15.setBackground(new java.awt.Color(153, 0, 0));
 
         jLabel41.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         jLabel41.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        jLabel41.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
         jLabel41.setText("Passenger 2:");
 
         dispClient2.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         dispClient2.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        dispClient2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         dispClient2.setForeground(new java.awt.Color(255, 255, 255));
         dispClient2.setText("none");
 
         jLabel43.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         jLabel43.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        jLabel43.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Passenger 1:");
 
         dispClient1.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         dispClient1.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        dispClient1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         dispClient1.setForeground(new java.awt.Color(255, 255, 255));
         dispClient1.setText(". . .");
 
         dispClient3.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         dispClient3.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        dispClient3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         dispClient3.setForeground(new java.awt.Color(255, 255, 255));
         dispClient3.setText("none");
 
         jLabel44.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         jLabel44.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        jLabel44.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("Passegner 3:");
 
         jLabel45.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         jLabel45.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        jLabel45.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         jLabel45.setForeground(new java.awt.Color(255, 255, 255));
         jLabel45.setText("Passenger 4:");
 
         dispClient4.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
         dispClient4.setFont(new java.awt.Font("Sitka Banner", 1, 18)); // NOI18N
+=======
+        dispClient4.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+>>>>>>> Stashed changes
         dispClient4.setForeground(new java.awt.Color(255, 255, 255));
         dispClient4.setText("none");
 

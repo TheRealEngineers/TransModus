@@ -47,7 +47,13 @@ public class Booking extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(179, 0, 0));
 
+<<<<<<< Updated upstream
         jLabel5.setFont(new java.awt.Font("Sitka Banner", 0, 36)); // NOI18N
+=======
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+>>>>>>> Stashed changes
         jLabel5.setText("Booking History");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -67,7 +73,12 @@ public class Booking extends javax.swing.JFrame {
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
+<<<<<<< Updated upstream
         btnHome.setFont(new java.awt.Font("Sitka Banner", 0, 14)); // NOI18N
+=======
+        btnHome.setBackground(new java.awt.Color(179, 0, 0));
+        btnHome.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+>>>>>>> Stashed changes
         btnHome.setText("Home");
         btnHome.setActionCommand("Save Changes");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +87,34 @@ public class Booking extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< Updated upstream
+=======
+        jLabel1.setFont(new java.awt.Font("Simsun", 1, 18)); // NOI18N
+        jLabel1.setText("All of your previous bookings are listed here");
+
+        jScrollPane3.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+
+        BookHistTable.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        BookHistTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                { new Integer(98430235),  new Integer(5336), "LA Union", "Greyhound", "Northridge", "San Francisco", "6:15 am", "5:30 pm", "BOOKED"}
+            },
+            new String [] {
+                "Booking ID", "Transit ID", "Station", "Transit Line", "Origin", "Destination", "Departure Time", "Arrival Time", "Status"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        BookHistTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane3.setViewportView(BookHistTable);
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(

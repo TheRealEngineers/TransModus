@@ -37,28 +37,28 @@
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("SimSun-ExtB", 0, 20)); // NOI18N
-        jLabel1.setText("PROFILE DETAILS");
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        jLabel1.setText("Profile Details");
 
-        jLabel3.setFont(new java.awt.Font("Sitka Banner", 0, 18)); // NOI18N
-        jLabel3.setText("NAME");
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel3.setText("Name");
 
-        jLabel4.setFont(new java.awt.Font("SimSun-ExtB", 0, 20)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jLabel4.setText("Contact Details");
 
-        jLabel5.setFont(new java.awt.Font("Sitka Banner", 0, 18)); // NOI18N
-        jLabel5.setText("DATE OF BIRTH");
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel5.setText("Date of birth");
 
-        jLabel6.setFont(new java.awt.Font("Sitka Banner", 0, 18)); // NOI18N
-        jLabel6.setText("USERNAME");
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel6.setText("Username");
 
-        jLabel7.setFont(new java.awt.Font("Sitka Banner", 0, 18)); // NOI18N
-        jLabel7.setText("PHONE NUMBER");
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel7.setText("Phone number");
 
-        jLabel8.setFont(new java.awt.Font("Sitka Banner", 0, 18)); // NOI18N
-        jLabel8.setText("EMAIL");
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel8.setText("Email");
 
-        btnSave.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+        btnSave.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnSave.setText("Save Changes");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +66,7 @@
             }
         });
 
-        btnGoBack.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+        btnGoBack.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnGoBack.setText("Close Profile");
         btnGoBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +76,7 @@
 
         jPanel1.setBackground(new java.awt.Color(179, 0, 0));
 
-        jLabel2.setFont(new java.awt.Font("SimSun-ExtB", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         jLabel2.setText("User Profile");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

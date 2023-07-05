@@ -36,21 +36,21 @@ public class LoginForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Sitka Banner", 0, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Username:");
 
-        jLabel2.setFont(new java.awt.Font("Sitka Banner", 0, 20)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Password:");
 
-        jLabel3.setFont(new java.awt.Font("SimSun-ExtB", 1, 13)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
         jLabel3.setText("Don't have an account? Create one here!");
 
         jPanel1.setBackground(new java.awt.Color(179, 0, 0));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("SimSun-ExtB", 1, 48)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Welcome to TransModus");
 
@@ -73,8 +73,13 @@ public class LoginForm extends javax.swing.JFrame {
 
         btnRegister.setBackground(new java.awt.Color(179, 0, 0));
         btnRegister.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+<<<<<<< Updated upstream
         btnRegister.setForeground(new java.awt.Color(255, 255, 255));
         btnRegister.setText("REGISTER");
+=======
+        btnRegister.setForeground(new java.awt.Color(0, 0, 0));
+        btnRegister.setText("Register");
+>>>>>>> Stashed changes
         btnRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegisterActionPerformed(evt);
@@ -83,8 +88,13 @@ public class LoginForm extends javax.swing.JFrame {
 
         btnLogin.setBackground(new java.awt.Color(179, 0, 0));
         btnLogin.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
+<<<<<<< Updated upstream
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("LOGIN");
+=======
+        btnLogin.setForeground(new java.awt.Color(0, 0, 0));
+        btnLogin.setText("Log in");
+>>>>>>> Stashed changes
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {

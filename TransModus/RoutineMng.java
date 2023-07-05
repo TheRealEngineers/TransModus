@@ -90,7 +90,85 @@ public class RoutineMng extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+<<<<<<< Updated upstream
         BusTable.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+=======
+        btnHome.setBackground(new java.awt.Color(255, 0, 0));
+        btnHome.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btnHome.setForeground(new java.awt.Color(0, 0, 0));
+        btnHome.setText("Home");
+        btnHome.setActionCommand("Save Changes");
+        btnHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHomeActionPerformed(evt);
+            }
+        });
+
+        jTabbedPane1.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel1.setText("Bus Number");
+
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel18.setText("Price (USD)");
+
+        btnAddBus.setBackground(new java.awt.Color(204, 0, 0));
+        btnAddBus.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnAddBus.setForeground(new java.awt.Color(0, 0, 0));
+        btnAddBus.setText("Add Bus");
+        btnAddBus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddBusActionPerformed(evt);
+            }
+        });
+
+        txtBusPrice.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+
+        jLabel_1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel_1.setText(".00");
+
+        txtBusNum.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        txtBusTo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel4.setText("Departure Time");
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel5.setText("Origin");
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel6.setText("Destination");
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel7.setText("Arrival Time");
+
+        txtBusFrom.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        btnDeleteBus.setBackground(new java.awt.Color(204, 0, 0));
+        btnDeleteBus.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnDeleteBus.setForeground(new java.awt.Color(0, 0, 0));
+        btnDeleteBus.setText("Delete");
+        btnDeleteBus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteBusActionPerformed(evt);
+            }
+        });
+
+        cbBusDepart1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbBusDepart1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45" }));
+
+        cbBusDepart2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbBusDepart2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+
+        cbBusArrive1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbBusArrive1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45" }));
+
+        cbBusArrive2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbBusArrive2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+
+        BusTable.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+>>>>>>> Stashed changes
         BusTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -115,8 +193,329 @@ public class RoutineMng extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(BusTable);
+<<<<<<< Updated upstream
+=======
+        if (BusTable.getColumnModel().getColumnCount() > 0) {
+            BusTable.getColumnModel().getColumn(0).setResizable(false);
+            BusTable.getColumnModel().getColumn(1).setResizable(false);
+            BusTable.getColumnModel().getColumn(2).setResizable(false);
+            BusTable.getColumnModel().getColumn(3).setResizable(false);
+            BusTable.getColumnModel().getColumn(4).setResizable(false);
+            BusTable.getColumnModel().getColumn(5).setResizable(false);
+            BusTable.getColumnModel().getColumn(6).setResizable(false);
+            BusTable.getColumnModel().getColumn(7).setResizable(false);
+        }
 
-        PlaneTable.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        txtBusCompany.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel25.setText("Company");
+
+        jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel26.setText("Station");
+
+        txtBusStation.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(260, 260, 260)
+                        .addComponent(btnAddBus, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(237, 237, 237)
+                        .addComponent(btnDeleteBus, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtBusFrom)
+                    .addComponent(txtBusNum)
+                    .addComponent(txtBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtBusStation)
+                    .addComponent(txtBusCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel18))
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtBusPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel_1)
+                        .addGap(2, 2, 2))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(cbBusArrive1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cbBusDepart1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cbBusDepart2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbBusArrive2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cbBusDepart1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4)
+                            .addComponent(cbBusDepart2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cbBusArrive1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)
+                            .addComponent(cbBusArrive2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel18)
+                            .addComponent(txtBusPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel_1)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtBusNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel26)
+                            .addComponent(txtBusStation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtBusFrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtBusCompany, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAddBus)
+                    .addComponent(btnDeleteBus))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Bus Manager", jPanel1);
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        cbTrainDepart2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbTrainDepart2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+        jPanel3.add(cbTrainDepart2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 30, -1, -1));
+
+        cbTrainDepart1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbTrainDepart1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45" }));
+        jPanel3.add(cbTrainDepart1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 30, -1, -1));
+
+        cbTrainArrive2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbTrainArrive2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+        jPanel3.add(cbTrainArrive2, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 80, -1, -1));
+
+        cbTrainArrive1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbTrainArrive1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45" }));
+        jPanel3.add(cbTrainArrive1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 80, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel8.setText("Arrival Time");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 80, -1, -1));
+
+        jLabel_2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel_2.setText(".00");
+        jPanel3.add(jLabel_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 130, -1, -1));
+
+        txtTrainPrice.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jPanel3.add(txtTrainPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 130, 80, -1));
+
+        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel20.setText("Price (USD)");
+        jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, -1, -1));
+
+        btnAddTrain.setBackground(new java.awt.Color(204, 0, 0));
+        btnAddTrain.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnAddTrain.setForeground(new java.awt.Color(0, 0, 0));
+        btnAddTrain.setText("Add Train");
+        btnAddTrain.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddTrainActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnAddTrain, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 158, -1));
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel10.setText("Origin");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel9.setText("Departure Time");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 40, -1, -1));
+
+        txtTrainTo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jPanel3.add(txtTrainTo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 136, -1));
+
+        txtTrainNum.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jPanel3.add(txtTrainNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 136, -1));
+
+        txtTrainFrom.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jPanel3.add(txtTrainFrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 136, -1));
+
+        btnDeleteTrain.setBackground(new java.awt.Color(204, 0, 0));
+        btnDeleteTrain.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnDeleteTrain.setForeground(new java.awt.Color(0, 0, 0));
+        btnDeleteTrain.setText("Delete");
+        btnDeleteTrain.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteTrainActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnDeleteTrain, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 230, 158, -1));
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel12.setText("Train Number");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel11.setText("Destination");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
+
+        TrainTable.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        TrainTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Train ID", "Station", "Company", "Origin", "Destination", "Departure Time", "Arrival Time", "Fare"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(TrainTable);
+        if (TrainTable.getColumnModel().getColumnCount() > 0) {
+            TrainTable.getColumnModel().getColumn(0).setResizable(false);
+            TrainTable.getColumnModel().getColumn(2).setResizable(false);
+            TrainTable.getColumnModel().getColumn(3).setResizable(false);
+            TrainTable.getColumnModel().getColumn(4).setResizable(false);
+            TrainTable.getColumnModel().getColumn(5).setResizable(false);
+            TrainTable.getColumnModel().getColumn(6).setResizable(false);
+            TrainTable.getColumnModel().getColumn(7).setResizable(false);
+        }
+
+        jPanel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 284, 1100, 260));
+
+        txtTrainCompany.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jPanel3.add(txtTrainCompany, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, 124, -1));
+
+        jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel23.setText("Company");
+        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel24.setText("Station");
+        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, -1, -1));
+
+        txtTrainStation.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jPanel3.add(txtTrainStation, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 124, -1));
+
+        jTabbedPane1.addTab("Train Manager", jPanel3);
+
+        jLabel_3.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel_3.setText(".00");
+
+        txtPlanePrice.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel22.setText("Price (USD)");
+
+        btnAddPlane.setBackground(new java.awt.Color(204, 0, 0));
+        btnAddPlane.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnAddPlane.setForeground(new java.awt.Color(0, 0, 0));
+        btnAddPlane.setText("Add Plane");
+        btnAddPlane.setActionCommand("Home");
+        btnAddPlane.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddPlaneActionPerformed(evt);
+            }
+        });
+
+        cbPlaneDepart2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbPlaneDepart2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+
+        cbPlaneDepart1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbPlaneDepart1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45" }));
+
+        txtPlaneNum.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        txtPlaneFrom.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel13.setText("Arrival Time");
+
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel16.setText("Destination");
+
+        btnDeletePlane.setBackground(new java.awt.Color(204, 0, 0));
+        btnDeletePlane.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        btnDeletePlane.setForeground(new java.awt.Color(0, 0, 0));
+        btnDeletePlane.setText("Delete");
+        btnDeletePlane.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeletePlaneActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel17.setText("Plane Number");
+
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel15.setText("Origin");
+
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel14.setText("Departure Time");
+
+        txtPlaneTo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        cbPlaneArrive2.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbPlaneArrive2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AM", "PM" }));
+
+        cbPlaneArrive1.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        cbPlaneArrive1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01:00", "01:15", "01:30", "01:45", "02:00", "02:15", "02:30", "02:45", "03:00", "03:15", "03:30", "03:45", "04:00", "04:15", "04:30", "04:45", "05:00", "05:15", "05:30", "05:45", "06:00", "06:15", "06:30", "06:45", "07:00", "07:15", "07:30", "07:45", "08:00", "08:15", "08:30", "08:45", "09:00", "09:15", "09:30", "09:45", "10:00", "10:15", "10:30", "10:45", "11:00", "11:15", "11:30", "11:45", "12:00", "12:15", "12:30", "12:45" }));
+>>>>>>> Stashed changes
+
+        PlaneTable.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         PlaneTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -142,6 +541,7 @@ public class RoutineMng extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(PlaneTable);
 
+<<<<<<< Updated upstream
         TrainTable.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         TrainTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -167,6 +567,17 @@ public class RoutineMng extends javax.swing.JFrame {
             }
         });
         jScrollPane3.setViewportView(TrainTable);
+=======
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel19.setText("Station");
+
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
+        jLabel21.setText("Company");
+
+        txtPlaneCompany.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+
+        txtPlaneStation.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+>>>>>>> Stashed changes
 
         jLabel1.setFont(new java.awt.Font("SimSun-ExtB", 1, 14)); // NOI18N
         jLabel1.setText("Bus Number");

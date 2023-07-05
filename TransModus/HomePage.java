@@ -29,6 +29,7 @@ public class HomePage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+<<<<<<< Updated upstream
         jPanel2.setBackground(new java.awt.Color(179, 0, 0));
 
         jLabel5.setFont(new java.awt.Font("Sitka Banner", 0, 36)); // NOI18N
@@ -68,6 +69,11 @@ public class HomePage extends javax.swing.JFrame {
         });
 
         btnTicketRes.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+=======
+        btnTicketRes.setBackground(new java.awt.Color(204, 0, 0));
+        btnTicketRes.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnTicketRes.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> Stashed changes
         btnTicketRes.setText("Book Tickets");
         btnTicketRes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,7 +81,100 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< Updated upstream
         btnRoutineMng.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+=======
+        jLabel3.setIcon(new javax.swing.ImageIcon("Image/Ticket_IMG.png")); // NOI18N
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(280, 356, 149, 140);
+
+        btnRatingSystem.setBackground(new java.awt.Color(204, 0, 0));
+        btnRatingSystem.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnRatingSystem.setForeground(new java.awt.Color(0, 0, 0));
+        btnRatingSystem.setText("Leave a Review");
+        btnRatingSystem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRatingSystemActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnRatingSystem);
+        btnRatingSystem.setBounds(690, 506, 190, 60);
+
+        btnBooking.setBackground(new java.awt.Color(204, 0, 0));
+        btnBooking.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnBooking.setForeground(new java.awt.Color(0, 0, 0));
+        btnBooking.setText("Booking History");
+        btnBooking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBookingActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnBooking);
+        btnBooking.setBounds(470, 506, 190, 60);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("Image/Routine_IMG.png")); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(690, 356, 184, 150);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("Image/Profile_IMG.png")); // NOI18N
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(60, 356, 130, 140);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("Image/Clock_IMG.png")); // NOI18N
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(500, 356, 125, 146);
+
+        btnProfile1.setBackground(new java.awt.Color(204, 0, 0));
+        btnProfile1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnProfile1.setForeground(new java.awt.Color(0, 0, 0));
+        btnProfile1.setText("User Profile");
+        btnProfile1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProfile1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnProfile1);
+        btnProfile1.setBounds(30, 506, 190, 60);
+
+        jPanel2.setBackground(new java.awt.Color(179, 0, 0));
+
+        jLabel5.setFont(new java.awt.Font("Lato", 1, 36)); // NOI18N
+        jLabel5.setText("T R A N S M O D U S");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(293, 293, 293)
+                .addComponent(jLabel5)
+                .addContainerGap(294, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel5)
+                .addContainerGap(43, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(0, 0, 940, 106);
+
+        dispUser.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        dispUser.setForeground(new java.awt.Color(204, 0, 0));
+        dispUser.setText("*User Not Found*");
+        jPanel1.add(dispUser);
+        dispUser.setBounds(140, 106, 40, 40);
+
+        /*ActiveClient.setText("*User Not Found*");
+        jPanel1.add(ActiveClient);                      Attempts at getting User... Struggles
+        ActiveUser = ActiveClient.getText();*/
+
+        btnRoutineMng.setBackground(new java.awt.Color(204, 0, 0));
+        btnRoutineMng.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        btnRoutineMng.setForeground(new java.awt.Color(0, 0, 0));
+>>>>>>> Stashed changes
         btnRoutineMng.setText("Routine Manager");
         btnRoutineMng.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,6 +182,7 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< Updated upstream
         jLabel2.setIcon(new javax.swing.ImageIcon("Image/Routine_IMG.png")); // NOI18N
 
         jLabel3.setIcon(new javax.swing.ImageIcon("Image/Ticket_IMG.png")); // NOI18N
@@ -90,6 +190,20 @@ public class HomePage extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon("Image/Profile_IMG.png")); // NOI18N
 
         jLabel4.setIcon(new javax.swing.ImageIcon("Image/Clock_IMG.png")); // NOI18N
+=======
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel8.setText("Welcome,");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(20, 150, 124, 40);
+
+        btnAdminPanel.setBackground(new java.awt.Color(204, 0, 0));
+        btnAdminPanel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        btnAdminPanel.setForeground(new java.awt.Color(0, 0, 0));
+        btnAdminPanel.setText("Admin Panel");
+        jPanel1.add(btnAdminPanel);
+        btnAdminPanel.setBounds(759, 160, 170, 30);
+>>>>>>> Stashed changes
 
         jLabel6.setIcon(new javax.swing.ImageIcon("Image/TransModus_BG_2.jpg")); // NOI18N
 

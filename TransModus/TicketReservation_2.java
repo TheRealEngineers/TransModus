@@ -106,69 +106,69 @@ public class TicketReservation_2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("SimSun-ExtB", 0, 36)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         jLabel15.setText("Payment Process");
 
-        tfCardNum.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
+        tfCardNum.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jLabel16.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel16.setText("Card Security Code (CSC):");
 
-        jLabel17.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel17.setText("/");
 
-        jLabel18.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel18.setText("Subtotal");
 
-        jLabel19.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel19.setText("Taxes");
 
-        jLabel20.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel20.setText("Total");
 
-        tfSubtotal.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        tfSubtotal.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         tfSubtotal.setText("000");
 
-        tfTaxes.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        tfTaxes.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         tfTaxes.setText("000");
 
-        tfTotalCost.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        tfTotalCost.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         tfTotalCost.setText("000");
 
-        jLabel21.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel21.setText("Card Number:");
 
-        tfHolderName.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        tfHolderName.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
-        jLabel25.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel25.setText("Cardholder Name:");
 
-        jLabel27.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel27.setText("Cardholder Email:");
 
-        jLabel29.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel29.setText("Customer Data and Payment");
 
-        jLabel30.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel30.setText("Billing Address:");
 
-        jLabel31.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel31.setText("Travel Costs");
 
-        cbExpYear.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        cbExpYear.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         cbExpYear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "23", "24", "25", "26", "27", "28", "29", "30" }));
 
-        jLabel32.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        jLabel32.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel32.setText("Exp Date:");
 
-        cbExpMonth.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        cbExpMonth.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         cbExpMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
-        tfCSC1.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
+        tfCSC1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        tfHolderEmail.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        tfHolderEmail.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
-        tfBillAddress.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        tfBillAddress.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -295,11 +295,11 @@ public class TicketReservation_2 extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 10, 10, 10, new java.awt.Color(179, 0, 0)));
 
-        jLabel1.setFont(new java.awt.Font("SimSun-ExtB", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 48)); // NOI18N
         jLabel1.setText("Ticket Reservation");
 
         btnHome.setBackground(new java.awt.Color(204, 0, 0));
-        btnHome.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+        btnHome.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnHome.setText("Home");
         btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -331,6 +331,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(179, 0, 0)));
 
+<<<<<<< Updated upstream
         jLabel5.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel5.setText("From:");
 
@@ -393,6 +394,70 @@ public class TicketReservation_2 extends javax.swing.JFrame {
 
         dispMethod.setFont(new java.awt.Font("SimSun-ExtB", 1, 18)); // NOI18N
         dispMethod.setText("...");
+=======
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel5.setText("Origin:");
+
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel4.setText("Destination:");
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel9.setText("Departure Date:");
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel10.setText("Return Date:");
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel6.setText("Trip:");
+
+        tripType_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        tripType_2.setText("...");
+
+        origin_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        origin_2.setText("...");
+
+        destination_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        destination_2.setText("...");
+
+        returnDate_2.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        returnDate_2.setText("none");
+
+        departDate_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        departDate_2.setText("...");
+
+        departTime_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        departTime_2.setText("...");
+
+        transitID_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        transitID_2.setText("...");
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel8.setText("Arival Time:");
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel11.setText("Transit ID:");
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel12.setText("Departure Time:");
+
+        arriveTime_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        arriveTime_2.setText("...");
+
+        fare_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        fare_2.setText("...");
+
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel14.setText("Ticket Price:");
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 30)); // NOI18N
+        jLabel7.setText("Travel Detail Confirmation");
+
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel22.setText("Method:");
+
+        tranMethod_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        tranMethod_2.setText("...");
+>>>>>>> Stashed changes
 
         btnCalcFare.setBackground(new java.awt.Color(204, 0, 0));
         btnCalcFare.setFont(new java.awt.Font("Sitka Banner", 0, 24)); // NOI18N
@@ -403,6 +468,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< Updated upstream
         dispClass.setFont(new java.awt.Font("SimSun-ExtB", 1, 18)); // NOI18N
         dispClass.setText("...");
 
@@ -414,10 +480,24 @@ public class TicketReservation_2 extends javax.swing.JFrame {
 
         dispAmount.setFont(new java.awt.Font("SimSun-ExtB", 1, 18)); // NOI18N
         dispAmount.setText("...");
+=======
+        ticketClass_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        ticketClass_2.setText("...");
 
-        jLabel13.setFont(new java.awt.Font("SimSun-ExtB", 0, 16)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel23.setText("Ticket Class:");
+
+        jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel24.setText("No. Passengers:");
+
+        amtTickets_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        amtTickets_2.setText("...");
+>>>>>>> Stashed changes
+
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("*Make sure all details are correct before paying");
 
+<<<<<<< Updated upstream
         jLabel3.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel3.setText("Passenger 1");
 
@@ -442,6 +522,44 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         dispPass4.setFont(new java.awt.Font("SimSun-ExtB", 1, 18)); // NOI18N
         dispPass4.setText("none");
 
+=======
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel3.setText("Passenger 1");
+
+        jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel26.setText("Passenger 2");
+
+        jLabel28.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel28.setText("Passenger 3");
+
+        jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel33.setText("Passenger 4");
+
+        dispPass2.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        dispPass2.setText("none");
+
+        dispPass3.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        dispPass3.setText("none");
+
+        dispPass1.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        dispPass1.setText("...");
+
+        dispPass4.setFont(new java.awt.Font("Times New Roman", 1, 17)); // NOI18N
+        dispPass4.setText("none");
+
+        jLabel34.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel34.setText("Station:");
+
+        company_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        company_2.setText("...");
+
+        station_2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        station_2.setText("...");
+
+        jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
+        jLabel35.setText("Company:");
+
+>>>>>>> Stashed changes
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(

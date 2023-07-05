@@ -6,6 +6,86 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< Updated upstream
+=======
+            "name": "UserProfile",
+            "request": "launch",
+            "mainClass": "UserProfile",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_3",
+            "request": "launch",
+            "mainClass": "TicketReservation_3",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_1",
+            "request": "launch",
+            "mainClass": "TicketReservation_1",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "RoutineMng",
+            "request": "launch",
+            "mainClass": "RoutineMng",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "ReviewSystem",
+            "request": "launch",
+            "mainClass": "ReviewSystem",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "RegisterForm",
+            "request": "launch",
+            "mainClass": "RegisterForm",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "LoginForm",
+            "request": "launch",
+            "mainClass": "LoginForm",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "HomePage",
+            "request": "launch",
+            "mainClass": "HomePage",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "Booking",
+            "request": "launch",
+            "mainClass": "Booking",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_2",
+            "request": "launch",
+            "mainClass": "TicketReservation_2",
+            "projectName": "TransModus_60cc58f0"
+        },
+        {
+            "type": "java",
+            "name": "TicketReservation_2",
+            "request": "launch",
+            "mainClass": "TicketReservation_2",
+            "projectName": "TransModus_dee9d71"
+        },
+        {
+            "type": "java",
+>>>>>>> Stashed changes
             "name": "Booking",
             "request": "launch",
             "mainClass": "Booking",
