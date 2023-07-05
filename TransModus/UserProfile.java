@@ -3,12 +3,11 @@ import javax.swing.JOptionPane;
 
 public class UserProfile extends javax.swing.JFrame {
 
-
     // Creates new form UserProfile
     public UserProfile() {
         initComponents();
         this.setLocationRelativeTo(null);
-        userInformation(HomePage.ActiveUser);
+        this.setAlwaysOnTop(true);
     }
 
     /**
@@ -20,7 +19,7 @@ public class UserProfile extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
+        pack();
         jTextField6 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -38,7 +37,7 @@ public class UserProfile extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         txtBirthDate = new javax.swing.JTextField();
-        
+        userInformation();
 
         jTextField6.setText("jTextField6");
 
@@ -226,13 +225,14 @@ public class UserProfile extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void userInformation(String ActiveUser) {
+    private void userInformation() {
+        String ActiveClient = HomePage.ActiveUser; //Struggles
     try {Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", ""); // Establish connection with SQL Database
         // Prepare the SQL statement to retrieve the data
-        PreparedStatement statement = connection.prepareStatement("SELECT firstname, lastname, login, phone_number, email, birthday_month, birthday_day, birthday_year FROM client WHERE client_id = ?");
-        statement.setString(1, ActiveUser);
+        PreparedStatement statement = connection.prepareStatement("SELECT client_id, firstname, lastname, login, ufn_FormatPhone(phone_number) AS phone_number, email, birthday_month, birthday_day, birthday_year FROM client WHERE client_id = ?");
+        statement.setString(1, ActiveClient);
         // Execute the query
-        ResultSet resultSet = statement.executeQuery();
+        try(ResultSet resultSet = statement.executeQuery()) {
 
         if (resultSet.next()) {
             // Retrieve the values from the result set
@@ -260,15 +260,18 @@ public class UserProfile extends javax.swing.JFrame {
             txtEmail.setText(email);
             txtBirthDate.setText(dateofBirth);
 
-            if (resultSet != null) {
-                resultSet.close();
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
             }
-            if (statement != null) {
-                statement.close();
-            }
-            if (connection != null) {
-                connection.close();
-            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     } catch (SQLException e) {
         e.printStackTrace();
@@ -306,7 +309,7 @@ public class UserProfile extends javax.swing.JFrame {
             try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root",
                     "");
                     PreparedStatement statement = connection.prepareStatement(
-                            "INSERT INTO client (firstname, lastname, login, birthday_month, birthday_day, birthday_year, phonenumber, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")) {
+                            "UPDATE client (firstname, lastname, login, birthday_month, birthday_day, birthday_year, ufn_FormatPhone(phone_number) AS phone_number, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")) {
 
                 // Prepare the SQL statement
                 statement.setString(1, firstname);
@@ -375,7 +378,7 @@ public class UserProfile extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGoBack;
     private javax.swing.JButton btnSave;
@@ -394,5 +397,6 @@ public class UserProfile extends javax.swing.JFrame {
     public javax.swing.JTextField txtFullName;
     public javax.swing.JTextField txtPhoneNum;
     public javax.swing.JTextField txtUsername;
+    HomePage hpg = new HomePage();
     // End of variables declaration//GEN-END:variables
 }

@@ -1,6 +1,6 @@
 public class HomePage extends javax.swing.JFrame {
-
-    // Creates new form HomePg
+    public static String ActiveUser; // User struggles
+    // Creates new form HomePage
     public HomePage() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -27,13 +27,12 @@ public class HomePage extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         dispUser = new javax.swing.JLabel();
-        ActiveClient = new javax.swing.JLabel();
+        ActiveClient = new javax.swing.JLabel("00001"); // Stuggling
         btnRoutineMng = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         btnAdminPanel = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        ActiveUser = ActiveClient.getText();
-
+        // @BREAKPOINT
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnTicketRes.setBackground(new java.awt.Color(204, 0, 0));
@@ -128,6 +127,10 @@ public class HomePage extends javax.swing.JFrame {
         dispUser.setText("*User Not Found*");
         jPanel1.add(dispUser);
         dispUser.setBounds(140, 106, 40, 40);
+
+        /*ActiveClient.setText("*User Not Found*");
+        jPanel1.add(ActiveClient);                      Attempts at getting User... Struggles
+        ActiveUser = ActiveClient.getText();*/
 
         btnRoutineMng.setBackground(new java.awt.Color(204, 0, 0));
         btnRoutineMng.setFont(new java.awt.Font("SimSun", 1, 16)); // NOI18N
@@ -327,7 +330,7 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JButton btnRoutineMng;
     private javax.swing.JButton btnTicketRes;
     public  javax.swing.JLabel dispUser;
-    public  javax.swing.JLabel ActiveClient;
+    public  javax.swing.JLabel ActiveClient; //struggles
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -337,6 +340,5 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    public static String ActiveUser;
     // End of variables declaration//GEN-END:variables
 }

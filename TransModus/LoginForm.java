@@ -158,11 +158,12 @@ public class LoginForm extends javax.swing.JFrame {
 
 
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
-             PreparedStatement statement = connection.prepareStatement("SELECT login, password, firstname, client_id FROM client WHERE login = ? AND password = ?")) {
+             PreparedStatement statement = connection.prepareStatement("SELECT login, email, password, firstname, LPAD(client_id, 5, '0') AS client_id FROM client WHERE login = ? OR email = ? AND password = ?")) {
 
             // Prepare the SQL statement
             statement.setString(1, login);
-            statement.setString(2, password);
+            statement.setString(2, login);
+            statement.setString(3, password);
 
 
             // Execute the query
@@ -172,7 +173,8 @@ public class LoginForm extends javax.swing.JFrame {
                     // If a match is found, take the user to the homepage
                     HomePage hpg = new HomePage();
                     hpg.dispUser.setText(resultSet.getString("firstname") + "!");
-                    hpg.ActiveClient.setText(resultSet.getString("client_id"));
+                    hpg.ActiveClient.setText(resultSet.getString("client_id")); // Struggling
+                    hpg.ActiveUser = resultSet.getString("client_id"); // Struggling Bad
                     hpg.setVisible(true);
                     hpg.pack();
                     this.dispose();
