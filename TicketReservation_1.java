@@ -11,12 +11,12 @@ public class TicketReservation_1 extends javax.swing.JFrame {
     public TicketReservation_1() {
         initComponents();
         this.setLocationRelativeTo(null);
+
         model = (DefaultTableModel) TransitTable.getModel();
-        
         returnDate.setEnabled(false);
-        passenger2.setEnabled(false);
-        passenger3.setEnabled(false);
-        passenger4.setEnabled(false);
+        passenger2.setText("none");
+        passenger3.setText("none");
+        passenger4.setText("none");
     }
 
     /**
@@ -238,11 +238,6 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
         amtTickets.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         amtTickets.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
-        amtTickets.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                amtTicketsActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -387,49 +382,49 @@ public class TicketReservation_1 extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(186, 186, 186)
+                        .addComponent(jLabel123)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 460, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(jLabel124)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
-                                .addComponent(btnChkTransport)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btnChkTransport))
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(jLabel123)
-                                .addGap(308, 308, 308))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGap(30, 30, 30)
-                                    .addComponent(jLabel117)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(origin, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(44, 44, 44)
-                                    .addComponent(jLabel118)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(destination, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGap(97, 97, 97)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel122)
-                                        .addComponent(jLabel121))
-                                    .addGap(40, 40, 40)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(tranMethod, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(tripType, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(jLabel119)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(departDate, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(27, 27, 27)
-                                    .addComponent(jLabel120)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(returnDate, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(147, 147, 147)
+                                        .addComponent(jLabel117)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(origin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(39, 39, 39)
+                                        .addComponent(jLabel118)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(destination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(121, 121, 121)
+                                        .addComponent(jLabel119)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(departDate, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(27, 27, 27)
+                                        .addComponent(jLabel120)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(returnDate, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel122)
+                            .addComponent(jLabel121))
+                        .addGap(40, 40, 40)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tranMethod, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tripType, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(236, 236, 236)))
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -452,8 +447,8 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(origin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel117)
-                            .addComponent(destination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel118))
+                            .addComponent(jLabel118)
+                            .addComponent(destination, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel119)
@@ -657,40 +652,55 @@ public class TicketReservation_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnTicketReviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTicketReviewActionPerformed
-        TicketReservation_2 trs2 = new TicketReservation_2();
-        trs2.tripType_2.setText(tripType.getSelectedItem().toString());
-        trs2.tranMethod_2.setText(tranMethod.getSelectedItem().toString());
-        trs2.departDate_2.setText(departDate.getText());
+        String departureDate = departDate.getText();
+        String client1 = passenger1.getText();
+        String client2 = passenger2.getText();
+        String client3 = passenger3.getText();
+        String client4 = passenger4.getText();
+        
+        Object from = origin.getSelectedItem();
+        Object to = destination.getSelectedItem();
 
-        if (tripType.getSelectedItem() == "One Way"){
-            trs2.returnDate_2.setText("none");
+        if (client1.isEmpty() || client2.isEmpty() || client3.isEmpty() || client4.isEmpty() || departureDate.isEmpty()) { 
+            JOptionPane.showMessageDialog(this,
+                    "Make sure all valid fields are filled out", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
-        else {
-            trs2.returnDate_2.setText(returnDate.getText());
-        }
+        else { // SEND REGISTRATION INFORMATION TO SQL DATABASE AND RETURN TO LOGIN PAGE
+            TicketReservation_2 trs2 = new TicketReservation_2();
+            trs2.tripType_2.setText(tripType.getSelectedItem().toString());
+            trs2.tranMethod_2.setText(tranMethod.getSelectedItem().toString());
+            trs2.departDate_2.setText(departDate.getText());
 
-        trs2.ticketClass_2.setText(ticketClass.getSelectedItem().toString());
-        trs2.amtTickets_2.setText(amtTickets.getSelectedItem().toString());
+            if (tripType.getSelectedItem() == "One Way"){
+                trs2.returnDate_2.setText("none");
+            }
+            else {
+                trs2.returnDate_2.setText(returnDate.getText());
+            }
 
-        trs2.dispPass1.setText(passenger1.getText());
-        trs2.dispPass2.setText(passenger2.getText());
-        trs2.dispPass3.setText(passenger3.getText());
-        trs2.dispPass4.setText(passenger4.getText());
+            trs2.ticketClass_2.setText(ticketClass.getSelectedItem().toString());
+            trs2.amtTickets_2.setText(amtTickets.getSelectedItem().toString());
 
-        int index = TransitTable.getSelectedRow();
-        TableModel model = TransitTable.getModel();
-        trs2.transitID_2.setText(model.getValueAt(index, 0).toString());
-        trs2.station_2.setText(model.getValueAt(index, 1).toString());
-        trs2.company_2.setText(model.getValueAt(index, 2).toString());
-        trs2.origin_2.setText(model.getValueAt(index, 3).toString());
-        trs2.destination_2.setText(model.getValueAt(index, 4).toString());
-        trs2.departTime_2.setText(model.getValueAt(index, 5).toString());
-        trs2.arriveTime_2.setText(model.getValueAt(index, 6).toString());
-        trs2.fare_2.setText(model.getValueAt(index, 7).toString());
+            trs2.dispPass1.setText(passenger1.getText());
+            trs2.dispPass2.setText(passenger2.getText());
+            trs2.dispPass3.setText(passenger3.getText());
+            trs2.dispPass4.setText(passenger4.getText());
 
-        trs2.setVisible(true);
-        trs2.pack();
-        this.dispose();
+            int index = TransitTable.getSelectedRow();
+            TableModel model = TransitTable.getModel();
+                trs2.transitID_2.setText(model.getValueAt(index, 0).toString());
+                trs2.station_2.setText(model.getValueAt(index, 1).toString());
+                trs2.company_2.setText(model.getValueAt(index, 2).toString());
+                trs2.origin_2.setText(model.getValueAt(index, 3).toString());
+                trs2.destination_2.setText(model.getValueAt(index, 4).toString());
+                trs2.departTime_2.setText(model.getValueAt(index, 5).toString());
+                trs2.arriveTime_2.setText(model.getValueAt(index, 6).toString());
+                trs2.fare_2.setText(model.getValueAt(index, 7).toString());
+
+            trs2.setVisible(true);
+            trs2.pack();
+            this.dispose();    
+        }   
     }//GEN-LAST:event_btnTicketReviewActionPerformed
 
     private void btnChkTransportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChkTransportActionPerformed
@@ -705,15 +715,6 @@ public class TicketReservation_1 extends javax.swing.JFrame {
             returnDate.setEnabled(true);
         }
     }//GEN-LAST:event_tripTypeActionPerformed
-
-    private void amtTicketsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amtTicketsActionPerformed
-        if (amtTickets.getSelectedItem() == "1") {
-            passenger2.setEnabled(false);
-        }
-        else {
-            passenger1.setEnabled(true);
-        }
-    }//GEN-LAST:event_amtTicketsActionPerformed
 
     private void btnChkTransport1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChkTransport1ActionPerformed
         // TODO add your handling code here:

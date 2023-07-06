@@ -555,18 +555,16 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         SecureRandom rand = new SecureRandom();
         int upperbound = 99999999;
         int lowerbound = 10000000;
-        int randomNum = rand.nextInt(lowerbound,upperbound);        
-
-        tfBookCode.setText(Integer.toString(randomNum));
+        int booking_code = rand.nextInt(lowerbound,upperbound);        
+        tfBookCode.setText(Integer.toString(booking_code));
         btnGenerateCode.setEnabled(false);
         btnHomePage.setEnabled(true);
         
+        // SQL STUFF GOES UNDER HERE    
+
     }//GEN-LAST:event_btnGenerateCodeActionPerformed
 
     private void btnHomePageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomePageActionPerformed
-        HomePage hpg = new HomePage();
-        hpg.setVisible(true);
-        hpg.pack();
         this.dispose();
     }//GEN-LAST:event_btnHomePageActionPerformed
 
