@@ -154,6 +154,11 @@ public class HomePage extends javax.swing.JFrame {
         btnAdminPanel.setFont(new java.awt.Font("SimSun", 1, 16)); // NOI18N
         btnAdminPanel.setForeground(new java.awt.Color(0, 0, 0));
         btnAdminPanel.setText("Admin Panel");
+        btnAdminPanel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAdminPanelPerformed(evt);
+            }
+        });
         jPanel1.add(btnAdminPanel);
         btnAdminPanel.setBounds(759, 160, 170, 30);
 
@@ -282,12 +287,19 @@ public class HomePage extends javax.swing.JFrame {
         bk.pack();
     }//GEN-LAST:event_btnBookingActionPerformed
 
-    // ADMIN PANEL
+    // ROUTINE MANAGER
     private void btnRoutineMngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRoutineMngActionPerformed
         RoutineMng rtm = new RoutineMng();
         rtm.setVisible(true);
         rtm.pack();
     }//GEN-LAST:event_btnRoutineMngActionPerformed
+
+    // ROUTINE MANAGER
+    private void btnAdminPanelPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminPanelPerformed
+        AdminPanel amp = new AdminPanel();
+        amp.setVisible(true);
+        amp.pack();
+    }//GEN-LAST:event_btnAdminPanelPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
