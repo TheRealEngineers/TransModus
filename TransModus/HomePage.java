@@ -1,5 +1,6 @@
 public class HomePage extends javax.swing.JFrame {
     public static String ActiveUser; // User struggles
+    static Object existingInstance;
     // Creates new form HomePage
     public HomePage() {
         initComponents();
@@ -27,13 +28,15 @@ public class HomePage extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         dispUser = new javax.swing.JLabel();
-        ActiveClient = new javax.swing.JLabel("00001"); // Stuggling
+        ActiveClient = new javax.swing.JLabel(); // Stuggling
         btnRoutineMng = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         btnAdminPanel = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        this.setUndecorated(false);
+
         // @BREAKPOINT
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         btnTicketRes.setBackground(new java.awt.Color(204, 0, 0));
         btnTicketRes.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
@@ -91,6 +94,7 @@ public class HomePage extends javax.swing.JFrame {
         btnProfile1.setText("User Profile");
         btnProfile1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dispose();
                 btnProfile1ActionPerformed(evt);
             }
         });
@@ -127,10 +131,6 @@ public class HomePage extends javax.swing.JFrame {
         dispUser.setText("*User Not Found*");
         jPanel1.add(dispUser);
         dispUser.setBounds(140, 106, 40, 40);
-
-        /*ActiveClient.setText("*User Not Found*");
-        jPanel1.add(ActiveClient);                      Attempts at getting User... Struggles
-        ActiveUser = ActiveClient.getText();*/
 
         btnRoutineMng.setBackground(new java.awt.Color(204, 0, 0));
         btnRoutineMng.setFont(new java.awt.Font("SimSun", 1, 16)); // NOI18N

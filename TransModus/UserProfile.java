@@ -1,4 +1,6 @@
 import java.sql.*;
+import java.util.Arrays;
+
 import javax.swing.JOptionPane;
 
 public class UserProfile extends javax.swing.JFrame {
@@ -38,6 +40,7 @@ public class UserProfile extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtBirthDate = new javax.swing.JTextField();
         userInformation();
+        
 
         jTextField6.setText("jTextField6");
 
@@ -243,6 +246,9 @@ public class UserProfile extends javax.swing.JFrame {
             String login = resultSet.getString("login");
            
             String phoneNumber = resultSet.getString("phone_number");
+                if (phoneNumber.equals("() -")) {
+                        phoneNumber = null;
+                }
             
             String email = resultSet.getString("email");
             
@@ -253,7 +259,7 @@ public class UserProfile extends javax.swing.JFrame {
 
 
             // Populate the text fields with the retrieved values
-            
+
             txtFullName.setText(name);
             txtUsername.setText(login);
             txtPhoneNum.setText(phoneNumber);
@@ -279,51 +285,73 @@ public class UserProfile extends javax.swing.JFrame {
 }
 
     private void btnGoBackActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnGoBackActionPerformed
-        this.dispose();
+        dispose();
+       // HomePage.setVisible(true); // makes so that it makes Existing HomePage visible
     }// GEN-LAST:event_btnGoBackActionPerformed
 
-    // Save changes made to the profile and override data in the SQL database
+// Save changes made to the profile and override data in the SQL database
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnSaveActionPerformed
+        String ActiveClient = HomePage.ActiveUser;
 
-        String name = txtFullName.getText();
+        String name = txtFullName.getText(); // has Full name
         String firstname;
         String lastname;
-        String login = txtUsername.getText();
-        String dateofbirth = txtBirthDate.getText();
 
-        String phonenumber = txtPhoneNum.getText();
+        String login = txtUsername.getText();
+
+        String birthMonth;
+        String birthDay;
+        String birthYear;
+        String dateOfBirth = txtBirthDate.getText();
+
+        String phoneNumber = txtPhoneNum.getText();
+                    if (phoneNumber.equals("() -")) {
+                phoneNumber = null;
+            }
         String email = txtEmail.getText();
 
-        if (name.isEmpty() || login.isEmpty() || dateofbirth.isEmpty() || email.isEmpty()) { // edit
+        if (name.isEmpty() || login.isEmpty() || dateOfBirth.isEmpty() || email.isEmpty()) { // edit
             JOptionPane.showMessageDialog(this,
                     "Please fill in all of the text fields", "ERROR", JOptionPane.ERROR_MESSAGE);
         } else {
-            String[] nameParts = name.split(" ");
+            
+                String[] nameParts = name.split(" ");
             if (nameParts.length >= 2) {
-                firstname = nameParts[0];
-                lastname = nameParts[1];
+                firstname = String.join(" ", Arrays.copyOfRange(nameParts, 0, nameParts.length - 1));
+                lastname = nameParts[nameParts.length - 1];
             } else {
                 firstname = name;
                 lastname = "";
             }
-            try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root",
-                    "");
-                    PreparedStatement statement = connection.prepareStatement(
-                            "UPDATE client (firstname, lastname, login, birthday_month, birthday_day, birthday_year, ufn_FormatPhone(phone_number) AS phone_number, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")) {
+
+                String[] birthParts = dateOfBirth.split(" |,"); //
+                birthMonth = birthParts[0];
+                birthMonth = birthMonth.substring(0, 3).toLowerCase().replaceFirst("\\w", String.valueOf(Character.toUpperCase(birthMonth.charAt(0))));
+                birthDay = birthParts[1];
+                birthYear = String.join("", Arrays.copyOfRange(birthParts, 2, birthParts.length));
+
+                phoneNumber = phoneNumber.replaceAll("\\D", "");
+
+            try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
+                    PreparedStatement statement = connection.prepareStatement("UPDATE client SET firstname = ?, lastname = ?, login = ?, birthday_month = ?, birthday_day = ?, birthday_year = ?, phone_number = ?, email = ? WHERE client_id = ?")) {
 
                 // Prepare the SQL statement
                 statement.setString(1, firstname);
                 statement.setString(2, lastname);
-                statement.setString(2, login);
-                statement.setString(3, dateofbirth);
-                statement.setString(4, phonenumber);
-                statement.setString(5, email);
+                statement.setString(3, login);
+                statement.setString(4, birthMonth);
+                statement.setString(5, birthDay);
+                statement.setString(6, birthYear);
+                statement.setString(7, phoneNumber);
+                statement.setString(8, email);
+                statement.setString(9, ActiveClient);
 
                 // Execute the SQL statement
                 int rowsAffected = statement.executeUpdate();
                 if (rowsAffected > 0) {
                     JOptionPane.showMessageDialog(this, "Your account has been successfully updated!");
                     HomePage hpg = new HomePage();
+                    hpg.dispUser.setText(firstname + "!");
                     hpg.setVisible(true);
                     hpg.pack();
                     this.dispose();
@@ -334,8 +362,9 @@ public class UserProfile extends javax.swing.JFrame {
             } catch (SQLException e) {
                 e.printStackTrace();
                 JOptionPane.showMessageDialog(this,
-                        "An error occurred while registering your account", "ERROR", JOptionPane.ERROR_MESSAGE);
+                        "An error occurred while saving changes, please try again.", "ERROR", JOptionPane.ERROR_MESSAGE);
             }
+
         }
     } // GEN-LAST:event_btnSaveActionPerformed
 

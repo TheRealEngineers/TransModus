@@ -1,3 +1,6 @@
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -5,6 +8,7 @@ import java.sql.SQLException;
 import java.time.Month;
 import java.util.Date;
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 public class RegisterForm extends javax.swing.JFrame {
 
@@ -42,7 +46,15 @@ public class RegisterForm extends javax.swing.JFrame {
         cbBirthYear = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                LoginForm lgf = new LoginForm();
+                lgf.setVisible(true); // Make the new window visible when the current window is closing
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("SimSun", 1, 36)); // NOI18N
         jLabel1.setText("User Registration");
@@ -256,6 +268,7 @@ public class RegisterForm extends javax.swing.JFrame {
                 new RegisterForm().setVisible(true);
             }
         });
+        SwingUtilities.invokeLater(() -> new RegisterForm());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

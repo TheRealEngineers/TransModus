@@ -362,7 +362,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         destination_2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         destination_2.setText("...");
 
-        returnDate_2.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
+        returnDate_2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         returnDate_2.setText("none");
 
         departDate_2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
@@ -375,7 +375,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         transitID_2.setText("...");
 
         jLabel8.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
-        jLabel8.setText("Arival Time:");
+        jLabel8.setText("Arrival Time:");
 
         jLabel11.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         jLabel11.setText("Transit ID:");
@@ -437,16 +437,16 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         jLabel33.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         jLabel33.setText("Passenger 4");
 
-        dispPass2.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
+        dispPass2.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         dispPass2.setText("none");
 
-        dispPass3.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
+        dispPass3.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         dispPass3.setText("none");
 
         dispPass1.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         dispPass1.setText("...");
 
-        dispPass4.setFont(new java.awt.Font("SimSun-ExtB", 1, 17)); // NOI18N
+        dispPass4.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
         dispPass4.setText("none");
 
         jLabel34.setFont(new java.awt.Font("SimSun-ExtB", 0, 17)); // NOI18N
@@ -557,8 +557,9 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(150, 150, 150)
                                     .addComponent(jLabel10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(returnDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addComponent(jLabel9)
@@ -570,6 +571,25 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                                     .addComponent(jLabel8)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(arriveTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+/*
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+    .addGroup(jPanel3Layout.createSequentialGroup()
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addGap(150, 150, 150)
+        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jLabel10)
+            .addComponent(returnDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+    .addGroup(jPanel3Layout.createSequentialGroup()
+        .addComponent(jLabel9)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(jLabel8)
+                .addComponent(departDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(departTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+        .addGap(50, 50, 50)
+        .addComponent(arriveTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+*/
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addGap(1, 1, 1)
                                 .addComponent(jLabel12)
@@ -599,12 +619,11 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
                     .addComponent(departDate_2)
-                    .addComponent(jLabel9))
-                    .addGap(18, 18, 18)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel10)
-                        .addComponent(returnDate_2))
+                    .addComponent(jLabel10)
+                    .addComponent(returnDate_2)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)

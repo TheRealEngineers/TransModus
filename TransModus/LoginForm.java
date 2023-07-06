@@ -1,4 +1,9 @@
 import java.sql.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.InputStream;
+
+import javax.sound.sampled.*;
 import javax.swing.JOptionPane;
 
 public class LoginForm extends javax.swing.JFrame {
@@ -28,6 +33,7 @@ public class LoginForm extends javax.swing.JFrame {
         btnRegister = new javax.swing.JButton();
         btnLogin = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -146,6 +152,7 @@ public class LoginForm extends javax.swing.JFrame {
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
         // Take user to the registration form
+        this.setVisible(false);
         RegisterForm rgf = new RegisterForm();
         rgf.setVisible(true);
         rgf.pack();
@@ -211,5 +218,6 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField tfPassword;
     private javax.swing.JTextField tfUsername;
+    String swishFX = "SoundFX/Swish_FX.wav";
     // End of variables declaration//GEN-END:variables
 }
