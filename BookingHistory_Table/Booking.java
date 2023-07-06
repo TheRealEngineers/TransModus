@@ -1,3 +1,6 @@
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+
 public class Booking extends javax.swing.JFrame {
 
     // Creates new form Booking
@@ -5,6 +8,9 @@ public class Booking extends javax.swing.JFrame {
     public Booking() {
         initComponents();
         this.setLocationRelativeTo(null);
+        
+        DefaultTableModel model;
+        model = (DefaultTableModel) BookingTable.getModel();
     }
 
     /**
@@ -21,7 +27,7 @@ public class Booking extends javax.swing.JFrame {
         btnHome = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        BookHistTable = new javax.swing.JTable();
+        BookingTable = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -36,17 +42,17 @@ public class Booking extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(394, 394, 394)
                 .addComponent(jLabel5)
-                .addGap(330, 330, 330))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(8, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
         btnHome.setBackground(new java.awt.Color(179, 0, 0));
@@ -64,8 +70,8 @@ public class Booking extends javax.swing.JFrame {
 
         jScrollPane3.setFont(new java.awt.Font("SimSun", 0, 36)); // NOI18N
 
-        BookHistTable.setFont(new java.awt.Font("SimSun", 0, 14)); // NOI18N
-        BookHistTable.setModel(new javax.swing.table.DefaultTableModel(
+        BookingTable.setFont(new java.awt.Font("SimSun", 0, 14)); // NOI18N
+        BookingTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 { new Integer(98430235),  new Integer(5336), "LA Union", "Greyhound", "Northridge", "San Francisco", "6:15 am", "5:30 pm",  new Float(143.55), "BOOKED"}
             },
@@ -81,8 +87,8 @@ public class Booking extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        BookHistTable.getTableHeader().setReorderingAllowed(false);
-        jScrollPane3.setViewportView(BookHistTable);
+        BookingTable.getTableHeader().setReorderingAllowed(false);
+        jScrollPane3.setViewportView(BookingTable);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -90,13 +96,14 @@ public class Booking extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(371, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(223, 223, 223))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(294, 294, 294)
+                        .addComponent(jLabel1)))
+                .addContainerGap(300, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
@@ -109,9 +116,9 @@ public class Booking extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnHome)
-                .addGap(18, 18, 18)
+                .addGap(26, 26, 26)
                 .addComponent(jLabel1)
-                .addContainerGap(196, Short.MAX_VALUE))
+                .addContainerGap(188, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(174, 174, 174)
@@ -162,7 +169,7 @@ public class Booking extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable BookHistTable;
+    private javax.swing.JTable BookingTable;
     private javax.swing.JButton btnHome;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
