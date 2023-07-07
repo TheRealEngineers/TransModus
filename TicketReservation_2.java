@@ -6,8 +6,11 @@ public class TicketReservation_2 extends javax.swing.JFrame {
     // Creates new form TicketReservation_2
     public TicketReservation_2() {
         initComponents();
-        this.setLocationRelativeTo(null); 
+        this.setLocationRelativeTo(null);
         
+        tfSubtotal.setEnabled(false);
+        tfTaxes.setEnabled(false);
+        tfTotalCost.setEnabled(false);
         holder_name.setEnabled(false);
         holder_email.setEnabled(false);
         holder_address.setEnabled(false);
@@ -283,9 +286,9 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                     .addComponent(jLabel27)
                     .addComponent(holder_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel30)
-                    .addComponent(holder_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(holder_address, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel30))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21)
@@ -737,26 +740,24 @@ public class TicketReservation_2 extends javax.swing.JFrame {
             trs3.tranMethod_3.setText(tranMethod_2.getText());
             trs3.amtTickets_3.setText(amtTickets_2.getText());
 
-            trs3.dispDepartDate2.setText(departDate_2.getText());
-            trs3.dispFrom2.setText(origin_2.getText());
-            trs3.dispDepartTime2.setText(departTime_2.getText());
+            trs3.departDate_3.setText(departDate_2.getText());
+            trs3.origin_3.setText(origin_2.getText());
+            trs3.departTime_3.setText(departTime_2.getText());
 
-            trs3.dispTo2.setText(destination_2.getText());
-            trs3.dispArriveTime2.setText(arriveTime_2.getText());
+            trs3.destination_3.setText(destination_2.getText());
+            trs3.arriveTime_3.setText(arriveTime_2.getText());
 
             trs3.dispClient1.setText(dispPass1.getText());
             trs3.dispClient2.setText(dispPass2.getText());
             trs3.dispClient3.setText(dispPass3.getText());
             trs3.dispClient4.setText(dispPass4.getText());
+            trs3.paidAmt_3.setText(tfTotalCost.getText());
 
             trs3.setVisible(true);
             trs3.pack();
             this.dispose();            
 
         }  
-
-        
-
     }//GEN-LAST:event_btnPaymentConfActionPerformed
 
     private void btnCalcFareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcFareActionPerformed
@@ -804,6 +805,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
             }
         }
         
+        btnCalcFare.setEnabled(false);
         holder_name.setEnabled(true);
         holder_email.setEnabled(true);
         holder_address.setEnabled(true);
