@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="ANALYZE_INJECTED_CODE" value="false" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="Testing Version 3 (images)">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d1de71b0-dbf9-43db-a718-d98f761b6b22.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/TransModus_Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/TransModus_Database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_1.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_1.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_2.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_2.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_3.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_3.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketReservation_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/TicketReservation_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/HomePage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/RegisterForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile.java" beforeDir="false" />
-=======
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-53 Testing Version 2.5 (Just in case :D)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 93fe10af7e8f6686a804d9dfa20e338634acd894
-    </list>
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TRS-53-Test-Debug-Sprint-2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,89 +29,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "TestingBranch-Sprint1",
+    "git-widget-placeholder": "TRS-55-Test-Debug-Sprint-4",
     "last_opened_file_path": "/Users/justchance/Desktop/projects/TransModus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
-    ],
-    "RunConfigurationTargetLRU": [
-      "d1de71b0-dbf9-43db-a718-d98f761b6b22",
-      "d1de71b0-dbf9-43db-a718-d98f761b6b22/schema/\"TransModus\""
-    ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
-      "MySQL"
     ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TransModus" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Ticket Reservation" />
-      <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="TransModus_Booking.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/Database/TransModus_Booking.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="d1de71b0-dbf9-43db-a718-d98f761b6b22" namespace="schema/&quot;TransModus&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TransModus_Database.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/Database/TransModus_Database.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="d1de71b0-dbf9-43db-a718-d98f761b6b22" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app1.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app1.js" working-dir="$PROJECT_DIR$/web">
-      <method v="2" />
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TRS-14-Booking-History&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/justchance/Desktop/projects/TransModus&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Transmodus" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Transmodus" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
->>>>>>> 93fe10af7e8f6686a804d9dfa20e338634acd894
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -143,43 +53,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686334419147</updated>
-<<<<<<< HEAD
-      <workItem from="1687555046415" duration="253000" />
-      <workItem from="1687555302474" duration="815000" />
-      <workItem from="1687556121160" duration="2603000" />
-      <workItem from="1687716571559" duration="1400000" />
-      <workItem from="1687731073112" duration="21167000" />
-=======
-      <workItem from="1687909140186" duration="71000" />
-      <workItem from="1687909213147" duration="36000" />
-      <workItem from="1687909251644" duration="7000" />
->>>>>>> 93fe10af7e8f6686a804d9dfa20e338634acd894
     </task>
-    <task id="LOCAL-00001" summary="Testing Version 1">
+    <task id="LOCAL-00001" summary="TRS-55 Version 5 (Pulled from TRS 14, 19, &amp; 39. Edited AdminPanel.java and HomePage.java)">
       <option name="closed" value="true" />
-      <created>1687731184030</created>
+      <created>1688687761104</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1687731184030</updated>
+      <updated>1688687761104</updated>
     </task>
-    <task id="LOCAL-00002" summary="Testing Version 2">
+    <task id="LOCAL-00002" summary="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)">
       <option name="closed" value="true" />
-      <created>1687821447515</created>
+      <created>1688720208656</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1687821447515</updated>
+      <updated>1688720208656</updated>
     </task>
-    <task id="LOCAL-00003" summary="Testing Version 3 (images)">
-      <option name="closed" value="true" />
-      <created>1687821971869</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1687821971869</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,17 +87,6 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/TRS-30-Database-Setup" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
             </State>
           </value>
         </entry>
@@ -214,9 +94,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Testing Version 1" />
-    <MESSAGE value="Testing Version 2" />
-    <MESSAGE value="Testing Version 3 (images)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Version 3 (images)" />
+    <MESSAGE value="TRS-55 Version 5 (Pulled from TRS 14, 19, &amp; 39. Edited AdminPanel.java and HomePage.java)" />
+    <MESSAGE value="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)" />
   </component>
 </project>

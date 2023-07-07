@@ -65,6 +65,9 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         paidAmt_3 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
 
+        this.setUndecorated(true);
+
+        this.setUndecorated(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Sitka Banner", 0, 30)); // NOI18N

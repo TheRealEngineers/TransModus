@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS client (
     `password` VARCHAR(50) NOT NULL,
     `birthday_month` CHAR(3) NOT NULL,
     `birthday_day` INT(2) NOT NULL,
-    `birthday_year` INT(4) NOT NULL
+    `birthday_year` INT(4) NOT NULL,
+    `phone_number` VARCHAR(10) DEFAULT NULL
 );
 
 ALTER TABLE client AUTO_INCREMENT = 1;
@@ -45,6 +46,8 @@ DELETE c1 FROM client c1
 -- Will remove the users without email?
 DELETE FROM client WHERE email = '';
 
+
+
 -- Retrieve data from the table (permanently)
 -- TransModus User Database
 SELECT
@@ -56,7 +59,8 @@ SELECT
     password,
     (CONCAT(UCASE(LEFT(birthday_month, 1)),LCASE(SUBSTRING(birthday_month, 2)))) AS birthday_month,
     birthday_day,
-    birthday_year
+    birthday_year,
+    ufn_FormatPhone(phone_number) AS phone_number
 FROM
     client
 WHERE

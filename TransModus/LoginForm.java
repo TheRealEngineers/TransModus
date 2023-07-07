@@ -1,9 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Scanner;
+import java.sql.*;
 import javax.swing.JOptionPane;
 
 public class LoginForm extends javax.swing.JFrame {
@@ -33,6 +28,7 @@ public class LoginForm extends javax.swing.JFrame {
         btnRegister = new javax.swing.JButton();
         btnLogin = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,7 +57,7 @@ public class LoginForm extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
-                .addGap(300, 300, 300))
+                .addGap(291, 291, 291))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -73,7 +69,7 @@ public class LoginForm extends javax.swing.JFrame {
 
         btnRegister.setBackground(new java.awt.Color(179, 0, 0));
         btnRegister.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        btnRegister.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegister.setForeground(new java.awt.Color(0, 0, 0));
         btnRegister.setText("REGISTER");
         btnRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,14 +79,13 @@ public class LoginForm extends javax.swing.JFrame {
 
         btnLogin.setBackground(new java.awt.Color(179, 0, 0));
         btnLogin.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setForeground(new java.awt.Color(0, 0, 0));
         btnLogin.setText("LOGIN");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
                     btnLoginActionPerformed(evt);
                 } catch (ClassNotFoundException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             }
@@ -152,6 +147,7 @@ public class LoginForm extends javax.swing.JFrame {
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
         // Take user to the registration form
+        this.setVisible(false);
         RegisterForm rgf = new RegisterForm();
         rgf.setVisible(true);
         rgf.pack();
@@ -162,13 +158,15 @@ public class LoginForm extends javax.swing.JFrame {
         String login = tfUsername.getText();
         String password = new String(tfPassword.getPassword());
 
-       
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "Cubbie17");
-             PreparedStatement statement = connection.prepareStatement("SELECT login, password FROM client WHERE login = ? AND password = ?")) {
+
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com:3306/sql9630816", "sql9630816", "xPzHtpjvSw");
+             PreparedStatement statement = connection.prepareStatement("SELECT login, email, password, firstname, LPAD(client_id, 5, '0') AS client_id FROM client WHERE login = ? OR email = ? AND password = ?")) {
 
             // Prepare the SQL statement
             statement.setString(1, login);
-            statement.setString(2, password);
+            statement.setString(2, login);
+            statement.setString(3, password);
+
 
             // Execute the query
             try (ResultSet resultSet = statement.executeQuery()) {
@@ -176,6 +174,9 @@ public class LoginForm extends javax.swing.JFrame {
                 if (resultSet.next()) {
                     // If a match is found, take the user to the homepage
                     HomePage hpg = new HomePage();
+                    hpg.dispUser.setText(resultSet.getString("firstname") + "!");
+                    hpg.ActiveClient.setText(resultSet.getString("client_id")); // Struggling
+                    hpg.ActiveUser = resultSet.getString("client_id"); // Struggling Bad
                     hpg.setVisible(true);
                     hpg.pack();
                     this.dispose();
@@ -212,5 +213,6 @@ public class LoginForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField tfPassword;
     private javax.swing.JTextField tfUsername;
+    String swishFX = "SoundFX/Swish_FX.wav";
     // End of variables declaration//GEN-END:variables
 }

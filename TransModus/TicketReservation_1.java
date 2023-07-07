@@ -80,6 +80,8 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         CancelTable = new javax.swing.JTable();
 
+        this.setUndecorated(true);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
