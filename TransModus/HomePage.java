@@ -1,3 +1,6 @@
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 public class HomePage extends javax.swing.JFrame {
     public static String ActiveUser; // User struggles
     static Object existingInstance;
@@ -37,7 +40,15 @@ public class HomePage extends javax.swing.JFrame {
         this.setUndecorated(false);
 
         // @BREAKPOINT
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                // Shut down the program when the window is closed
+                System.exit(0);
+            }
+        });
+
+
 
         btnTicketRes.setBackground(new java.awt.Color(204, 0, 0));
         btnTicketRes.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
@@ -111,9 +122,9 @@ public class HomePage extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(293, 293, 293)
+                .addGap(285, 285, 285)
                 .addComponent(jLabel5)
-                .addContainerGap(294, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,18 +143,6 @@ public class HomePage extends javax.swing.JFrame {
         jPanel1.add(dispUser);
         dispUser.setBounds(140, 106, 40, 40);
 
-        btnRoutineMng.setBackground(new java.awt.Color(204, 0, 0));
-        btnRoutineMng.setFont(new java.awt.Font("SimSun", 1, 16)); // NOI18N
-        btnRoutineMng.setForeground(new java.awt.Color(0, 0, 0));
-        btnRoutineMng.setText("Routine Manager");
-        btnRoutineMng.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRoutineMngActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnRoutineMng);
-        btnRoutineMng.setBounds(760, 120, 170, 30);
-
         jLabel8.setFont(new java.awt.Font("SimSun", 3, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(204, 0, 0));
         jLabel8.setText("Welcome,");
@@ -153,14 +152,14 @@ public class HomePage extends javax.swing.JFrame {
         btnAdminPanel.setBackground(new java.awt.Color(204, 0, 0));
         btnAdminPanel.setFont(new java.awt.Font("SimSun", 1, 16)); // NOI18N
         btnAdminPanel.setForeground(new java.awt.Color(0, 0, 0));
-        btnAdminPanel.setText("Admin Panel");
+        btnAdminPanel.setText("Admin HP");
         btnAdminPanel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAdminPanelPerformed(evt);
+                btnAdminPanelActionPerformed(evt);
             }
         });
         jPanel1.add(btnAdminPanel);
-        btnAdminPanel.setBounds(759, 160, 170, 30);
+        btnAdminPanel.setBounds(710, 135, 170, 30);
 
         jLabel6.setIcon(new javax.swing.ImageIcon("Image/TransModus_BG_2.jpg")); // NOI18N
 
@@ -189,18 +188,12 @@ public class HomePage extends javax.swing.JFrame {
                 .addGap(470, 470, 470)
                 .addComponent(btnBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(759, 759, 759)
-                .addComponent(btnAdminPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(760, 760, 760)
-                .addComponent(btnRoutineMng, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(690, 690, 690)
                 .addComponent(btnRatingSystem, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(250, 250, 250)
                 .addComponent(btnTicketRes, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 965, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(btnProfile1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -228,12 +221,6 @@ public class HomePage extends javax.swing.JFrame {
                         .addGap(400, 400, 400)
                         .addComponent(btnBooking, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(btnAdminPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(btnRoutineMng, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(400, 400, 400)
                         .addComponent(btnRatingSystem, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -259,7 +246,7 @@ public class HomePage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    // RATING SYSTEM
+    // REVIEW SYSTEM
     private void btnRatingSystemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRatingSystemActionPerformed
         ReviewSystem rev = new ReviewSystem();  
         rev.setVisible(true);
@@ -287,19 +274,12 @@ public class HomePage extends javax.swing.JFrame {
         bk.pack();
     }//GEN-LAST:event_btnBookingActionPerformed
 
-    // ROUTINE MANAGER
-    private void btnRoutineMngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRoutineMngActionPerformed
-        RoutineMng rtm = new RoutineMng();
-        rtm.setVisible(true);
-        rtm.pack();
-    }//GEN-LAST:event_btnRoutineMngActionPerformed
-
-    // ROUTINE MANAGER
-    private void btnAdminPanelPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminPanelPerformed
-        AdminPanel amp = new AdminPanel();
-        amp.setVisible(true);
-        amp.pack();
-    }//GEN-LAST:event_btnAdminPanelPerformed
+    // ADMIN PANEL & ROUTINE MANAGER
+    private void btnAdminPanelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdminPanelActionPerformed
+        AdminPanel adp = new AdminPanel();
+        adp.setVisible(true);
+        adp.pack();
+    }//GEN-LAST:event_btnAdminPanelActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

@@ -1,12 +1,13 @@
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import java.util.Scanner;
 
 public class RoutineMng extends javax.swing.JFrame {
     
     DefaultTableModel model;
     DefaultTableModel model_2;
     DefaultTableModel model_3;
-    
+
     // Creates new form RoutineMng
     public RoutineMng() {
         initComponents();
@@ -100,8 +101,6 @@ public class RoutineMng extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         txtPlaneCompany = new javax.swing.JTextField();
         txtPlaneStation = new javax.swing.JTextField();
-
-        this.setUndecorated(true);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
