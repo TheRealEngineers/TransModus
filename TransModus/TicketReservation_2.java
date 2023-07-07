@@ -1,9 +1,23 @@
+
+import javax.swing.JOptionPane;
+
 public class TicketReservation_2 extends javax.swing.JFrame {
 
     // Creates new form TicketReservation_2
     public TicketReservation_2() {
         initComponents();
-        this.setLocationRelativeTo(null); 
+        this.setLocationRelativeTo(null);
+        
+        tfSubtotal.setEnabled(false);
+        tfTaxes.setEnabled(false);
+        tfTotalCost.setEnabled(false);
+        holder_name.setEnabled(false);
+        holder_email.setEnabled(false);
+        holder_address.setEnabled(false);
+        holder_card.setEnabled(false);
+        card_CSC.setEnabled(false);
+        cbExpMonth.setEnabled(false);
+        cbExpYear.setEnabled(false);
     }
 
     /**
@@ -22,7 +36,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         btnPaymentConf = new javax.swing.JButton();
         btnGoBack = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
-        tfCardNum = new javax.swing.JPasswordField();
+        holder_card = new javax.swing.JPasswordField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -32,7 +46,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         tfTaxes = new javax.swing.JTextField();
         tfTotalCost = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        tfHolderName = new javax.swing.JTextField();
+        holder_name = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
@@ -41,9 +55,9 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         cbExpYear = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         cbExpMonth = new javax.swing.JComboBox<>();
-        tfCSC1 = new javax.swing.JPasswordField();
-        tfHolderEmail = new javax.swing.JTextField();
-        tfBillAddress = new javax.swing.JTextField();
+        card_CSC = new javax.swing.JPasswordField();
+        holder_email = new javax.swing.JTextField();
+        holder_address = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnHome = new javax.swing.JButton();
@@ -116,7 +130,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("SimSun-ExtB", 0, 36)); // NOI18N
         jLabel15.setText("Payment Process");
 
-        tfCardNum.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
+        holder_card.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel16.setText("Card Security Code (CSC):");
@@ -145,7 +159,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel21.setText("Card Number:");
 
-        tfHolderName.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        holder_name.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
 
         jLabel25.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel25.setText("Cardholder Name:");
@@ -171,11 +185,11 @@ public class TicketReservation_2 extends javax.swing.JFrame {
         cbExpMonth.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         cbExpMonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
 
-        tfCSC1.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
+        card_CSC.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
 
-        tfHolderEmail.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        holder_email.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
 
-        tfBillAddress.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
+        holder_address.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -185,15 +199,19 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(btnGoBack, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnPaymentConf, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(35, 35, 35)
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(jLabel16)
                                         .addGap(18, 18, 18)
-                                        .addComponent(tfCSC1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                        .addComponent(card_CSC, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addGap(66, 66, 66)
                                         .addComponent(jLabel32)
                                         .addGap(28, 28, 28)
@@ -202,33 +220,26 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                                         .addComponent(jLabel17)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(cbExpYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel27)
-                                                .addComponent(jLabel25))
-                                            .addGap(18, 18, 18)
-                                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(tfHolderName, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
-                                                .addComponent(tfHolderEmail)))
-                                        .addGroup(jPanel4Layout.createSequentialGroup()
-                                            .addGap(9, 9, 9)
-                                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel21)
-                                                .addComponent(jLabel30))
-                                            .addGap(18, 18, 18)
-                                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                                    .addComponent(tfCardNum, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(0, 155, Short.MAX_VALUE))
-                                                .addComponent(tfBillAddress))))))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel27)
+                                            .addComponent(jLabel25))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(holder_name, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
+                                            .addComponent(holder_email)))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addGap(9, 9, 9)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel21)
+                                            .addComponent(jLabel30))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(holder_card, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(holder_address, javax.swing.GroupLayout.PREFERRED_SIZE, 468, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addComponent(jLabel31)
                             .addComponent(jLabel29))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(btnGoBack, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnPaymentConf, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
@@ -269,23 +280,23 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(tfHolderName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(holder_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
-                    .addComponent(tfHolderEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(holder_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel30)
-                    .addComponent(tfBillAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(holder_address, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel30))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21)
-                    .addComponent(tfCardNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(holder_card, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(tfCSC1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(card_CSC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -551,29 +562,28 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                                 .addComponent(jLabel3)
                                 .addGap(31, 31, 31)
                                 .addComponent(dispPass1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGap(27, 27, 27)
+                            .addComponent(jLabel12)
+                            .addGap(189, 189, 189))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                            .addGap(26, 26, 26)
+                            .addComponent(jLabel9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel10)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(returnDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(jLabel9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(departTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(departDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(departTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(51, 51, 51)
                                     .addComponent(jLabel8)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(arriveTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addComponent(jLabel12)
-                                .addGap(189, 189, 189)))))
+                                    .addComponent(arriveTime_2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel3Layout.createSequentialGroup()
+                                    .addComponent(departDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(47, 47, 47)
+                                    .addComponent(jLabel10)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(returnDate_2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -604,12 +614,13 @@ public class TicketReservation_2 extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(returnDate_2))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(arriveTime_2)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel12)
-                        .addComponent(departTime_2)))
+                        .addComponent(departTime_2))
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel8)
+                        .addComponent(arriveTime_2)))
                 .addGap(17, 17, 17)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -706,30 +717,47 @@ public class TicketReservation_2 extends javax.swing.JFrame {
     // Continue to the third page where ticket info is displayed
     // Button will be greyed out until user picks a bus train or plane from the table
     private void btnPaymentConfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPaymentConfActionPerformed
-        TicketReservation_3 trs3 = new TicketReservation_3();
-        trs3.station_3.setText(station_2.getText());
-        trs3.company_3.setText(company_2.getText());
+        String name = holder_name.getText();
+        String email = holder_email.getText();
+        String address = holder_address.getText();
+        String card = holder_card.getText();
+        String csc = card_CSC.getText();
+
+        if (name.isEmpty() || email.isEmpty() || address.isEmpty() || card.isEmpty() || csc.isEmpty()) { 
+            JOptionPane.showMessageDialog(this,
+                    "Payment could not be processed. "
+                            + "Please make sure all fields are correctly filled in.", "ERROR", JOptionPane.ERROR_MESSAGE);
+        }
+        else {
+            JOptionPane.showMessageDialog(this, "Your payment has been successfully processed!");
         
-        trs3.transitID_3.setText(transitID_2.getText());
-        trs3.ticketClass_3.setText(ticketClass_2.getText());
-        trs3.tranMethod_3.setText(tranMethod_2.getText());
-        trs3.amtTickets_3.setText(amtTickets_2.getText());
-        
-        trs3.dispDepartDate2.setText(departDate_2.getText());
-        trs3.dispFrom2.setText(origin_2.getText());
-        trs3.dispDepartTime2.setText(departTime_2.getText());
-        
-        trs3.dispTo2.setText(destination_2.getText());
-        trs3.dispArriveTime2.setText(arriveTime_2.getText());
-        
-        trs3.dispClient1.setText(dispPass1.getText());
-        trs3.dispClient2.setText(dispPass2.getText());
-        trs3.dispClient3.setText(dispPass3.getText());
-        trs3.dispClient4.setText(dispPass4.getText());
-        
-        trs3.setVisible(true);
-        trs3.pack();
-        this.dispose();
+            TicketReservation_3 trs3 = new TicketReservation_3();
+            trs3.station_3.setText(station_2.getText());
+            trs3.company_3.setText(company_2.getText());
+
+            trs3.transitID_3.setText(transitID_2.getText());
+            trs3.ticketClass_3.setText(ticketClass_2.getText());
+            trs3.tranMethod_3.setText(tranMethod_2.getText());
+            trs3.amtTickets_3.setText(amtTickets_2.getText());
+
+            trs3.departDate_3.setText(departDate_2.getText());
+            trs3.origin_3.setText(origin_2.getText());
+            trs3.departTime_3.setText(departTime_2.getText());
+
+            trs3.destination_3.setText(destination_2.getText());
+            trs3.arriveTime_3.setText(arriveTime_2.getText());
+
+            trs3.dispClient1.setText(dispPass1.getText());
+            trs3.dispClient2.setText(dispPass2.getText());
+            trs3.dispClient3.setText(dispPass3.getText());
+            trs3.dispClient4.setText(dispPass4.getText());
+            trs3.paidAmt_3.setText(tfTotalCost.getText());
+
+            trs3.setVisible(true);
+            trs3.pack();
+            this.dispose();            
+
+        }  
     }//GEN-LAST:event_btnPaymentConfActionPerformed
 
     private void btnCalcFareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcFareActionPerformed
@@ -774,8 +802,17 @@ public class TicketReservation_2 extends javax.swing.JFrame {
 
                 float totalCost = subtotal + taxFee;
                     tfTotalCost.setText(String.valueOf(totalCost));
-            } 
+            }
         }
+        
+        btnCalcFare.setEnabled(false);
+        holder_name.setEnabled(true);
+        holder_email.setEnabled(true);
+        holder_address.setEnabled(true);
+        holder_card.setEnabled(true);
+        card_CSC.setEnabled(true);
+        cbExpMonth.setEnabled(true);
+        cbExpYear.setEnabled(true);        
     }//GEN-LAST:event_btnCalcFareActionPerformed
 
     
@@ -798,6 +835,7 @@ public class TicketReservation_2 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.JPasswordField card_CSC;
     private javax.swing.JComboBox<String> cbExpMonth;
     private javax.swing.JComboBox<String> cbExpYear;
     public javax.swing.JLabel company_2;
@@ -809,6 +847,10 @@ public class TicketReservation_2 extends javax.swing.JFrame {
     public javax.swing.JLabel dispPass3;
     public javax.swing.JLabel dispPass4;
     public javax.swing.JLabel fare_2;
+    private javax.swing.JTextField holder_address;
+    private javax.swing.JPasswordField holder_card;
+    private javax.swing.JTextField holder_email;
+    private javax.swing.JTextField holder_name;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -852,11 +894,6 @@ public class TicketReservation_2 extends javax.swing.JFrame {
     public javax.swing.JLabel origin_2;
     public javax.swing.JLabel returnDate_2;
     public javax.swing.JLabel station_2;
-    private javax.swing.JTextField tfBillAddress;
-    private javax.swing.JPasswordField tfCSC1;
-    private javax.swing.JPasswordField tfCardNum;
-    private javax.swing.JTextField tfHolderEmail;
-    private javax.swing.JTextField tfHolderName;
     private javax.swing.JTextField tfSubtotal;
     private javax.swing.JTextField tfTaxes;
     private javax.swing.JTextField tfTotalCost;
