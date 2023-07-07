@@ -141,9 +141,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         TransitTable.setFont(new java.awt.Font("SimSun", 0, 14)); // NOI18N
         TransitTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                { new Integer(5336), "LA Union", "Greyhound", "Northridge", "San Francisco", "6:15 am", "5:30 pm",  new Integer(67)},
-                { new Integer(8743), "LA Union", "AmTrak", "Los Angeles", "San Diego", "9:00 am", "12:15 pm",  new Integer(82)},
-                { new Integer(9846), "LAS", "Delta", "Las Vegas", "Houston", "1:45 pm", "3:15 pm",  new Integer(110)}
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
                 "Transit ID", "Station", "Company", "Origin", "Destination", "Departure Time", "Arrival Time", "Fare"
@@ -190,13 +188,13 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         });
 
         origin.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
-        origin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", "--Bus", "Los Angeles", "Northridge", "San Francisco", "Northridge", " ", "--Train", "Los Angeles", "San Francisco", "San Diego", "Sacramento", " ", "--Plane", "Las Vegas", "Houston", "Salt Lake City" }));
+        origin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", " ", "-- Arizona", "Phoenix", "Mesa", "Tucson", " ", "--California", "Los Angeles", "San Francisco", "San Diego", "Sacramento", " ", "-- Illinois", "Chicago", "Springfield", " ", "-- Nevada", "Las Vegas", "Henderson", "Reno", " ", "-- Texas", "Houston", "Dallas", "San Antonio", " ", "-- Utah", "Salt Lake City", "Ogden", "Provo", "St. George", " ", "-- Washington", "Seattle", "Vacnouver", "Bellingham", " ", "-- New York", "New York City", "Manhattan", "Queens" }));
 
         tranMethod.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
         tranMethod.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bus", "Train", "Plane" }));
 
         destination.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
-        destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", "--Bus", "Los Angeles", "Northridge", "San Francisco", "Northridge", " ", "--Train", "Los Angeles", "San Francisco", "San Diego", "Sacramento", " ", "--Plane", "Las Vegas", "Houston", "Salt Lake City" }));
+        destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", " ", "-- Arizona", "Phoenix", "Mesa", "Tucson", " ", "--California", "Los Angeles", "San Francisco", "San Diego", "Sacramento", " ", "-- Illinois", "Chicago", "Springfield", " ", "-- Nevada", "Las Vegas", "Henderson", "Reno", " ", "-- Texas", "Houston", "Dallas", "San Antonio", " ", "-- Utah", "Salt Lake City", "Ogden", "Provo", "St. George", " ", "-- Washington", "Seattle", "Vacnouver", "Bellingham", " ", "-- New York", "New York City", "Manhattan", "Queens" }));
 
         jLabel122.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel122.setText("Transit Method");

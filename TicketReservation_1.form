@@ -292,47 +292,15 @@
                       <Font name="SimSun" size="14" style="0"/>
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="8" rowCount="3">
-                        <Column editable="false" title="Transit ID" type="java.lang.Integer">
-                          <Data value="5336"/>
-                          <Data value="8743"/>
-                          <Data value="9846"/>
-                        </Column>
-                        <Column editable="true" title="Station" type="java.lang.String">
-                          <Data value="LA Union"/>
-                          <Data value="LA Union"/>
-                          <Data value="LAS"/>
-                        </Column>
-                        <Column editable="true" title="Company" type="java.lang.String">
-                          <Data value="Greyhound"/>
-                          <Data value="AmTrak"/>
-                          <Data value="Delta"/>
-                        </Column>
-                        <Column editable="false" title="Origin" type="java.lang.String">
-                          <Data value="Northridge"/>
-                          <Data value="Los Angeles"/>
-                          <Data value="Las Vegas"/>
-                        </Column>
-                        <Column editable="false" title="Destination" type="java.lang.String">
-                          <Data value="San Francisco"/>
-                          <Data value="San Diego"/>
-                          <Data value="Houston"/>
-                        </Column>
-                        <Column editable="true" title="Departure Time" type="java.lang.Object">
-                          <Data value="6:15 am"/>
-                          <Data value="9:00 am"/>
-                          <Data value="1:45 pm"/>
-                        </Column>
-                        <Column editable="false" title="Arrival Time" type="java.lang.Object">
-                          <Data value="5:30 pm"/>
-                          <Data value="12:15 pm"/>
-                          <Data value="3:15 pm"/>
-                        </Column>
-                        <Column editable="false" title="Fare" type="java.lang.Integer">
-                          <Data value="67"/>
-                          <Data value="82"/>
-                          <Data value="110"/>
-                        </Column>
+                      <Table columnCount="8" rowCount="1">
+                        <Column editable="false" title="Transit ID" type="java.lang.Integer"/>
+                        <Column editable="true" title="Station" type="java.lang.String"/>
+                        <Column editable="true" title="Company" type="java.lang.String"/>
+                        <Column editable="false" title="Origin" type="java.lang.String"/>
+                        <Column editable="false" title="Destination" type="java.lang.String"/>
+                        <Column editable="true" title="Departure Time" type="java.lang.Object"/>
+                        <Column editable="false" title="Arrival Time" type="java.lang.Object"/>
+                        <Column editable="false" title="Fare" type="java.lang.Integer"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -414,24 +382,49 @@
                   <Font name="SimSun-ExtB" size="15" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="17">
+                  <StringArray count="42">
                     <StringItem index="0" value="Pick a location"/>
-                    <StringItem index="1" value="--Bus"/>
-                    <StringItem index="2" value="Los Angeles"/>
-                    <StringItem index="3" value="Northridge"/>
-                    <StringItem index="4" value="San Francisco"/>
-                    <StringItem index="5" value="Northridge"/>
+                    <StringItem index="1" value=" "/>
+                    <StringItem index="2" value="-- Arizona"/>
+                    <StringItem index="3" value="Phoenix"/>
+                    <StringItem index="4" value="Mesa"/>
+                    <StringItem index="5" value="Tucson"/>
                     <StringItem index="6" value=" "/>
-                    <StringItem index="7" value="--Train"/>
+                    <StringItem index="7" value="--California"/>
                     <StringItem index="8" value="Los Angeles"/>
                     <StringItem index="9" value="San Francisco"/>
                     <StringItem index="10" value="San Diego"/>
                     <StringItem index="11" value="Sacramento"/>
                     <StringItem index="12" value=" "/>
-                    <StringItem index="13" value="--Plane"/>
-                    <StringItem index="14" value="Las Vegas"/>
-                    <StringItem index="15" value="Houston"/>
-                    <StringItem index="16" value="Salt Lake City"/>
+                    <StringItem index="13" value="-- Illinois"/>
+                    <StringItem index="14" value="Chicago"/>
+                    <StringItem index="15" value="Springfield"/>
+                    <StringItem index="16" value=" "/>
+                    <StringItem index="17" value="-- Nevada"/>
+                    <StringItem index="18" value="Las Vegas"/>
+                    <StringItem index="19" value="Henderson"/>
+                    <StringItem index="20" value="Reno"/>
+                    <StringItem index="21" value=" "/>
+                    <StringItem index="22" value="-- Texas"/>
+                    <StringItem index="23" value="Houston"/>
+                    <StringItem index="24" value="Dallas"/>
+                    <StringItem index="25" value="San Antonio"/>
+                    <StringItem index="26" value=" "/>
+                    <StringItem index="27" value="-- Utah"/>
+                    <StringItem index="28" value="Salt Lake City"/>
+                    <StringItem index="29" value="Ogden"/>
+                    <StringItem index="30" value="Provo"/>
+                    <StringItem index="31" value="St. George"/>
+                    <StringItem index="32" value=" "/>
+                    <StringItem index="33" value="-- Washington"/>
+                    <StringItem index="34" value="Seattle"/>
+                    <StringItem index="35" value="Vacnouver"/>
+                    <StringItem index="36" value="Bellingham"/>
+                    <StringItem index="37" value=" "/>
+                    <StringItem index="38" value="-- New York"/>
+                    <StringItem index="39" value="New York City"/>
+                    <StringItem index="40" value="Manhattan"/>
+                    <StringItem index="41" value="Queens"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -464,24 +457,49 @@
                   <Font name="SimSun-ExtB" size="15" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="17">
+                  <StringArray count="42">
                     <StringItem index="0" value="Pick a location"/>
-                    <StringItem index="1" value="--Bus"/>
-                    <StringItem index="2" value="Los Angeles"/>
-                    <StringItem index="3" value="Northridge"/>
-                    <StringItem index="4" value="San Francisco"/>
-                    <StringItem index="5" value="Northridge"/>
+                    <StringItem index="1" value=" "/>
+                    <StringItem index="2" value="-- Arizona"/>
+                    <StringItem index="3" value="Phoenix"/>
+                    <StringItem index="4" value="Mesa"/>
+                    <StringItem index="5" value="Tucson"/>
                     <StringItem index="6" value=" "/>
-                    <StringItem index="7" value="--Train"/>
+                    <StringItem index="7" value="--California"/>
                     <StringItem index="8" value="Los Angeles"/>
                     <StringItem index="9" value="San Francisco"/>
                     <StringItem index="10" value="San Diego"/>
                     <StringItem index="11" value="Sacramento"/>
                     <StringItem index="12" value=" "/>
-                    <StringItem index="13" value="--Plane"/>
-                    <StringItem index="14" value="Las Vegas"/>
-                    <StringItem index="15" value="Houston"/>
-                    <StringItem index="16" value="Salt Lake City"/>
+                    <StringItem index="13" value="-- Illinois"/>
+                    <StringItem index="14" value="Chicago"/>
+                    <StringItem index="15" value="Springfield"/>
+                    <StringItem index="16" value=" "/>
+                    <StringItem index="17" value="-- Nevada"/>
+                    <StringItem index="18" value="Las Vegas"/>
+                    <StringItem index="19" value="Henderson"/>
+                    <StringItem index="20" value="Reno"/>
+                    <StringItem index="21" value=" "/>
+                    <StringItem index="22" value="-- Texas"/>
+                    <StringItem index="23" value="Houston"/>
+                    <StringItem index="24" value="Dallas"/>
+                    <StringItem index="25" value="San Antonio"/>
+                    <StringItem index="26" value=" "/>
+                    <StringItem index="27" value="-- Utah"/>
+                    <StringItem index="28" value="Salt Lake City"/>
+                    <StringItem index="29" value="Ogden"/>
+                    <StringItem index="30" value="Provo"/>
+                    <StringItem index="31" value="St. George"/>
+                    <StringItem index="32" value=" "/>
+                    <StringItem index="33" value="-- Washington"/>
+                    <StringItem index="34" value="Seattle"/>
+                    <StringItem index="35" value="Vacnouver"/>
+                    <StringItem index="36" value="Bellingham"/>
+                    <StringItem index="37" value=" "/>
+                    <StringItem index="38" value="-- New York"/>
+                    <StringItem index="39" value="New York City"/>
+                    <StringItem index="40" value="Manhattan"/>
+                    <StringItem index="41" value="Queens"/>
                   </StringArray>
                 </Property>
               </Properties>
