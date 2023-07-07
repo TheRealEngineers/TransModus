@@ -13,10 +13,27 @@
             "name": "localhost",
             "username": "root",
             "database": "TransModus"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "sql9.freesqldatabase.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "sql9630816",
+            "username": "sql9630816",
+            "database": "sql9630816"
         }
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/Users/justchance/Downloads/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar"
-    ]
+    ],
+    "files.associations": {
+        "202089751.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

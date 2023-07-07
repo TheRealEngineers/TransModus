@@ -29,6 +29,8 @@ public class Booking extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         BookingTable = new javax.swing.JTable();
 
+        this.setUndecorated(true);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(179, 0, 0));

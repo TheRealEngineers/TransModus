@@ -1,6 +1,7 @@
 public class HomePage extends javax.swing.JFrame {
     public static String ActiveUser; // User struggles
     static Object existingInstance;
+
     // Creates new form HomePage
     public HomePage() {
         initComponents();
@@ -94,7 +95,6 @@ public class HomePage extends javax.swing.JFrame {
         btnProfile1.setText("User Profile");
         btnProfile1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dispose();
                 btnProfile1ActionPerformed(evt);
             }
         });

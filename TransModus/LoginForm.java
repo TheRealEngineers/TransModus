@@ -1,9 +1,4 @@
 import java.sql.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.InputStream;
-
-import javax.sound.sampled.*;
 import javax.swing.JOptionPane;
 
 public class LoginForm extends javax.swing.JFrame {
@@ -164,7 +159,7 @@ public class LoginForm extends javax.swing.JFrame {
         String password = new String(tfPassword.getPassword());
 
 
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com:3306/sql9630816", "sql9630816", "xPzHtpjvSw");
              PreparedStatement statement = connection.prepareStatement("SELECT login, email, password, firstname, LPAD(client_id, 5, '0') AS client_id FROM client WHERE login = ? OR email = ? AND password = ?")) {
 
             // Prepare the SQL statement

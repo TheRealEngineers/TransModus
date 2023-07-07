@@ -90,6 +90,8 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
 
+        this.setUndecorated(true);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

@@ -28,6 +28,8 @@ public class ReviewSystem extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         btnSendReview = new javax.swing.JButton();
 
+        this.setUndecorated(true);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTextField1.setText("END THE SEMESTER ALREADY");

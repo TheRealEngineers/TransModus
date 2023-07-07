@@ -4,7 +4,7 @@ import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 public class UserProfile extends javax.swing.JFrame {
-
+        
     // Creates new form UserProfile
     public UserProfile() {
         initComponents();
@@ -79,7 +79,7 @@ public class UserProfile extends javax.swing.JFrame {
         btnGoBack.setText("Close Profile");
         btnGoBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGoBackActionPerformed(evt);
+                btnGoBackActionPerformed(evt);    
             }
         });
 
@@ -228,9 +228,9 @@ public class UserProfile extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void userInformation() {
+   private void userInformation() {
         String ActiveClient = HomePage.ActiveUser; //Struggles
-    try {Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", ""); // Establish connection with SQL Database
+    try {Connection connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com:3306/sql9630816", "sql9630816", "xPzHtpjvSw"); // Establish connection with SQL Database
         // Prepare the SQL statement to retrieve the data
         PreparedStatement statement = connection.prepareStatement("SELECT client_id, firstname, lastname, login, ufn_FormatPhone(phone_number) AS phone_number, email, birthday_month, birthday_day, birthday_year FROM client WHERE client_id = ?");
         statement.setString(1, ActiveClient);
@@ -332,7 +332,7 @@ public class UserProfile extends javax.swing.JFrame {
 
                 phoneNumber = phoneNumber.replaceAll("\\D", "");
 
-            try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
+            try (Connection connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com:3306/sql9630816", "sql9630816", "xPzHtpjvSw");
                     PreparedStatement statement = connection.prepareStatement("UPDATE client SET firstname = ?, lastname = ?, login = ?, birthday_month = ?, birthday_day = ?, birthday_year = ?, phone_number = ?, email = ? WHERE client_id = ?")) {
 
                 // Prepare the SQL statement

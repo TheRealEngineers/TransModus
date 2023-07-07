@@ -1,12 +1,9 @@
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.time.Month;
-import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
@@ -221,7 +218,7 @@ public class RegisterForm extends javax.swing.JFrame {
         } else {
             try {
                 // Connect to the database
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TransModus", "root", "");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com:3306/sql9630816", "sql9630816", "xPzHtpjvSw");
 
                 // Prepare the SQL statement
                 String sql = "INSERT INTO client (firstname, lastname, login, email, password, birthday_month, birthday_day, birthday_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";

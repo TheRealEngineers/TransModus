@@ -1,6 +1,5 @@
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import java.util.Scanner;
 
 public class AdminPanel extends javax.swing.JFrame {
     
@@ -38,6 +37,8 @@ public class AdminPanel extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         btnEdit = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
+
+        this.setUndecorated(true);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
