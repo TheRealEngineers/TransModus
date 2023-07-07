@@ -36,15 +36,15 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        dispDepartTime2 = new javax.swing.JLabel();
-        dispFrom2 = new javax.swing.JLabel();
+        departTime_3 = new javax.swing.JLabel();
+        origin_3 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        dispDepartDate2 = new javax.swing.JLabel();
+        departDate_3 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
-        dispArriveTime2 = new javax.swing.JLabel();
+        arriveTime_3 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        dispTo2 = new javax.swing.JLabel();
+        destination_3 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel33 = new javax.swing.JLabel();
@@ -62,6 +62,8 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         dispClient4 = new javax.swing.JLabel();
+        paidAmt_3 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         this.setUndecorated(true);
 
@@ -197,25 +199,25 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("Time of Departure:");
 
-        dispDepartTime2.setBackground(new java.awt.Color(255, 255, 255));
-        dispDepartTime2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
-        dispDepartTime2.setForeground(new java.awt.Color(255, 255, 255));
-        dispDepartTime2.setText(". . .");
+        departTime_3.setBackground(new java.awt.Color(255, 255, 255));
+        departTime_3.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        departTime_3.setForeground(new java.awt.Color(255, 255, 255));
+        departTime_3.setText(". . .");
 
-        dispFrom2.setBackground(new java.awt.Color(255, 255, 255));
-        dispFrom2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
-        dispFrom2.setForeground(new java.awt.Color(255, 255, 255));
-        dispFrom2.setText(". . .");
+        origin_3.setBackground(new java.awt.Color(255, 255, 255));
+        origin_3.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        origin_3.setForeground(new java.awt.Color(255, 255, 255));
+        origin_3.setText(". . .");
 
         jLabel26.setBackground(new java.awt.Color(255, 255, 255));
         jLabel26.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("Date:");
 
-        dispDepartDate2.setBackground(new java.awt.Color(255, 255, 255));
-        dispDepartDate2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
-        dispDepartDate2.setForeground(new java.awt.Color(255, 255, 255));
-        dispDepartDate2.setText(". . .");
+        departDate_3.setBackground(new java.awt.Color(255, 255, 255));
+        departDate_3.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        departDate_3.setForeground(new java.awt.Color(255, 255, 255));
+        departDate_3.setText(". . .");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -234,9 +236,9 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                             .addComponent(jLabel26))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dispDepartTime2)
-                            .addComponent(dispDepartDate2)
-                            .addComponent(dispFrom2))))
+                            .addComponent(departTime_3)
+                            .addComponent(departDate_3)
+                            .addComponent(origin_3))))
                 .addContainerGap(147, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -247,15 +249,15 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                 .addGap(40, 40, 40)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
-                    .addComponent(dispDepartDate2))
+                    .addComponent(departDate_3))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dispFrom2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(origin_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel22))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel23)
-                    .addComponent(dispDepartTime2))
+                    .addComponent(departTime_3))
                 .addGap(36, 36, 36))
         );
 
@@ -267,20 +269,20 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("Time of Arrival:");
 
-        dispArriveTime2.setBackground(new java.awt.Color(255, 255, 255));
-        dispArriveTime2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
-        dispArriveTime2.setForeground(new java.awt.Color(255, 255, 255));
-        dispArriveTime2.setText(". . .");
+        arriveTime_3.setBackground(new java.awt.Color(255, 255, 255));
+        arriveTime_3.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        arriveTime_3.setForeground(new java.awt.Color(255, 255, 255));
+        arriveTime_3.setText(". . .");
 
         jLabel29.setBackground(new java.awt.Color(255, 255, 255));
         jLabel29.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("Going to:");
 
-        dispTo2.setBackground(new java.awt.Color(255, 255, 255));
-        dispTo2.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
-        dispTo2.setForeground(new java.awt.Color(255, 255, 255));
-        dispTo2.setText(". . .");
+        destination_3.setBackground(new java.awt.Color(255, 255, 255));
+        destination_3.setFont(new java.awt.Font("SimSun-ExtB", 0, 21)); // NOI18N
+        destination_3.setForeground(new java.awt.Color(255, 255, 255));
+        destination_3.setText(". . .");
 
         jLabel28.setBackground(new java.awt.Color(255, 255, 255));
         jLabel28.setFont(new java.awt.Font("Poor Richard", 3, 36)); // NOI18N
@@ -300,8 +302,8 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                             .addComponent(jLabel30))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dispArriveTime2)
-                            .addComponent(dispTo2)))
+                            .addComponent(arriveTime_3)
+                            .addComponent(destination_3)))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel28)))
@@ -315,11 +317,11 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                 .addGap(31, 31, 31)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
-                    .addComponent(dispTo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(destination_3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
-                    .addComponent(dispArriveTime2))
+                    .addComponent(arriveTime_3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -522,14 +524,24 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        paidAmt_3.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
+        paidAmt_3.setText("...");
+
+        jLabel24.setFont(new java.awt.Font("SimSun-ExtB", 0, 24)); // NOI18N
+        jLabel24.setText("Total Amount Paid:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(631, 631, 631)
+                .addGap(57, 57, 57)
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(paidAmt_3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnHomePage, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(53, 53, 53))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -546,9 +558,12 @@ public class TicketReservation_3 extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnHomePage)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(paidAmt_3)
+                    .addComponent(btnHomePage))
+                .addGap(7, 7, 7))
         );
 
         pack();
@@ -558,18 +573,16 @@ public class TicketReservation_3 extends javax.swing.JFrame {
         SecureRandom rand = new SecureRandom();
         int upperbound = 99999999;
         int lowerbound = 10000000;
-        int randomNum = rand.nextInt(lowerbound,upperbound);        
-
-        tfBookCode.setText(Integer.toString(randomNum));
+        int booking_code = rand.nextInt(lowerbound,upperbound);        
+        tfBookCode.setText(Integer.toString(booking_code));
         btnGenerateCode.setEnabled(false);
         btnHomePage.setEnabled(true);
         
+        // SQL STUFF GOES UNDER HERE    
+
     }//GEN-LAST:event_btnGenerateCodeActionPerformed
 
     private void btnHomePageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomePageActionPerformed
-        HomePage hpg = new HomePage();
-        hpg.setVisible(true);
-        hpg.pack();
         this.dispose();
     }//GEN-LAST:event_btnHomePageActionPerformed
 
@@ -608,22 +621,22 @@ public class TicketReservation_3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel amtTickets_3;
+    public javax.swing.JLabel arriveTime_3;
     private javax.swing.JButton btnGenerateCode;
     private javax.swing.JButton btnHomePage;
     public javax.swing.JLabel company_3;
-    public javax.swing.JLabel dispArriveTime2;
+    public javax.swing.JLabel departDate_3;
+    public javax.swing.JLabel departTime_3;
+    public javax.swing.JLabel destination_3;
     public javax.swing.JLabel dispClient1;
     public javax.swing.JLabel dispClient2;
     public javax.swing.JLabel dispClient3;
     public javax.swing.JLabel dispClient4;
-    public javax.swing.JLabel dispDepartDate2;
-    public javax.swing.JLabel dispDepartTime2;
-    public javax.swing.JLabel dispFrom2;
-    public javax.swing.JLabel dispTo2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
@@ -646,6 +659,8 @@ public class TicketReservation_3 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    public javax.swing.JLabel origin_3;
+    public javax.swing.JLabel paidAmt_3;
     public javax.swing.JLabel station_3;
     private javax.swing.JTextField tfBookCode;
     public javax.swing.JLabel ticketClass_3;
