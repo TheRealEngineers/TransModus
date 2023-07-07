@@ -30,7 +30,6 @@ public class HomePage extends javax.swing.JFrame {
         btnAdminPanel = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        btnLogout = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -151,17 +150,6 @@ public class HomePage extends javax.swing.JFrame {
         jLabel7.setText("jLabel7");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(705, 344, 148, 151));
 
-        btnLogout.setBackground(new java.awt.Color(204, 0, 0));
-        btnLogout.setFont(new java.awt.Font("SimSun", 1, 13)); // NOI18N
-        btnLogout.setForeground(new java.awt.Color(0, 0, 0));
-        btnLogout.setText("Logout and Close");
-        btnLogout.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLogoutActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 160, -1));
-
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\TransModus_BG_2.jpg")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 101, 940, 466));
 
@@ -220,10 +208,6 @@ public class HomePage extends javax.swing.JFrame {
         abt.pack();
     }//GEN-LAST:event_iconAboutUsMouseClicked
 
-    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
-        dispose();
-    }//GEN-LAST:event_btnLogoutActionPerformed
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -260,7 +244,6 @@ public class HomePage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdminPanel;
     private javax.swing.JButton btnBooking;
-    private javax.swing.JButton btnLogout;
     private javax.swing.JButton btnProfile1;
     private javax.swing.JButton btnRatingSystem;
     private javax.swing.JButton btnTicketRes;
