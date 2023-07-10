@@ -1,14 +1,27 @@
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.Window;
 
 public class HomePage extends javax.swing.JFrame {
     public static String ActiveUser; // User struggles
     static Object existingInstance;
-
     // Creates new form HomePage
     public HomePage() {
         initComponents();
         this.setLocationRelativeTo(null);
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                closeAllWindows();
+            }
+        });
+    }
+
+    private void closeAllWindows() {
+        Window[] windows = Window.getWindows();
+        for (Window window : windows) {
+            window.dispose();
+        }
     }
 
     /**
@@ -40,7 +53,7 @@ public class HomePage extends javax.swing.JFrame {
         btnAdminPanel = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         this.setUndecorated(false);
-
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 
         btnTicketRes.setBackground(new java.awt.Color(204, 0, 0));

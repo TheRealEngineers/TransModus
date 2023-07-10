@@ -27,6 +27,7 @@ public class ReviewSystem extends javax.swing.JFrame {
         btnSendReview = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         textArea = new javax.swing.JTextArea();
+        this.setUndecorated(true);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -136,6 +137,7 @@ public class ReviewSystem extends javax.swing.JFrame {
                     "Your review has been sent! "
                             + "Thank you for your feedback!");
         textArea.setText("");
+        this.setUndecorated(true);
     }//GEN-LAST:event_btnSendReviewActionPerformed
 
     /**

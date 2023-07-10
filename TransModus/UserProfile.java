@@ -246,9 +246,6 @@ public class UserProfile extends javax.swing.JFrame {
             String login = resultSet.getString("login");
            
             String phoneNumber = resultSet.getString("phone_number");
-                if (phoneNumber.equals("() -")) {
-                        phoneNumber = null;
-                }
             
             String email = resultSet.getString("email");
             
@@ -350,6 +347,7 @@ public class UserProfile extends javax.swing.JFrame {
                 int rowsAffected = statement.executeUpdate();
                 if (rowsAffected > 0) {
                     JOptionPane.showMessageDialog(this, "Your account has been successfully updated!");
+                    this.setUndecorated(true);
                     HomePage hpg = new HomePage();
                     hpg.dispUser.setText(firstname + "!");
                     hpg.setVisible(true);
