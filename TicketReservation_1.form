@@ -382,49 +382,26 @@
                   <Font name="SimSun-ExtB" size="15" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="42">
+                  <StringArray count="19">
                     <StringItem index="0" value="Pick a location"/>
                     <StringItem index="1" value=" "/>
-                    <StringItem index="2" value="-- Arizona"/>
-                    <StringItem index="3" value="Phoenix"/>
-                    <StringItem index="4" value="Mesa"/>
-                    <StringItem index="5" value="Tucson"/>
-                    <StringItem index="6" value=" "/>
-                    <StringItem index="7" value="--California"/>
-                    <StringItem index="8" value="Los Angeles"/>
-                    <StringItem index="9" value="San Francisco"/>
-                    <StringItem index="10" value="San Diego"/>
-                    <StringItem index="11" value="Sacramento"/>
-                    <StringItem index="12" value=" "/>
-                    <StringItem index="13" value="-- Illinois"/>
-                    <StringItem index="14" value="Chicago"/>
-                    <StringItem index="15" value="Springfield"/>
-                    <StringItem index="16" value=" "/>
-                    <StringItem index="17" value="-- Nevada"/>
-                    <StringItem index="18" value="Las Vegas"/>
-                    <StringItem index="19" value="Henderson"/>
-                    <StringItem index="20" value="Reno"/>
-                    <StringItem index="21" value=" "/>
-                    <StringItem index="22" value="-- Texas"/>
-                    <StringItem index="23" value="Houston"/>
-                    <StringItem index="24" value="Dallas"/>
-                    <StringItem index="25" value="San Antonio"/>
-                    <StringItem index="26" value=" "/>
-                    <StringItem index="27" value="-- Utah"/>
-                    <StringItem index="28" value="Salt Lake City"/>
-                    <StringItem index="29" value="Ogden"/>
-                    <StringItem index="30" value="Provo"/>
-                    <StringItem index="31" value="St. George"/>
-                    <StringItem index="32" value=" "/>
-                    <StringItem index="33" value="-- Washington"/>
-                    <StringItem index="34" value="Seattle"/>
-                    <StringItem index="35" value="Vacnouver"/>
-                    <StringItem index="36" value="Bellingham"/>
-                    <StringItem index="37" value=" "/>
-                    <StringItem index="38" value="-- New York"/>
-                    <StringItem index="39" value="New York City"/>
-                    <StringItem index="40" value="Manhattan"/>
-                    <StringItem index="41" value="Queens"/>
+                    <StringItem index="2" value="--California"/>
+                    <StringItem index="3" value="Los Angeles"/>
+                    <StringItem index="4" value="San Francisco"/>
+                    <StringItem index="5" value="San Diego"/>
+                    <StringItem index="6" value="Bakersfield"/>
+                    <StringItem index="7" value=" "/>
+                    <StringItem index="8" value="-- Nevada"/>
+                    <StringItem index="9" value="Las Vegas"/>
+                    <StringItem index="10" value="Henderson"/>
+                    <StringItem index="11" value=" "/>
+                    <StringItem index="12" value="-- Texas"/>
+                    <StringItem index="13" value="Houston"/>
+                    <StringItem index="14" value="Dallas"/>
+                    <StringItem index="15" value=" "/>
+                    <StringItem index="16" value="-- Utah"/>
+                    <StringItem index="17" value="Salt Lake City"/>
+                    <StringItem index="18" value="St. George"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -457,49 +434,26 @@
                   <Font name="SimSun-ExtB" size="15" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="42">
+                  <StringArray count="19">
                     <StringItem index="0" value="Pick a location"/>
                     <StringItem index="1" value=" "/>
-                    <StringItem index="2" value="-- Arizona"/>
-                    <StringItem index="3" value="Phoenix"/>
-                    <StringItem index="4" value="Mesa"/>
-                    <StringItem index="5" value="Tucson"/>
-                    <StringItem index="6" value=" "/>
-                    <StringItem index="7" value="--California"/>
-                    <StringItem index="8" value="Los Angeles"/>
-                    <StringItem index="9" value="San Francisco"/>
-                    <StringItem index="10" value="San Diego"/>
-                    <StringItem index="11" value="Sacramento"/>
-                    <StringItem index="12" value=" "/>
-                    <StringItem index="13" value="-- Illinois"/>
-                    <StringItem index="14" value="Chicago"/>
-                    <StringItem index="15" value="Springfield"/>
-                    <StringItem index="16" value=" "/>
-                    <StringItem index="17" value="-- Nevada"/>
-                    <StringItem index="18" value="Las Vegas"/>
-                    <StringItem index="19" value="Henderson"/>
-                    <StringItem index="20" value="Reno"/>
-                    <StringItem index="21" value=" "/>
-                    <StringItem index="22" value="-- Texas"/>
-                    <StringItem index="23" value="Houston"/>
-                    <StringItem index="24" value="Dallas"/>
-                    <StringItem index="25" value="San Antonio"/>
-                    <StringItem index="26" value=" "/>
-                    <StringItem index="27" value="-- Utah"/>
-                    <StringItem index="28" value="Salt Lake City"/>
-                    <StringItem index="29" value="Ogden"/>
-                    <StringItem index="30" value="Provo"/>
-                    <StringItem index="31" value="St. George"/>
-                    <StringItem index="32" value=" "/>
-                    <StringItem index="33" value="-- Washington"/>
-                    <StringItem index="34" value="Seattle"/>
-                    <StringItem index="35" value="Vacnouver"/>
-                    <StringItem index="36" value="Bellingham"/>
-                    <StringItem index="37" value=" "/>
-                    <StringItem index="38" value="-- New York"/>
-                    <StringItem index="39" value="New York City"/>
-                    <StringItem index="40" value="Manhattan"/>
-                    <StringItem index="41" value="Queens"/>
+                    <StringItem index="2" value="--California"/>
+                    <StringItem index="3" value="Los Angeles"/>
+                    <StringItem index="4" value="San Francisco"/>
+                    <StringItem index="5" value="San Diego"/>
+                    <StringItem index="6" value="Bakersfield"/>
+                    <StringItem index="7" value=" "/>
+                    <StringItem index="8" value="-- Nevada"/>
+                    <StringItem index="9" value="Las Vegas"/>
+                    <StringItem index="10" value="Henderson"/>
+                    <StringItem index="11" value=" "/>
+                    <StringItem index="12" value="-- Texas"/>
+                    <StringItem index="13" value="Houston"/>
+                    <StringItem index="14" value="Dallas"/>
+                    <StringItem index="15" value=" "/>
+                    <StringItem index="16" value="-- Utah"/>
+                    <StringItem index="17" value="Salt Lake City"/>
+                    <StringItem index="18" value="St. George"/>
                   </StringArray>
                 </Property>
               </Properties>

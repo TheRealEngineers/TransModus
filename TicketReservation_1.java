@@ -13,6 +13,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
 
         model = (DefaultTableModel) TransitTable.getModel();
+        model_2 = (DefaultTableModel) CancelTable.getModel();
         
         btnConfirmCancel.setEnabled(false);
         returnDate.setEnabled(false);
@@ -188,13 +189,13 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         });
 
         origin.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
-        origin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", " ", "-- Arizona", "Phoenix", "Mesa", "Tucson", " ", "--California", "Los Angeles", "San Francisco", "San Diego", "Sacramento", " ", "-- Illinois", "Chicago", "Springfield", " ", "-- Nevada", "Las Vegas", "Henderson", "Reno", " ", "-- Texas", "Houston", "Dallas", "San Antonio", " ", "-- Utah", "Salt Lake City", "Ogden", "Provo", "St. George", " ", "-- Washington", "Seattle", "Vacnouver", "Bellingham", " ", "-- New York", "New York City", "Manhattan", "Queens" }));
+        origin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", " ", "--California", "Los Angeles", "San Francisco", "San Diego", "Bakersfield", " ", "-- Nevada", "Las Vegas", "Henderson", " ", "-- Texas", "Houston", "Dallas", " ", "-- Utah", "Salt Lake City", "St. George" }));
 
         tranMethod.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
         tranMethod.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bus", "Train", "Plane" }));
 
         destination.setFont(new java.awt.Font("SimSun-ExtB", 0, 15)); // NOI18N
-        destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", " ", "-- Arizona", "Phoenix", "Mesa", "Tucson", " ", "--California", "Los Angeles", "San Francisco", "San Diego", "Sacramento", " ", "-- Illinois", "Chicago", "Springfield", " ", "-- Nevada", "Las Vegas", "Henderson", "Reno", " ", "-- Texas", "Houston", "Dallas", "San Antonio", " ", "-- Utah", "Salt Lake City", "Ogden", "Provo", "St. George", " ", "-- Washington", "Seattle", "Vacnouver", "Bellingham", " ", "-- New York", "New York City", "Manhattan", "Queens" }));
+        destination.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pick a location", " ", "--California", "Los Angeles", "San Francisco", "San Diego", "Bakersfield", " ", "-- Nevada", "Las Vegas", "Henderson", " ", "-- Texas", "Houston", "Dallas", " ", "-- Utah", "Salt Lake City", "St. George" }));
 
         jLabel122.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel122.setText("Transit Method");
@@ -605,7 +606,248 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
     // CHECK DATABASE FOR AVAILABLE TRANSPORT BASED ON TRANSPORT METHODS AND DESTINATIONS
     private void btnChkTransportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChkTransportActionPerformed
-        // TODO add your handling code here:
+        if (tranMethod.getSelectedItem() == "Bus") {
+ 
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "San Francisco") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1108, "Grand Park", "Megabus", "Los Angeles",
+                    "San Francisco", "5:30 am", "3:30 pm", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1106, "Tefusa", "MegaBus", "Los Angeles",
+                    "San Francisco", "6:45 am", "5:30 pm", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1107, "LA Union", "Greyhound", "Los Angeles",
+                    "San Francisco", "7:15 am", "6:00 pm", 15});
+                model.insertRow(model.getRowCount(), new Object[]{1107, "LA Union", "Greyhound", "Los Angeles",
+                    "San Francisco", "11:15 am", "7:00 pm", 15});
+                model.insertRow(model.getRowCount(), new Object[]{1108, "LA Union", "Flixbus", "Los Angeles",
+                    "San Francisco", "1:30 pm", "9:15 pm", 15});
+            }
+            
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "San Diego") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1167, "Tefusa", "Megasbus", "Los Angeles",
+                    "San Diego", "7:45 am", "11:15 am", 5});
+                model.insertRow(model.getRowCount(), new Object[]{1168, "LA Union", "Greyhound", "Los Angeles",
+                    "San Diego", "8:30 am", "1:00 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1169, "LA Union", "Greyhound", "Los Angeles",
+                    "San Diego", "7:15 pm", "10:45 pm", 20});
+            }
+            
+            if (origin.getSelectedItem() == "San Diego" && destination.getSelectedItem() == "Los Angeles") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1132, "Old Town", "Greyhound", "San Diego",
+                    "Los Angeles", "8:30 am", "1:15 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1133, "Old Town", "Greyound", "San Diego",
+                    "Los Angeles", "10:45 am", "1:15 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1134, "La Jolla", "FlixBus", "San Diego",
+                    "Los Angeles", "1:30 am", "4:00 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1135, "La Jolla", "FlixBus", "San Diego",
+                    "Los Angeles", "3:45 am", "6:15 pm", 20});            
+            }
+            
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Bakersfield") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1176, "Tefusa", "Megabus", "Los Angeles",
+                    "Bakersfield", "5:30 am", "8:15 am", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1177, "LA Union", "Greyhound", "Los Angeles",
+                    "Bakersfield", "12:15 pm", "3:00 pm", 12});
+                model.insertRow(model.getRowCount(), new Object[]{1178, "LA Union", "FlixBus", "Los Angeles",
+                    "Bakersfield", "3:00 pm", "6:00 pm", 12});
+            }
+            
+            if (origin.getSelectedItem() == "Bakersfield" && destination.getSelectedItem() == "Los Angeles") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1208, "Park & Ride", "Megabus", "Bakersfield",
+                    "Los Angeles", "7:30 am", "10:15 am", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1209, "Truxton Ave", "Greyhound", "Bakersfield",
+                    "Los Angeles", "11:45 am", "3:00 pm", 12});
+                model.insertRow(model.getRowCount(), new Object[]{1210, "Truxton Ave", "FlixBus", "Bakersfield",
+                    "Los Angeles", "2:00 pm", "4:45 pm", 12});
+            }
+            
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Las Vegas") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1245, "Tefusa", "Megabus", "Los Angeles",
+                    "Las Vegas", "7:30 am", "1:15 pm", 8});
+                model.insertRow(model.getRowCount(), new Object[]{1246, "LA Union", "Grehound", "Los Angeles",
+                    "Las Vegas", "9:00 am", "2:45 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1246, "LA Union", "Grehound", "Los Angeles",
+                    "Las Vegas", "1:15 pm", "7:00 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1247, "LA Union", "FlixBus", "Los Angeles",
+                    "Las Vegas", "12:45 pm", "6:00 pm", 20});
+            }
+            
+            if (origin.getSelectedItem() == "Las Vegas" && destination.getSelectedItem() == "Los Angeles") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1297, "F.Show Mall", "Megabus", "Las Vegas",
+                    "Los Angeles", "8:30 am", "2:15 pm", 12});
+                model.insertRow(model.getRowCount(), new Object[]{1298, "South Strip", "Greyhound", "Las Vegas",
+                    "Los Angeles", "10:45 am", "4:30 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{1298, "South Strip", "Greyhound", "Las Vegas",
+                    "Los Angeles", "12:15 pm", "6:00 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{1299, "Caesar's Palace", "FlixBus", "Las Vegas",
+                    "Los Angeles", "2:00 pm", "7:30 pm", 35});
+            }
+            
+            if (origin.getSelectedItem() == "Houston" && destination.getSelectedItem() == "Dallas") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1310, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "7:30 am", "12:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "8:30 am", "12:30 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "9:45 am", "1:30 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "11:15 am", "2:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1312, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "12:45 pm", "5:15 pm", 30});
+            }
+            
+            if (origin.getSelectedItem() == "Dallas" && destination.getSelectedItem() == "Houston") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{1310, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "8:30 am", "1:30 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "10:15 am", "2:00 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1312, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "11:15 am", "2:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "12:30 am", "4:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1312, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "2:00 am", "6:00 pm", 30});
+            }
+            
+        }
+        
+        
+        // TRAIN SCHEDULES
+        if (tranMethod.getSelectedItem() == "Train") {
+        
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "San Diego") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3010, "LA Union", "AmTrak", "Los Angeles",
+                    "San Diego", "6:15 am", "8:45 am", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3011, "LA Union", "AmTrak", "Los Angeles",
+                    "San Diego", "7:15 am", "9:15 am", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "10:15 am", "1:00 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "11:45 am", "5:00 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "12:15 pm", "2:45 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "3:30 pm", "6:00 pm", 35});
+            }
+            
+            if (origin.getSelectedItem() == "San Diego" && destination.getSelectedItem() == "Los Angeles") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3054, "Santa Fe", "AmTrak", "San Diego",
+                    "Los Angeles", "9:30 am", "11:30 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
+                    "Los Angeles", "10:30 am", "4:15 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3056, "Santa Fe", "Amtrak", "San Diego",
+                    "Los Angeles", "11:45 am", "4:45 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
+                    "Los Angeles", "1:00 pm", "7:30 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{3056, "Old Town", "Amtrak", "San Diego",
+                    "Los Angeles", "4:15 pm", "6:45 pm", 35});
+            }
+
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Las Vegas") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                    "Las Vegas", "8:18 am", "7:30 pm", 86});
+                model.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                    "Las Vegas", "10:15 pm", "9:45 pm", 86});
+                model.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                    "Las Vegas", "2:30 am", "11:15 am", 86});
+                
+            }
+            
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Salt Lake City") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3110, "LA Union", "AmTrak", "Salt Lake City",
+                    "Los Angeles", "9:45 am", "3:00 am", 98});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LA Union", "AmTrak", "Salt Lake City",
+                    "Los Angeles", "4:45 pm", "10:00 am", 98});
+            }
+
+        }
+
+        
+        if (tranMethod.getSelectedItem() == "Plane") {
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Las Vegas") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
+                    "Las Vegas", "9:45 am", "3:00 am", 67});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
+                    "Las Vegas", "4:45 pm", "10:00 am", 70});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
+                    "Las Vegas", "4:45 pm", "10:00 am", 70});
+            }
+            
+            if (origin.getSelectedItem() == "Las Vegas" && destination.getSelectedItem() == "Houston") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Las Vegas",
+                    "Houston", "9:30 am", "12:15 pm", 88});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Las Vegas",
+                    "Houston", "4:45 pm", "8:00 am", 76});
+            }
+
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Salt Lake City") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Spirit", "Los Angeles",
+                    "Salt Lake City", "9:45 am", "12:00 pm", 98});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
+                    "Salt Lake City", "4:45 pm", "10:00 am", 98});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Los Angeles",
+                    "Salt Lake City", "4:45 pm", "10:00 am", 98});
+            }
+            
+            if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Houston") {
+                DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
+                model.setRowCount(0);
+                
+                model.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
+                    "Houston", "8:30 am", "12:00 pm", 98});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
+                    "Houston", "1:45 pm", "5:00 pm", 98});
+            }
+        }
+        
+        
+       
     }//GEN-LAST:event_btnChkTransportActionPerformed
 
     // Enables and disables the return date option depending on trip type
@@ -625,7 +867,9 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
     // Refunds the user's money and sets the booking status to CANCELLED
     private void btnConfirmCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmCancelActionPerformed
-        
+        JOptionPane.showMessageDialog(this,
+                    "Your reservation has been successfully cancelled and your payment has been refunded");
+        btnConfirmCancel.setEnabled(false);
     }//GEN-LAST:event_btnConfirmCancelActionPerformed
 
  
