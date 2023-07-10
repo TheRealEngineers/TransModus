@@ -21,6 +21,7 @@ public class AdminPanel extends javax.swing.JFrame {
         ClientTable.setEnabled(false);
         btnClient_Save.setEnabled(false);
         btnClient_Delete.setEnabled(false);
+       
     }
 
     /**
@@ -58,6 +59,7 @@ public class AdminPanel extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         txtBusStation = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         cbTrainDepart2 = new javax.swing.JComboBox<>();
         cbTrainDepart1 = new javax.swing.JComboBox<>();
@@ -82,6 +84,7 @@ public class AdminPanel extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         txtTrainStation = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel_3 = new javax.swing.JLabel();
         txtPlanePrice = new javax.swing.JTextField();
@@ -106,6 +109,7 @@ public class AdminPanel extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         txtPlaneCompany = new javax.swing.JTextField();
         txtPlaneStation = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
         ClientTable = new javax.swing.JTable();
@@ -236,6 +240,16 @@ public class AdminPanel extends javax.swing.JFrame {
 
         txtBusStation.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
 
+        jButton1.setBackground(new java.awt.Color(255, 0, 0));
+        jButton1.setFont(new java.awt.Font("SimSun", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("Load Data");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -254,41 +268,46 @@ public class AdminPanel extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtBusFrom)
-                    .addComponent(txtBusNum)
-                    .addComponent(txtBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel26)
-                    .addComponent(jLabel25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtBusStation)
-                    .addComponent(txtBusCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(txtBusPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtBusFrom)
+                            .addComponent(txtBusNum)
+                            .addComponent(txtBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel25))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtBusStation)
+                            .addComponent(txtBusCompany, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel_1)
-                        .addGap(2, 2, 2))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(cbBusArrive1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(cbBusDepart1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cbBusDepart2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cbBusArrive2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txtBusPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel_1)
+                                .addGap(2, 2, 2))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(cbBusArrive1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cbBusDepart1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cbBusDepart2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbBusArrive2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(22, 22, 22))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -326,10 +345,11 @@ public class AdminPanel extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(txtBusTo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddBus)
-                    .addComponent(btnDeleteBus))
+                    .addComponent(btnDeleteBus)
+                    .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -468,6 +488,17 @@ public class AdminPanel extends javax.swing.JFrame {
         txtTrainStation.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
         jPanel3.add(txtTrainStation, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, 124, -1));
 
+        jButton2.setBackground(new java.awt.Color(255, 0, 0));
+        jButton2.setFont(new java.awt.Font("SimSun", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setText("Load Data");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
+
         jTabbedPane1.addTab("Train Manager", jPanel3);
 
         jLabel_3.setFont(new java.awt.Font("SimSun-ExtB", 1, 28)); // NOI18N
@@ -568,6 +599,16 @@ public class AdminPanel extends javax.swing.JFrame {
 
         txtPlaneStation.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
 
+        jButton3.setBackground(new java.awt.Color(255, 0, 0));
+        jButton3.setFont(new java.awt.Font("SimSun", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jButton3.setText("Load Data");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -578,7 +619,9 @@ public class AdminPanel extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(259, 259, 259)
+                        .addContainerGap()
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(141, 141, 141)
                         .addComponent(btnAddPlane)
                         .addGap(233, 233, 233)
                         .addComponent(btnDeletePlane, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -670,9 +713,11 @@ public class AdminPanel extends javax.swing.JFrame {
                         .addComponent(txtPlaneStation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel19)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAddPlane)
-                    .addComponent(btnDeletePlane))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnAddPlane)
+                        .addComponent(btnDeletePlane))
+                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -683,8 +728,11 @@ public class AdminPanel extends javax.swing.JFrame {
         ClientTable.setFont(new java.awt.Font("SimSun-ExtB", 0, 14)); // NOI18N
         ClientTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+                {"Rithik", "Kamble", "07/23/1990", "rkambz12@gmail.com", "8186337534", "rkambz", "overwatch", "NO"},
+                {"Edith", "Mason", "04/21/1976", "edoth_12", "8374656654", "edMas", "aristoteles", "YES"},
+                {"Chance", "Chime", "04/28/2003", "chanceChime@icloud.com", "", "ChanceChime", "TransModus", "YES"},
+                {"John", "Doe ", "01/01/2000", "john.doe@example.com", null, "jdoe1", "biscuitwarrior", "NO"},
+                {"James", "Smith", "08/18/2002", "james.smith@example.com", null, "jSmith2", "juiceandberly123", "NO"}
             },
             new String [] {
                 "First Name", "Last Name", "Date of Birth", "Email", "Phone #", "Username", "Password", "Admin Access"
@@ -789,7 +837,7 @@ public class AdminPanel extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 13, Short.MAX_VALUE)
                 .addComponent(btnHome))
         );
 
@@ -971,6 +1019,159 @@ public class AdminPanel extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnClient_SaveActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+                model.insertRow(model.getRowCount(), new Object[]{1108, "Grand Park", "Megabus", "Los Angeles",
+                    "San Francisco", "5:30 am", "3:30 pm", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1106, "Tefusa", "MegaBus", "Los Angeles",
+                    "San Francisco", "6:45 am", "5:30 pm", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1107, "LA Union", "Greyhound", "Los Angeles",
+                    "San Francisco", "7:15 am", "6:00 pm", 15});
+                model.insertRow(model.getRowCount(), new Object[]{1107, "LA Union", "Greyhound", "Los Angeles",
+                    "San Francisco", "11:15 am", "7:00 pm", 15});
+                model.insertRow(model.getRowCount(), new Object[]{1108, "LA Union", "Flixbus", "Los Angeles",
+                    "San Francisco", "1:30 pm", "9:15 pm", 15});
+            
+
+                model.insertRow(model.getRowCount(), new Object[]{1167, "Tefusa", "Megasbus", "Los Angeles",
+                    "San Diego", "7:45 am", "11:15 am", 5});
+                model.insertRow(model.getRowCount(), new Object[]{1168, "LA Union", "Greyhound", "Los Angeles",
+                    "San Diego", "8:30 am", "1:00 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1169, "LA Union", "Greyhound", "Los Angeles",
+                    "San Diego", "7:15 pm", "10:45 pm", 20});
+           
+                model.insertRow(model.getRowCount(), new Object[]{1132, "Old Town", "Greyhound", "San Diego",
+                    "Los Angeles", "8:30 am", "1:15 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1133, "Old Town", "Greyound", "San Diego",
+                    "Los Angeles", "10:45 am", "1:15 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1134, "La Jolla", "FlixBus", "San Diego",
+                    "Los Angeles", "1:30 am", "4:00 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1135, "La Jolla", "FlixBus", "San Diego",
+                    "Los Angeles", "3:45 am", "6:15 pm", 20});            
+          
+                model.insertRow(model.getRowCount(), new Object[]{1176, "Tefusa", "Megabus", "Los Angeles",
+                    "Bakersfield", "5:30 am", "8:15 am", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1177, "LA Union", "Greyhound", "Los Angeles",
+                    "Bakersfield", "12:15 pm", "3:00 pm", 12});
+                model.insertRow(model.getRowCount(), new Object[]{1178, "LA Union", "FlixBus", "Los Angeles",
+                    "Bakersfield", "3:00 pm", "6:00 pm", 12});
+          
+                model.insertRow(model.getRowCount(), new Object[]{1208, "Park & Ride", "Megabus", "Bakersfield",
+                    "Los Angeles", "7:30 am", "10:15 am", 7});
+                model.insertRow(model.getRowCount(), new Object[]{1209, "Truxton Ave", "Greyhound", "Bakersfield",
+                    "Los Angeles", "11:45 am", "3:00 pm", 12});
+                model.insertRow(model.getRowCount(), new Object[]{1210, "Truxton Ave", "FlixBus", "Bakersfield",
+                    "Los Angeles", "2:00 pm", "4:45 pm", 12});
+      
+                model.insertRow(model.getRowCount(), new Object[]{1245, "Tefusa", "Megabus", "Los Angeles",
+                    "Las Vegas", "7:30 am", "1:15 pm", 8});
+                model.insertRow(model.getRowCount(), new Object[]{1246, "LA Union", "Grehound", "Los Angeles",
+                    "Las Vegas", "9:00 am", "2:45 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1246, "LA Union", "Grehound", "Los Angeles",
+                    "Las Vegas", "1:15 pm", "7:00 pm", 20});
+                model.insertRow(model.getRowCount(), new Object[]{1247, "LA Union", "FlixBus", "Los Angeles",
+                    "Las Vegas", "12:45 pm", "6:00 pm", 20});
+      
+                model.insertRow(model.getRowCount(), new Object[]{1297, "F.Show Mall", "Megabus", "Las Vegas",
+                    "Los Angeles", "8:30 am", "2:15 pm", 12});
+                model.insertRow(model.getRowCount(), new Object[]{1298, "South Strip", "Greyhound", "Las Vegas",
+                    "Los Angeles", "10:45 am", "4:30 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{1298, "South Strip", "Greyhound", "Las Vegas",
+                    "Los Angeles", "12:15 pm", "6:00 pm", 35});
+                model.insertRow(model.getRowCount(), new Object[]{1299, "Caesar's Palace", "FlixBus", "Las Vegas",
+                    "Los Angeles", "2:00 pm", "7:30 pm", 35});
+          
+                model.insertRow(model.getRowCount(), new Object[]{1310, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "7:30 am", "12:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "8:30 am", "12:30 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "9:45 am", "1:30 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "11:15 am", "2:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1312, "Hillcroft", "Megabus", "Houston",
+                    "Dallas", "12:45 pm", "5:15 pm", 30});
+       
+                model.insertRow(model.getRowCount(), new Object[]{1310, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "8:30 am", "1:30 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "10:15 am", "2:00 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1312, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "11:15 am", "2:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1311, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "12:30 am", "4:45 pm", 30});
+                model.insertRow(model.getRowCount(), new Object[]{1312, "Grand Prairie", "Megabus", "Dallas",
+                    "Houston", "2:00 am", "6:00 pm", 30});
+      
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        model_2.insertRow(model.getRowCount(), new Object[]{3010, "LA Union", "AmTrak", "Los Angeles",
+                    "San Diego", "6:15 am", "8:45 am", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3011, "LA Union", "AmTrak", "Los Angeles",
+                    "San Diego", "7:15 am", "9:15 am", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "10:15 am", "1:00 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "11:45 am", "5:00 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "12:15 pm", "2:45 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                    "San Diego", "3:30 pm", "6:00 pm", 35});
+            
+                
+                model_2.insertRow(model.getRowCount(), new Object[]{3054, "Santa Fe", "AmTrak", "San Diego",
+                    "Los Angeles", "9:30 am", "11:30 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
+                    "Los Angeles", "10:30 am", "4:15 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3056, "Santa Fe", "Amtrak", "San Diego",
+                    "Los Angeles", "11:45 am", "4:45 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
+                    "Los Angeles", "1:00 pm", "7:30 pm", 35});
+                model_2.insertRow(model.getRowCount(), new Object[]{3056, "Old Town", "Amtrak", "San Diego",
+                    "Los Angeles", "4:15 pm", "6:45 pm", 35});
+         
+                model_2.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                    "Las Vegas", "8:18 am", "7:30 pm", 86});
+                model_2.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                    "Las Vegas", "10:15 pm", "9:45 pm", 86});
+                model_2.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                    "Las Vegas", "2:30 am", "11:15 am", 86});
+       
+                model_2.insertRow(model.getRowCount(), new Object[]{3110, "LA Union", "AmTrak", "Salt Lake City",
+                    "Los Angeles", "9:45 am", "3:00 am", 98});
+                model_2.insertRow(model.getRowCount(), new Object[]{3111, "LA Union", "AmTrak", "Salt Lake City",
+                    "Los Angeles", "4:45 pm", "10:00 am", 98});
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
+                    "Las Vegas", "9:45 am", "3:00 am", 67});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
+                    "Las Vegas", "4:45 pm", "10:00 am", 70});
+                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
+                    "Las Vegas", "4:45 pm", "10:00 am", 70});
+
+            
+                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Las Vegas",
+                    "Houston", "9:30 am", "12:15 pm", 88});
+                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Las Vegas",
+                    "Houston", "4:45 pm", "8:00 am", 76});
+         
+                
+                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Spirit", "Los Angeles",
+                    "Salt Lake City", "9:45 am", "12:00 pm", 98});
+                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
+                    "Salt Lake City", "4:45 pm", "10:00 am", 98});
+                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Los Angeles",
+                    "Salt Lake City", "4:45 pm", "10:00 am", 98});
+                      
+                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
+                    "Houston", "8:30 am", "12:00 pm", 98});
+                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
+                    "Houston", "1:45 pm", "5:00 pm", 98});    }//GEN-LAST:event_jButton3ActionPerformed
+
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -1016,48 +1217,16 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JTable ClientTable;
     public javax.swing.JTable PlaneTable;
     private javax.swing.JTable TrainTable;
-    private javax.swing.JTable UserTable;
-    private javax.swing.JTable UserTable1;
-    private javax.swing.JTable UserTable2;
-    private javax.swing.JTable UserTable3;
-    private javax.swing.JTable UserTable4;
-    private javax.swing.JTable UserTable5;
-    private javax.swing.JTable UserTable6;
-    private javax.swing.JTable UserTable7;
     private javax.swing.JButton btnAddBus;
     private javax.swing.JButton btnAddPlane;
     private javax.swing.JButton btnAddTrain;
     private javax.swing.JButton btnClient_Delete;
     private javax.swing.JButton btnClient_Edit;
     private javax.swing.JButton btnClient_Save;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnDelete1;
-    private javax.swing.JButton btnDelete2;
-    private javax.swing.JButton btnDelete3;
-    private javax.swing.JButton btnDelete4;
-    private javax.swing.JButton btnDelete5;
-    private javax.swing.JButton btnDelete6;
-    private javax.swing.JButton btnDelete7;
     private javax.swing.JButton btnDeleteBus;
     private javax.swing.JButton btnDeletePlane;
     private javax.swing.JButton btnDeleteTrain;
-    private javax.swing.JButton btnEdit;
-    private javax.swing.JButton btnEdit1;
-    private javax.swing.JButton btnEdit2;
-    private javax.swing.JButton btnEdit3;
-    private javax.swing.JButton btnEdit4;
-    private javax.swing.JButton btnEdit5;
-    private javax.swing.JButton btnEdit6;
-    private javax.swing.JButton btnEdit7;
     private javax.swing.JButton btnHome;
-    private javax.swing.JButton btnSave;
-    private javax.swing.JButton btnSave1;
-    private javax.swing.JButton btnSave2;
-    private javax.swing.JButton btnSave3;
-    private javax.swing.JButton btnSave4;
-    private javax.swing.JButton btnSave5;
-    private javax.swing.JButton btnSave6;
-    private javax.swing.JButton btnSave7;
     private javax.swing.JComboBox<String> cbBusArrive1;
     private javax.swing.JComboBox<String> cbBusArrive2;
     private javax.swing.JComboBox<String> cbBusDepart1;
@@ -1070,6 +1239,9 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbTrainArrive2;
     private javax.swing.JComboBox<String> cbTrainDepart1;
     private javax.swing.JComboBox<String> cbTrainDepart2;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1088,14 +1260,6 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1108,37 +1272,13 @@ public class AdminPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     public javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTabbedPane jTabbedPane2;
-    private javax.swing.JTabbedPane jTabbedPane3;
-    private javax.swing.JTabbedPane jTabbedPane4;
-    private javax.swing.JTabbedPane jTabbedPane5;
-    private javax.swing.JTabbedPane jTabbedPane6;
-    private javax.swing.JTabbedPane jTabbedPane7;
-    private javax.swing.JTabbedPane jTabbedPane8;
-    private javax.swing.JTabbedPane jTabbedPane9;
     private javax.swing.JTextField txtBusCompany;
     private javax.swing.JTextField txtBusFrom;
     private javax.swing.JTextField txtBusNum;
