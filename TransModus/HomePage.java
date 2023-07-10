@@ -31,22 +31,15 @@ public class HomePage extends javax.swing.JFrame {
         btnProfile1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        iconAboutUs = new javax.swing.JLabel();
         dispUser = new javax.swing.JLabel();
         ActiveClient = new javax.swing.JLabel(); // Stuggling
         btnRoutineMng = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         btnAdminPanel = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         this.setUndecorated(false);
-
-        // @BREAKPOINT
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                // Shut down the program when the window is closed
-                System.exit(0);
-            }
-        });
 
 
 
@@ -88,7 +81,7 @@ public class HomePage extends javax.swing.JFrame {
         jPanel1.add(btnBooking);
         btnBooking.setBounds(470, 506, 190, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("Image/Routine_IMG.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("Image/Feedback_15.png")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(690, 356, 184, 150);
 
@@ -117,21 +110,33 @@ public class HomePage extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("SimSun-ExtB", 1, 36)); // NOI18N
         jLabel5.setText("T R A N S M O D U S");
 
+        iconAboutUs.setIcon(new javax.swing.ImageIcon("Image/AboutUs_18.png")); // NOI18N
+        iconAboutUs.setText("jLabel2");
+        iconAboutUs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iconAboutUsMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(285, 285, 285)
+                .addGap(293, 293, 293)
                 .addComponent(jLabel5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(iconAboutUs, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLabel5)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(iconAboutUs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2);
@@ -160,6 +165,10 @@ public class HomePage extends javax.swing.JFrame {
         });
         jPanel1.add(btnAdminPanel);
         btnAdminPanel.setBounds(710, 135, 170, 30);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("Image/Feedback_15.png")); // NOI18N
+        jLabel7.setText("jLabel7");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(705, 344, 148, 151));
 
         jLabel6.setIcon(new javax.swing.ImageIcon("Image/TransModus_BG_2.jpg")); // NOI18N
 
@@ -281,6 +290,12 @@ public class HomePage extends javax.swing.JFrame {
         adp.pack();
     }//GEN-LAST:event_btnAdminPanelActionPerformed
 
+    private void iconAboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iconAboutUsMouseClicked
+        AboutUs abt = new AboutUs();
+        abt.setVisible(true);
+        abt.pack();
+    }//GEN-LAST:event_iconAboutUsMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -323,12 +338,14 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JButton btnTicketRes;
     public  javax.swing.JLabel dispUser;
     public  javax.swing.JLabel ActiveClient; //struggles
+    private javax.swing.JLabel iconAboutUs;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

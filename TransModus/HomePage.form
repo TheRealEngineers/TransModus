@@ -268,6 +268,17 @@
                 <Property name="text" type="java.lang.String" value="T R A N S M O D U S"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JLabel" name="iconAboutUs">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\Andres Ibarra\Documents\NetBeansProjects\TransModus\Image\AboutUs_18.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="jLabel2"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="iconAboutUsMouseClicked"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="dispUser">

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)" />
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)">
+      <change afterPath="$PROJECT_DIR$/Image/AboutUs_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/AboutUs_IMG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Feedback_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/airplane-train-think-paper-banner_1020x574.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.form" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/HomePage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/HomePage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +40,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "TRS-55-Test-Debug-Sprint-4",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/justchance/Desktop/projects/TransModus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

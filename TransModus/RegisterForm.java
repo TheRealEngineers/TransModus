@@ -241,7 +241,9 @@ public class RegisterForm extends javax.swing.JFrame {
                             "Your account has been successfully registered! "
                                     + "Thank you for signing up with TransModus!");
 
+                    
                     HomePage hpg = new HomePage();
+                    hpg.dispUser.setText(firstname + "!");
                     hpg.setVisible(true);
                     hpg.pack();
                     this.dispose();

@@ -27,6 +27,8 @@ public class AboutUs extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
+        this.setUndecorated(true);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -86,7 +88,7 @@ public class AboutUs extends javax.swing.JFrame {
         jLabel9.setText("TransModus constantly work to empower our users with flexibility and");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 580, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Andres Ibarra\\Documents\\NetBeansProjects\\TransModus\\Image\\AboutUs_IMG.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("Image/AboutUs_IMG.jpg")); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 420));
 
         pack();
