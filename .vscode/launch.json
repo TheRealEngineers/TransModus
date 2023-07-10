@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Booking",
+            "request": "launch",
+            "mainClass": "Booking",
+            "projectName": "TransModus_28facee1"
+        },
+        {
+            "type": "java",
             "name": "AdminPanel",
             "request": "launch",
             "mainClass": "AdminPanel",

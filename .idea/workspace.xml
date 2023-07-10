@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)" />
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-55 Beta Version (Ready For Pull Request to Main, pulling from other branches first)">
+      <change afterPath="$PROJECT_DIR$/Database/TransModus_Transportation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c75279f3-cac7-4b29-8ff1-1d2ad6ee2dbe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c75279f3-cac7-4b29-8ff1-1d2ad6ee2dbe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c75279f3-cac7-4b29-8ff1-1d2ad6ee2dbe/storage_v2/_src_/schema/sql9630816.Vfp_KA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c75279f3-cac7-4b29-8ff1-1d2ad6ee2dbe/storage_v2/_src_/schema/sql9630816.Vfp_KA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_Bus.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_Database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/TransModus_Database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_Plane.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_TicketReservation.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_Train.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/TransModus_UserProfile.sql" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,16 +44,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "TRS-55-Test-Debug-Sprint-4",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "TRS-87-Develop-Database-Tables-for-Window-of-Application",
     "last_opened_file_path": "/Users/justchance/Desktop/projects/TransModus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
     ]
   }
 }]]></component>
@@ -53,6 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686334419147</updated>
+      <workItem from="1688871025341" duration="22126000" />
     </task>
     <task id="LOCAL-00001" summary="TRS-55 Version 5 (Pulled from TRS 14, 19, &amp; 39. Edited AdminPanel.java and HomePage.java)">
       <option name="closed" value="true" />
