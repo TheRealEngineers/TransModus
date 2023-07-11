@@ -732,7 +732,7 @@ public class AdminPanel extends javax.swing.JFrame {
                 {"Edith", "Mason", "04/21/1976", "edoth_12", "8374656654", "edMas", "aristoteles", "YES"},
                 {"Chance", "Chime", "04/28/2003", "chanceChime@icloud.com", "", "ChanceChime", "TransModus", "YES"},
                 {"John", "Doe ", "01/01/2000", "john.doe@example.com", null, "jdoe1", "biscuitwarrior", "NO"},
-                {"James", "Smith", "08/18/2002", "james.smith@example.com", null, "jSmith2", "juiceandberly123", "NO"}
+                {"James", "Smith", "08/18/2002", "james.smith@example.com", "6195741288", "jSmith2", "juiceandberly123", "NO"}
             },
             new String [] {
                 "First Name", "Last Name", "Date of Birth", "Email", "Phone #", "Username", "Password", "Admin Access"
@@ -894,8 +894,6 @@ public class AdminPanel extends javax.swing.JFrame {
                 txtBusFrom.getText(), txtBusTo.getText(),cbBusDepart1.getSelectedItem() + " " + cbBusDepart2.getSelectedItem(),
                 cbBusArrive1.getSelectedItem() + " " + cbBusArrive2.getSelectedItem(), txtBusPrice.getText()});
 
-        // SQL: save data to database
-
         }
     }//GEN-LAST:event_btnAddBusActionPerformed
 
@@ -920,7 +918,7 @@ public class AdminPanel extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,
                 "New train had been successfully added");
 
-            model_2.insertRow(model.getRowCount(), new Object[]{txtTrainNum.getText(), txtTrainStation.getText(), txtTrainCompany.getText(),
+            model_2.insertRow(model_2.getRowCount(), new Object[]{txtTrainNum.getText(), txtTrainStation.getText(), txtTrainCompany.getText(),
                 txtTrainFrom.getText(), txtTrainTo.getText(),cbTrainDepart1.getSelectedItem() + " " + cbTrainDepart2.getSelectedItem(),
                 cbTrainArrive1.getSelectedItem() + " " + cbTrainArrive2.getSelectedItem(), txtTrainPrice.getText()});
         }
@@ -963,7 +961,7 @@ public class AdminPanel extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,
                 "New plane had been successfully added");
 
-            model_3.insertRow(model.getRowCount(), new Object[]{txtPlaneNum.getText(), txtPlaneStation.getText(), txtPlaneCompany.getText(),
+            model_3.insertRow(model_3.getRowCount(), new Object[]{txtPlaneNum.getText(), txtPlaneStation.getText(), txtPlaneCompany.getText(),
                 txtPlaneFrom.getText(), txtPlaneTo.getText(),cbPlaneDepart1.getSelectedItem() + " " + cbPlaneDepart2.getSelectedItem(),
                 cbPlaneArrive1.getSelectedItem() + " " + cbPlaneArrive2.getSelectedItem(), txtPlanePrice.getText()});
         }
@@ -1020,7 +1018,7 @@ public class AdminPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_btnClient_SaveActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+        jButton1.setEnabled(false);
                 model.insertRow(model.getRowCount(), new Object[]{1108, "Grand Park", "Megabus", "Los Angeles",
                     "San Francisco", "5:30 am", "3:30 pm", 7});
                 model.insertRow(model.getRowCount(), new Object[]{1106, "Tefusa", "MegaBus", "Los Angeles",
@@ -1106,70 +1104,72 @@ public class AdminPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        model_2.insertRow(model.getRowCount(), new Object[]{3010, "LA Union", "AmTrak", "Los Angeles",
+        jButton2.setEnabled(false);        
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3010, "LA Union", "AmTrak", "Los Angeles",
                     "San Diego", "6:15 am", "8:45 am", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3011, "LA Union", "AmTrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3011, "LA Union", "AmTrak", "Los Angeles",
                     "San Diego", "7:15 am", "9:15 am", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
                     "San Diego", "10:15 am", "1:00 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
                     "San Diego", "11:45 am", "5:00 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
                     "San Diego", "12:15 pm", "2:45 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3012, "LA Union", "Amtrak", "Los Angeles",
                     "San Diego", "3:30 pm", "6:00 pm", 35});
             
                 
-                model_2.insertRow(model.getRowCount(), new Object[]{3054, "Santa Fe", "AmTrak", "San Diego",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3054, "Santa Fe", "AmTrak", "San Diego",
                     "Los Angeles", "9:30 am", "11:30 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
                     "Los Angeles", "10:30 am", "4:15 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3056, "Santa Fe", "Amtrak", "San Diego",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3056, "Santa Fe", "Amtrak", "San Diego",
                     "Los Angeles", "11:45 am", "4:45 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3055, "Old Town", "AmTrak", "San Diego",
                     "Los Angeles", "1:00 pm", "7:30 pm", 35});
-                model_2.insertRow(model.getRowCount(), new Object[]{3056, "Old Town", "Amtrak", "San Diego",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3056, "Old Town", "Amtrak", "San Diego",
                     "Los Angeles", "4:15 pm", "6:45 pm", 35});
          
-                model_2.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
                     "Las Vegas", "8:18 am", "7:30 pm", 86});
-                model_2.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
                     "Las Vegas", "10:15 pm", "9:45 pm", 86});
-                model_2.insertRow(model.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3081, "LA Union", "AmTrak", "Los Angeles",
                     "Las Vegas", "2:30 am", "11:15 am", 86});
        
-                model_2.insertRow(model.getRowCount(), new Object[]{3110, "LA Union", "AmTrak", "Salt Lake City",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3110, "LA Union", "AmTrak", "Salt Lake City",
                     "Los Angeles", "9:45 am", "3:00 am", 98});
-                model_2.insertRow(model.getRowCount(), new Object[]{3111, "LA Union", "AmTrak", "Salt Lake City",
+                model_2.insertRow(model_2.getRowCount(), new Object[]{3111, "LA Union", "AmTrak", "Salt Lake City",
                     "Los Angeles", "4:45 pm", "10:00 am", 98});
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
+        jButton3.setEnabled(false);        
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
                     "Las Vegas", "9:45 am", "3:00 am", 67});
-                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
+                model.insertRow(model_3.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
                     "Las Vegas", "4:45 pm", "10:00 am", 70});
-                model.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
+                model.insertRow(model_3.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
                     "Las Vegas", "4:45 pm", "10:00 am", 70});
 
             
-                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Las Vegas",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3110, "LAS", "Delta", "Las Vegas",
                     "Houston", "9:30 am", "12:15 pm", 88});
-                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Las Vegas",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3111, "LAS", "Volaris", "Las Vegas",
                     "Houston", "4:45 pm", "8:00 am", 76});
          
                 
-                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Spirit", "Los Angeles",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3110, "LAX", "Spirit", "Los Angeles",
                     "Salt Lake City", "9:45 am", "12:00 pm", 98});
-                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3111, "LAX", "Spirit", "Los Angeles",
                     "Salt Lake City", "4:45 pm", "10:00 am", 98});
-                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Los Angeles",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3111, "LAX", "Volaris", "Los Angeles",
                     "Salt Lake City", "4:45 pm", "10:00 am", 98});
                       
-                model_3.insertRow(model.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3110, "LAX", "Delta", "Los Angeles",
                     "Houston", "8:30 am", "12:00 pm", 98});
-                model_3.insertRow(model.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
+                model_3.insertRow(model_3.getRowCount(), new Object[]{3111, "LAX", "Delta", "Los Angeles",
                     "Houston", "1:45 pm", "5:00 pm", 98});    }//GEN-LAST:event_jButton3ActionPerformed
 
 
