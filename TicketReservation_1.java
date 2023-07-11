@@ -75,7 +75,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         jLabel124 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        codeField = new javax.swing.JTextField();
         btnConfirmCancel = new javax.swing.JButton();
         btnReservationSearch = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -142,6 +142,8 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         TransitTable.setFont(new java.awt.Font("SimSun", 0, 14)); // NOI18N
         TransitTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null}
             },
             new String [] {
@@ -152,7 +154,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
-                false, true, true, false, false, true, false, false
+                false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -457,7 +459,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("SimSun-ExtB", 0, 18)); // NOI18N
         jLabel2.setText("Enter your booking code:");
 
-        jTextField1.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
+        codeField.setFont(new java.awt.Font("SimSun", 0, 18)); // NOI18N
 
         btnConfirmCancel.setBackground(new java.awt.Color(204, 0, 0));
         btnConfirmCancel.setFont(new java.awt.Font("SimSun", 1, 24)); // NOI18N
@@ -486,14 +488,14 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Booking ID", "Transit ID", "Station", "Transit Line", "Origin", "Destination", "Departure Time", "Arrival Time", "Total", "Status"
+                "Booking ID", "Transit ID", "Station", "Transit Line", "Origin", "Destination", "Departure Time", "Arrival Time", "Total"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Float.class, java.lang.String.class
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Float.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -517,7 +519,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(codeField, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(35, 35, 35)
                         .addComponent(btnReservationSearch)
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -534,7 +536,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(codeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnReservationSearch))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -799,7 +801,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
         }
 
-        
+        // PLANES
         if (tranMethod.getSelectedItem() == "Plane") {
             if (origin.getSelectedItem() == "Los Angeles" && destination.getSelectedItem() == "Las Vegas") {
                 DefaultTableModel model = (DefaultTableModel) TransitTable.getModel();
@@ -862,14 +864,34 @@ public class TicketReservation_1 extends javax.swing.JFrame {
 
     // Checks Booking History databse for corresponding booking id
     private void btnReservationSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReservationSearchActionPerformed
-        btnConfirmCancel.setEnabled(true);
+        int code = Integer.parseInt(codeField.getText());
+        
+        if (code == 98430235) {
+            JOptionPane.showMessageDialog(this,
+                    "This reservation has already been cancelled", "ERROR", JOptionPane.ERROR_MESSAGE);
+        }
+        
+        if (code == 59793649){
+            model_2.insertRow(model_2.getRowCount(), new Object[]{59793649, 1108, "LA Union", "FlixBus", "Los Angeles",
+                        "San Francisco", "1:30 am", "9:15 pm", 32.7});
+            
+            btnReservationSearch.setEnabled(false);
+            btnConfirmCancel.setEnabled(true);
+        } 
     }//GEN-LAST:event_btnReservationSearchActionPerformed
 
     // Refunds the user's money and sets the booking status to CANCELLED
     private void btnConfirmCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmCancelActionPerformed
         JOptionPane.showMessageDialog(this,
-                    "Your reservation has been successfully cancelled and your payment has been refunded");
+                    "Cancellation succesful! Your payment has been immediately refunded."
+                            + "\nAllow for a few hours for booking status to be changed to CANCELLED");
+        
+        btnReservationSearch.setEnabled(true);
         btnConfirmCancel.setEnabled(false);
+        codeField.setText("");
+        
+        DefaultTableModel model_2 = (DefaultTableModel) CancelTable.getModel();
+        model_2.setRowCount(0);
     }//GEN-LAST:event_btnConfirmCancelActionPerformed
 
  
@@ -894,6 +916,7 @@ public class TicketReservation_1 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.JTextField codeField;
     private javax.swing.JFormattedTextField departDate;
     public javax.swing.JComboBox<String> destination;
     private javax.swing.JLabel jLabel1;
@@ -922,7 +945,6 @@ public class TicketReservation_1 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
     public javax.swing.JComboBox<String> origin;
     private javax.swing.JTextField passenger1;
     private javax.swing.JTextField passenger2;

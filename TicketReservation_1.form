@@ -292,13 +292,13 @@
                       <Font name="SimSun" size="14" style="0"/>
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="8" rowCount="1">
+                      <Table columnCount="8" rowCount="3">
                         <Column editable="false" title="Transit ID" type="java.lang.Integer"/>
-                        <Column editable="true" title="Station" type="java.lang.String"/>
-                        <Column editable="true" title="Company" type="java.lang.String"/>
+                        <Column editable="false" title="Station" type="java.lang.String"/>
+                        <Column editable="false" title="Company" type="java.lang.String"/>
                         <Column editable="false" title="Origin" type="java.lang.String"/>
                         <Column editable="false" title="Destination" type="java.lang.String"/>
-                        <Column editable="true" title="Departure Time" type="java.lang.Object"/>
+                        <Column editable="false" title="Departure Time" type="java.lang.Object"/>
                         <Column editable="false" title="Arrival Time" type="java.lang.Object"/>
                         <Column editable="false" title="Fare" type="java.lang.Integer"/>
                       </Table>
@@ -828,7 +828,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField1" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="codeField" min="-2" pref="219" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Component id="btnReservationSearch" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -850,7 +850,7 @@
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="codeField" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnReservationSearch" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="110" max="32767" attributes="0"/>
@@ -871,7 +871,7 @@
                 <Property name="text" type="java.lang.String" value="Enter your booking code:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="codeField">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="SimSun" size="18" style="0"/>
@@ -927,7 +927,7 @@
                       <Font name="SimSun" size="17" style="0"/>
                     </Property>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="10" rowCount="0">
+                      <Table columnCount="9" rowCount="0">
                         <Column editable="false" title="Booking ID" type="java.lang.Integer"/>
                         <Column editable="false" title="Transit ID" type="java.lang.Integer"/>
                         <Column editable="false" title="Station" type="java.lang.String"/>
@@ -937,16 +937,10 @@
                         <Column editable="false" title="Departure Time" type="java.lang.Object"/>
                         <Column editable="false" title="Arrival Time" type="java.lang.Object"/>
                         <Column editable="false" title="Total" type="java.lang.Float"/>
-                        <Column editable="false" title="Status" type="java.lang.String"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                       <TableColumnModel selectionModel="0">
-                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                          <Title/>
-                          <Editor/>
-                          <Renderer/>
-                        </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                           <Title/>
                           <Editor/>
