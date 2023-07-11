@@ -10,7 +10,7 @@
   <priority>normal</priority>
   <downloadUrl></downloadUrl>
   <supportUrl></supportUrl>
-  <stayAlive>true</stayAlive>
+  <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
   <icon>/Users/justchance/Desktop/projects/TransModus/Image/TransModus_Icon.ico</icon>
