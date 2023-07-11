@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-87 Created tickets and trips table">
-      <change beforePath="$PROJECT_DIR$/TransModus/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TransModus/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/TransModus/UserProfile.java" afterDir="false" />
-    </list>
+    <list default="true" id="5ffcc881-2f3a-49e6-921a-c99aac2288d5" name="Changes" comment="TRS-87 Created tickets and trips table" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +40,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.fileTypes",
     "vue.rearranger.settings.migration": "true"
@@ -71,7 +67,7 @@
       <workItem from="1689022586488" duration="55000" />
       <workItem from="1689022731987" duration="69000" />
       <workItem from="1689023018215" duration="1011000" />
-      <workItem from="1689050212670" duration="420000" />
+      <workItem from="1689050212670" duration="1270000" />
     </task>
     <task id="LOCAL-00001" summary="TRS-55 Version 5 (Pulled from TRS 14, 19, &amp; 39. Edited AdminPanel.java and HomePage.java)">
       <option name="closed" value="true" />
