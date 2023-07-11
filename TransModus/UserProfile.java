@@ -40,6 +40,7 @@ public class UserProfile extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtBirthDate = new javax.swing.JTextField();
         userInformation();
+
         
 
         jTextField6.setText("jTextField6");

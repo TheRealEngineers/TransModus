@@ -52,7 +52,7 @@ public class HomePage extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         btnAdminPanel = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        this.setUndecorated(false);
+        this.setUndecorated(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 
