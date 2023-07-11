@@ -29,8 +29,6 @@ public class Booking extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         BookingTable = new javax.swing.JTable();
 
-        this.setUndecorated(true);
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(179, 0, 0));
@@ -75,7 +73,7 @@ public class Booking extends javax.swing.JFrame {
         BookingTable.setFont(new java.awt.Font("SimSun", 0, 14)); // NOI18N
         BookingTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                { new Integer(98430235),  new Integer(5336), "LA Union", "Greyhound", "Northridge", "San Francisco", "6:15 am", "5:30 pm",  new Float(143.55), "BOOKED"}
+                {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
                 "Booking ID", "Transit ID", "Station", "Transit Line", "Origin", "Destination", "Departure Time", "Arrival Time", "Total", "Status"

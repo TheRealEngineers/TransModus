@@ -1,9 +1,5 @@
--- Create a new database
-CREATE DATABASE IF NOT EXISTS `TransModus`;
-
-
 -- Use the newly created database
-USE `TransModus`;
+USE `sql9630816`;
 
 -- Create a new table on clients
 CREATE TABLE IF NOT EXISTS client (
@@ -16,17 +12,9 @@ CREATE TABLE IF NOT EXISTS client (
     `birthday_month` CHAR(3) NOT NULL,
     `birthday_day` INT(2) NOT NULL,
     `birthday_year` INT(4) NOT NULL,
-    `phone_number` VARCHAR(10) DEFAULT NULL
+    `phone_number` VARCHAR(10) DEFAULT NULL,
+    `admin_access` ENUM ('YES', 'NO') NOT NULL DEFAULT 'NO'
 );
-
-ALTER TABLE client AUTO_INCREMENT = 1;
-ALTER TABLE client MODIFY client_id int NOT NULL AUTO_INCREMENT;
-
--- Insert data into the table
-INSERT INTO client (firstname, lastname, login, email, password, birthday_month, birthday_day, birthday_year)
-VALUES ('John', 'Doe', 'jdoe1', 'john.doe@example.com', 'biscuitwarrior', 'Jan', 1, 2000),
-       ('Jane', 'Smith', 'jsmith2', 'jane.smith@example.com', 'justiceandliberty123', 'Aug', 18, 2002),
-       ('Mike', 'Johnson','mjohnson3', 'mike.johnson@example.com', 'password123', 'Apr', 28, 2003);
 
 -- Remove duplicates from the table
 DELETE c1 FROM client c1
@@ -46,10 +34,8 @@ DELETE c1 FROM client c1
 -- Will remove the users without email?
 DELETE FROM client WHERE email = '';
 
-
-
 -- Retrieve data from the table (permanently)
--- TransModus User Database
+-- TransModus User
 SELECT
     LPAD(client_id, 5, '0') AS user_id,
     firstname,
@@ -65,3 +51,17 @@ FROM
     client
 WHERE
     email <> '';
+
+-- TransModus Admin Table
+SELECT
+    LPAD(client_id, 5, '0') AS user_id,
+    firstname,
+    lastname,
+    CONCAT(UCASE(LEFT(birthday_month, 1)), LCASE(SUBSTRING(birthday_month, 2)), ' ', birthday_day, ', ', birthday_year) AS dateOfBirth,
+    email,
+    ufn_FormatPhone(phone_number) AS phone_number,
+    login AS username,
+    password,
+    admin_access
+FROM
+    client;
