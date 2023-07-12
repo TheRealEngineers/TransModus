@@ -13,9 +13,13 @@ With TransModus, your journey becomes an experience worth remembering. Imagine s
 Within our 6-week timeframe, We will launch our Fully-Developed Transit Reservation System, TransModus.
 
 Week 1: Begin with the requirements phase, defining our project scope, outlining key features, and crafting our website's initial design and wireframes.
+
 Week 2 & 3: Focus on setting up our backend infrastructure. We will use Java for server-side logic, building essential features like User Registration, Route Management, and the Reservation System.
+
 Week 4: Turn our attention to the front end of our application. Using JavaScript, we'll create a dynamic, user-friendly interface that ensures a smooth user experience.
+
 Week 5: The focus of this week will be integrating our front and back end. We will ensure all components are communicating Properly and that features like User Profile, Admin Panel, Payment, and Notifications are functioning correctly. 
+
 Week 6: Dedicate the final week to rigorous application testing, debugging, and fine-tuning.
 
 ---
@@ -36,9 +40,9 @@ Sebastian Ibarra
 
 Alberto Santana
 
-Sungbin Cho
+~~Sungbin Cho~~ (Removed from Credit due to lack of participation - Chance)
 
-Amr Elkordy
+~~Amr Elkordy~~ (Removed from Credit due to lack of participation - Chance)
 
  
-
+> This 6-week project serves as a demo rather than a working service. This project represents the potential the idea has brought forth. Thank you for checking out our project. - Chance and the Team Behind the TransModus Application
