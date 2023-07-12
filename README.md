@@ -30,19 +30,19 @@ Week 6: Dedicate the final week to rigorous application testing, debugging, and 
 ### David Pedroza
 
 ## Created By: 
-Chance Chime
+**Chance Chime** - Product Owner/ Lead Back-End Developer/ QA Engineer
 
-David Pedroza
+**David Pedroza** - Scrum Master/ Back-End Developer
 
-Jainivash Korisal
+**Jainivash Korisal** - Full-Stack Developer/ QA Engineer
 
-Sebastian Ibarra
+**Sebastian Ibarra** - Lead Front-End Developer/ Full-Stack Developer
 
-Alberto Santana
+**Alberto Santana** - Full-Stack Developer/ Document Controller
 
-~~Sungbin Cho~~ (Removed from Credit due to lack of participation - Chance)
+**~~Sungbin Cho~~ (Removed from Credit due to lack of participation - Chance)**
 
-~~Amr Elkordy~~ (Removed from Credit due to lack of participation - Chance)
+**~~Amr Elkordy~~ (Removed from Credit due to lack of participation - Chance)**
 
  
 > This 6-week project serves as a demo rather than a working service. This project represents the potential the idea has brought forth. Thank you for checking out our project. - Chance and the Team Behind the TransModus Application
